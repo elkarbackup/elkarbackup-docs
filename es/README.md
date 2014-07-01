@@ -1,7 +1,1 @@
-# Sarrera
-
-Hau sarrera bat da
-
-blabla
-
-fs
+Elkarbackup: Sistema centralizado de Backups basado en [rsnaphsot]:(http://www.rsnapshot.org/)
