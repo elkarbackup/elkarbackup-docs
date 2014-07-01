@@ -25,7 +25,8 @@ pre-xfer exec = /cygdrive/c/ElkarBackup/DeleteSnapshotCUmountB.cmd
 ### read only = true
 ### transfer logging = yes
 ### pre-xfer  exec = /cygdrive/c/ElkarBackup/MakeSnapshotCMountB.cmd
-### post-xfer exec = /cygdrive/c/ElkarBackup/DeleteSnapshotCUmountB.cmd```
+### post-xfer exec = /cygdrive/c/ElkarBackup/DeleteSnapshotCUmountB.cmd
+```
 
 
 Tal y como se nos indica tras la ejecución del script, es necesario descargar el programa ***vss.exe*** desde http://www.dmares.com/pub/nt_32/vss.exe .

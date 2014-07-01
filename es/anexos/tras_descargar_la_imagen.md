@@ -3,5 +3,6 @@ Tenemos que tener en cuenta que todos los que descargamos esta imagen estamos ut
 Desde el interfaz web en el apartado ***Configuración → Gestionar parámetros*** vemos el botón ***Descargar*** porque el sistema detecta que la clave ha sido previamente generada. Si por debajo borramos la clave, el interfaz cambiará el botón ***Descargar*** por el botón ***Generar***, y tendremos la opción de generar una nueva clave
 
 ```
-root@ElkarBackup:~# rm /var/lib/elkarbackup/.ssh/id_rsa.pub ```
+root@ElkarBackup:~# rm /var/lib/elkarbackup/.ssh/id_rsa.pub 
+```
 

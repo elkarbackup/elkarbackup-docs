@@ -31,7 +31,8 @@ done
 echo Backing up mysql DB
 ssh "$SERVER_USER@$SERVER" "mysqldump -u$MYSQL_USER -p$MYSQL_PASSWORD -h$MYSQL_HOST $MYSQL_DB" > ElkarBackup.sql
 echo Backing up uploads
-rsync -aH --delete "$SERVER_USER@$SERVER":"$UPLOADS/" uploads```
+rsync -aH --delete "$SERVER_USER@$SERVER":"$UPLOADS/" uploads
+```
 
 
 Si ejecutamos este script en otra máquina (en adelante ***Secundario***):

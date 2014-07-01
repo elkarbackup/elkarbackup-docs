@@ -29,7 +29,8 @@ Cuando llegue el momento de realizar la rotación de las carpetas Hourly hará l
 Borra el último Hourly:
 
 ```
-rm -Rf Hourly.4```
+rm -Rf Hourly.4
+```
 
 
 Cambia el nombre al resto para hacer la rotación
@@ -38,7 +39,8 @@ Cambia el nombre al resto para hacer la rotación
 mv Hourly.3 Hourly.4
 mv Hourly.2 Hourly.3
 mv Hourly.1 Hourly.2
-mv Hourly.0 Hourly.1```
+mv Hourly.0 Hourly.1
+```
 
 
 y por último crea un nuevo Hourly.0 con su contenido, copiando los nuevos ficheros y enlazando mediante Hardlinks aquellos que no han sido modificados.

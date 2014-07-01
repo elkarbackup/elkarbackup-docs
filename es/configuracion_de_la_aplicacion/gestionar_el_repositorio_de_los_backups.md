@@ -5,7 +5,8 @@ Si modificamos este parámetro una vez que hemos comenzado a realizar copias, el
 Además, deberíamos asignar los permisos correspondientes en la nueva carpeta para el  usuario y grupo elkarbackup
 
 ```
-root@backups:~# chown -Rf elkarbackup.elkarbackup nuevopath```
+root@backups:~# chown -Rf elkarbackup.elkarbackup nuevopath
+```
 
 
 El disco que el servidor está utilizando para almacenar los datos puede estar conectado físicamente, o bien estar montado a través de la red, por ejemplo a través de los protocolos [ISCSI](http://es.wikipedia.org/wiki/ISCSI) o [NFS](http://es.wikipedia.org/wiki/Network_File_System). Esta es una opción interesante cuando queremos montar ElkarBackup como servidor virtual.

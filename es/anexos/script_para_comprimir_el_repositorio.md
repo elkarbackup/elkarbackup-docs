@@ -14,7 +14,8 @@ drwxr-xr-x 4 root root 4,0K jun  7 11:24 ..
 -rw-r--r-- 1 root root 1,1M nov 18  2010 7z920.exe
 -rw-r--r-- 1 root root 164M may  3 18:16 LibreOffice_4.0.3_Linux_x86_deb.tar.gz
 -rw-r--r-- 1 root root  22M abr 15 19:11 vlc-2.0.6-win32.exe
--rw-r--r-- 1 root root  22M jun 12 12:44 vlc-2.0.6-win32-kopia.exe ```
+-rw-r--r-- 1 root root  22M jun 12 12:44 vlc-2.0.6-win32-kopia.exe 
+```
 
 
 Accedemos a la tarea encargada de hacer la copia de estos datos y pulsamos el botón ***Ejecutar ahora***. Al finalizar la tarea podremos observar que en la carpeta del servidor ElkarBackup están los dos ficheros
@@ -28,7 +29,8 @@ drwxrwxr-x 4 elkarbackup elkarbackup 4,0K jun  7 11:24 ..
 -rw-rw-r-- 3 elkarbackup elkarbackup 1,1M nov 18  2010 7z920.exe
 -rw-rw-r-- 3 elkarbackup elkarbackup 164M may  3 18:16 LibreOffice_4.0.3_Linux_x86_deb.tar.gz
 -rw-rw-r-- 3 elkarbackup elkarbackup  22M abr 15 19:11 vlc-2.0.6-win32.exe
--rw-rw-r-- 2 elkarbackup elkarbackup  22M jun 12 12:44 vlc-2.0.6-win32-kopia.exe ```
+-rw-rw-r-- 2 elkarbackup elkarbackup  22M jun 12 12:44 vlc-2.0.6-win32-kopia.exe 
+```
 
 
 y como podemos observar no están enlazados mediante hardlinks, ya que no tienen el mismo ***inode***
@@ -41,7 +43,8 @@ total 209M
 29332 -rw-rw-r-- 3 elkarbackup elkarbackup 1,1M nov 18  2010 7z920.exe
 29333 -rw-rw-r-- 3 elkarbackup elkarbackup 164M may  3 18:16 LibreOffice_4.0.3_Linux_x86_deb.tar.gz
 29334 -rw-rw-r-- 3 elkarbackup elkarbackup  22M abr 15 19:11 vlc-2.0.6-win32.exe
-74101 -rw-rw-r-- 2 elkarbackup elkarbackup  22M jun 12 12:44 vlc-2.0.6-win32-kopia.exe ```
+74101 -rw-rw-r-- 2 elkarbackup elkarbackup  22M jun 12 12:44 vlc-2.0.6-win32-kopia.exe 
+```
 
 
 A continuación veremos como podemos utilizar un script postscript para resolver este problema.
@@ -64,7 +67,8 @@ do
         fi
         lastHash=$currentHash
         lastFile="$file"
-done ```
+done 
+```
 
 
 Subimos el Script:
@@ -81,7 +85,8 @@ total 209M
 29332 -rw-rw-r-- 4 elkarbackup elkarbackup 1,1M nov 18  2010 7z920.exe
 29333 -rw-rw-r-- 4 elkarbackup elkarbackup 164M may  3 18:16 LibreOffice_4.0.3_Linux_x86_deb.tar.gz
 29334 -rw-rw-r-- 8 elkarbackup elkarbackup  22M abr 15 19:11 vlc-2.0.6-win32.exe
-29334 -rw-rw-r-- 8 elkarbackup elkarbackup  22M abr 15 19:11 vlc-2.0.6-win32-kopia.exe ```
+29334 -rw-rw-r-- 8 elkarbackup elkarbackup  22M abr 15 19:11 vlc-2.0.6-win32-kopia.exe 
+```
 
 
 Si ahora nos fijamos en los números de inodo que aparecen en la primera columna, podemos observar que las copias aparecen con el mismo inode, por lo que están apuntando a la misma ubicación en disco y no duplican el espacio utilizado.

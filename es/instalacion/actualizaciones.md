@@ -2,6 +2,7 @@ Sea cual sea el procedimiento de instalación elegido, la actualización de paqu
 
 ```
 root@backups:~# apt-get update
-root@backups:~# apt-get upgrade```
+root@backups:~# apt-get upgrade
+```
 
 

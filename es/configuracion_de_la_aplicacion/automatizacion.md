@@ -26,13 +26,15 @@ Idatzi balio berria, edo sakatu 'Sartu' tekla lehenetsirako
 	Laneko telefonoa []:
 	Etxeko telefonoa []:
 	Bestelakoa []:
-Informazioa zuzena da? [B/e] B ```
+Informazioa zuzena da? [B/e] B 
+```
 
 
 A continuación abrimos una sesión con ese usuario
 
 ```
-root@Secundario:~$ su - elkarbackup ```
+root@Secundario:~$ su - elkarbackup 
+```
 
 
 y creamos su clave RSA
@@ -59,14 +61,16 @@ The key's randomart image is:
 |+o.= ..          |
 |    .            |
 |                 |
-+-----------------+ ```
++-----------------+ 
+```
 
 
 Ahora podemos ver y copiar su clave pública
 
 ```
 elkarbackup@Secundario:~$ cat .ssh/id_rsa.pub
-ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQCuklE6TI16fU5pmTeU4APrSgG24eblwQdnHNtntUIIRSyAkAemPil2GDpufXgPKqT+FQV02z4JiaoTMMhQpsGqS/Shz/KE/MA7pm8k9v6qnFKVpY6HXZZyvgYhH+Yy6FxxDk+QGQqQMnabzmanyxcBBdQ3ZdluYbwT5kdlgAJR8eTlN/M08hrKKeQGbEVXP3GCPWYsiDV2p6VgRgkPzCSWUgMP63668ZAoNq8mlhW8RF+BEYDF9TPh7PJaEhc+Ea5LiiggD/E2lqQmFGYTqbjELKT4b97y6nDj+2UIG0pvqZ/dN0ZMdsCMX577e8ppkafMqgwGT3D7Af4gD9KninL3 ElkarBackup@Secundario```
+ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQCuklE6TI16fU5pmTeU4APrSgG24eblwQdnHNtntUIIRSyAkAemPil2GDpufXgPKqT+FQV02z4JiaoTMMhQpsGqS/Shz/KE/MA7pm8k9v6qnFKVpY6HXZZyvgYhH+Yy6FxxDk+QGQqQMnabzmanyxcBBdQ3ZdluYbwT5kdlgAJR8eTlN/M08hrKKeQGbEVXP3GCPWYsiDV2p6VgRgkPzCSWUgMP63668ZAoNq8mlhW8RF+BEYDF9TPh7PJaEhc+Ea5LiiggD/E2lqQmFGYTqbjELKT4b97y6nDj+2UIG0pvqZ/dN0ZMdsCMX577e8ppkafMqgwGT3D7Af4gD9KninL3 ElkarBackup@Secundario
+```
 
 
 y aprovechando la opción que tenemos en el interfaz web del servidor ElkarBackup, añadimos la clave en fichero ***authorized_keys*** del servidor.
@@ -82,7 +86,8 @@ ElkarBackup@Secundario:~$ ls -la copiarepositorio/
 guztira 12
 drwxrwxr-x 2 elkarbackup elkarbackup 4096 eka 10 17:02 .
 drwxr-xr-x 4 elkarbackup elkarbackup 4096 eka 10 16:53 ..
--rwxrwxr-x 1 elkarbackup elkarbackup  695 eka 10 15:24 copyrepository.sh ```
+-rwxrwxr-x 1 elkarbackup elkarbackup  695 eka 10 15:24 copyrepository.sh 
+```
 
 
 y comprobamos su ejecución
@@ -93,7 +98,8 @@ elkarbackup@portatil59:~/copiarepositorio$ ./copyrepository.sh
 Backing up job 0002/0002
 Backing up job 0001/0001
 Backing up mysql DB
-Backing up uploads```
+Backing up uploads
+```
 
 
 Como podemos observar hacemos la replicación sin tener que introducir ni usuario ni contraseña
@@ -107,6 +113,7 @@ drwxrwxr-x 3 elkarbackup elkarbackup   4096 eka 10 17:04 0001
 drwxrwxr-x 3 elkarbackup elkarbackup   4096 eka 10 17:04 0002
 -rwxrwxr-x 1 elkarbackup elkarbackup    695 eka 10 15:24 copyrepository.sh
 -rw-rw-r-- 1 elkarbackup elkarbackup 103785 eka 10 17:04 ElkarBackup.sql
-drwxr-xr-x 2 elkarbackup elkarbackup   4096 eka  6 15:32 uploads ```
+drwxr-xr-x 2 elkarbackup elkarbackup   4096 eka  6 15:32 uploads 
+```
 
 

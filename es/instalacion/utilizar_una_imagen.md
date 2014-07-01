@@ -10,7 +10,8 @@ Como la imagen ya tiene toda la instalación hecha no haría falta mucho más pa
 El servidor coge la dirección IP por DHCP, y esto habría que modificarlo ya que es conveniente que tenga una IP fija, para lo cual editamos el fichero ***/etc/network/interfaces***
 
 ```
-root@ElkarBackup:~# nano /etc/network/interfaces```
+root@ElkarBackup:~# nano /etc/network/interfaces
+```
 
 
 Y ahí le ponemos la IP, máscara, gateway y DNS.
@@ -29,12 +30,14 @@ address MI-IP
 netmask MASCARA
 gateway GATEWAY
 dns-nameservers DNS
+
 ```
 
 
 Probablemente cuando arranque no se activará el interfaz de red ya que se habrá dado cuenta de que su tarjeta (en este caso su tarjeta virtual) ha cambiado. Para solucionarlo editamos el fichero ***70-persistent-net*** borrando su contenido. Una vez que reiniciemos el servidor virtual el propio sistema se encargará de añadir en el fichero la información adecuada
 ```
 root@ElkarBackup:~# nano /etc/udev/rules.d/70-persistent-net.rules
+
 ```
 
 En la máquina virtual el usuario **root** tiene la contraseña **root**. Esto es algo que habría que cambiar cuando se ponga el servidor en producción.
@@ -44,10 +47,12 @@ root@ElkarBackup:~# passwd root
 Introduzca la nueva contraseña de UNIX:
 Vuelva a escribir la nueva contraseña de UNIX:
 passwd: contraseña actualizada correctamente
+
 ```
 
 Una vez realizados estos cambios habría que reiniciar la máquina virtual.
 ```
 root@ElkarBackup:~# shutdown -r now
+
 ```
 
