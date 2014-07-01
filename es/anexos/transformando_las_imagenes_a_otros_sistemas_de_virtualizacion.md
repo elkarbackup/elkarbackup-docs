@@ -4,8 +4,12 @@ Si utilizas Vmware aquí hay información que puedes utilizar: http://wiki.lapto
 
 Nosotros hemos convertido la imagen con este comando:
 
-<pre><code>:~# qemu-img convert  ElkarBackupServerBase2GB1.0.9.img -O vmdk ElkarBackupServerBase2GB1.0.9.vmdk</code></pre>
+```
+:~# qemu-img convert  ElkarBackupServerBase2GB1.0.9.img -O vmdk ElkarBackupServerBase2GB1.0.9.vmdk```
+
 
 Para VirtualBox puedes utilizar este otro comando:
-<pre><code>:~# VBoxManage convertfromraw ElkarBackupServerBase2GB1.0.9.img ElkarBackupServerBase2GB1.0.9.vdi</code></pre>
+```
+:~# VBoxManage convertfromraw ElkarBackupServerBase2GB1.0.9.img ElkarBackupServerBase2GB1.0.9.vdi```
+
 

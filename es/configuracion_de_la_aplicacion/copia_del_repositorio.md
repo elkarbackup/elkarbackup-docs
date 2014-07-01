@@ -10,7 +10,8 @@ En el menú podemos ver la opción ***Configuración → Script de copia del rep
 
 Si hacemos clic en ese botón, descargaremos el siguiente script:
 
-<pre><code>#!/bin/bash
+```
+#!/bin/bash
 
 MYSQL_DB=ElkarBackup
 MYSQL_HOST=localhost
@@ -30,7 +31,8 @@ done
 echo Backing up mysql DB
 ssh "$SERVER_USER@$SERVER" "mysqldump -u$MYSQL_USER -p$MYSQL_PASSWORD -h$MYSQL_HOST $MYSQL_DB" > ElkarBackup.sql
 echo Backing up uploads
-rsync -aH --delete "$SERVER_USER@$SERVER":"$UPLOADS/" uploads</code></pre>
+rsync -aH --delete "$SERVER_USER@$SERVER":"$UPLOADS/" uploads```
+
 
 Si ejecutamos este script en otra máquina (en adelante ***Secundario***):
 

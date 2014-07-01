@@ -9,10 +9,13 @@ Las últimas imágenes se pueden descargar desde aquí:
 Como la imagen ya tiene toda la instalación hecha no haría falta mucho más para ponerla a trabajar, aunque hay un par de detalles que habrá que cambiar para adaptarla a nuestra red.
 El servidor coge la dirección IP por DHCP, y esto habría que modificarlo ya que es conveniente que tenga una IP fija, para lo cual editamos el fichero ***/etc/network/interfaces***
 
-<pre><code>root@ElkarBackup:~# nano /etc/network/interfaces</code></pre>
+```
+root@ElkarBackup:~# nano /etc/network/interfaces```
+
 
 Y ahí le ponemos la IP, máscara, gateway y DNS.
-<pre><code># This file describes the network interfaces available on your system
+```
+# This file describes the network interfaces available on your system
 # and how to activate them. For more information, see interfaces(5).
 
 # The loopback network interface
@@ -26,18 +29,25 @@ address MI-IP
 netmask MASCARA
 gateway GATEWAY
 dns-nameservers DNS
-</code></pre>
+```
+
 
 Probablemente cuando arranque no se activará el interfaz de red ya que se habrá dado cuenta de que su tarjeta (en este caso su tarjeta virtual) ha cambiado. Para solucionarlo editamos el fichero ***70-persistent-net*** borrando su contenido. Una vez que reiniciemos el servidor virtual el propio sistema se encargará de añadir en el fichero la información adecuada
-<pre><code>root@ElkarBackup:~# nano /etc/udev/rules.d/70-persistent-net.rules
-</pre></code>
+```
+root@ElkarBackup:~# nano /etc/udev/rules.d/70-persistent-net.rules
+```
+
 En la máquina virtual el usuario **root** tiene la contraseña **root**. Esto es algo que habría que cambiar cuando se ponga el servidor en producción.
 
-<pre><code>root@ElkarBackup:~# passwd root
+```
+root@ElkarBackup:~# passwd root
 Introduzca la nueva contraseña de UNIX:
 Vuelva a escribir la nueva contraseña de UNIX:
 passwd: contraseña actualizada correctamente
-</code></pre>
+```
+
 Una vez realizados estos cambios habría que reiniciar la máquina virtual.
-<pre><code>root@ElkarBackup:~# shutdown -r now
-</code></pre>
+```
+root@ElkarBackup:~# shutdown -r now
+```
+

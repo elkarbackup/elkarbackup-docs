@@ -4,7 +4,8 @@ Esta máquina, debe tener instado el software cwRsyncServer, tal y como se descr
 
 En el cliente Windows ejecutamos el programa ***C:\ElkarBackup\INSTALL.bat*** el cual modificará el fichero de configuración de cwRsyncServer (***c:\Archivos de Programa\ICW\rsyncd.conf***) , incorporando las líneas que mostramos a continuación.
 
-<pre><code># Phony modules to trigger snapshot creation and mounting
+```
+# Phony modules to trigger snapshot creation and mounting
 [MakeSnapshotCMountB]
 path = /cygdrive/c/ElkarBackup/token
 read only = true
@@ -24,7 +25,8 @@ pre-xfer exec = /cygdrive/c/ElkarBackup/DeleteSnapshotCUmountB.cmd
 ### read only = true
 ### transfer logging = yes
 ### pre-xfer  exec = /cygdrive/c/ElkarBackup/MakeSnapshotCMountB.cmd
-### post-xfer exec = /cygdrive/c/ElkarBackup/DeleteSnapshotCUmountB.cmd</code></pre>
+### post-xfer exec = /cygdrive/c/ElkarBackup/DeleteSnapshotCUmountB.cmd```
+
 
 Tal y como se nos indica tras la ejecución del script, es necesario descargar el programa ***vss.exe*** desde http://www.dmares.com/pub/nt_32/vss.exe .
 
