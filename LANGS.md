@@ -1,1 +1,2 @@
+* [Euskara](eu)
 * [Español](es)
