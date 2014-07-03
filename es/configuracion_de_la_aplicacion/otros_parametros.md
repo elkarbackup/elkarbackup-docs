@@ -1,3 +1,0 @@
-- Cuánto tiempo mantendrá la información de LOG antes de eliminarla
-- Número máximo de líneas por página que mostrará
-- Prefijo que utilizará el sistema para generar ciertas URLs si en vez de utilizar un nombre resuelto por DNS para acceder al interfaz (por ejemplo http://elkarbackup) se utiliza una dirección IP fija (por ejemplo  http://IP/elkarbackup/app.php/login),  (en el ejemplo ***/elkarbackup***)
