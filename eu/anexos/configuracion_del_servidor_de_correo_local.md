@@ -1,3 +1,5 @@
+## Posta zerbitzari lokalaren konfigurazioa
+
 Aplikazioaren konfigurazioan posta elektronikoak SMTP zerbitzari baten bitartez bidaliko direla erabakitzen badugu, posta zerbitzari lokala konfiguratuta izan behar dugu mezuak bidaltzeko gai izan dadin.
 
 Hau egiteko era ezberdinak daude, bat ElkarBackup zerbitzarian Postfix zebitzari bat instalatu eta satelite moduan konfiguratzea da. Postfix instalatzerakoan exim4 kenduko du (antzerako zerbait egin daiteke exim4 erabiliz, baina Postfix gehiago gustatzen zait ***:-)***  )

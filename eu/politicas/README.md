@@ -1,3 +1,5 @@
+# Politikak
+
 Orain arte egin dugunarekin lortu dugu kopiak egitea, baina segurtasun kopia batean gauza gehiago ere zehaztu behar dira:
 - Programazioa: Noiz egingo dira kopiak ?
 - Erretentzioa: Kopia zaharrak noiz arte mantendu behar dira ?

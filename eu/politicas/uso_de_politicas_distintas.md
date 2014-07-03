@@ -1,3 +1,5 @@
+## Politika ezberdinen erabilera
+
 Gure sareetan informazio mota ezberdina dugu, eta guztia kopiatu beharra izateak ez du esan nahi denak trataera berdina izan behar duenik.
 
 Kasu batzuetan informazioa epe luzeetan mantentzekoa izango da (hileak edo urteak), beste kasu batzuetan aste bete igaro ondoren ez du baliorik izango eta ezabatu nahiko genuke.

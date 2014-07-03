@@ -1,3 +1,5 @@
+### Windows bezero batean probatzen
+
 Orain arte egin dugunarekin C:\ElkarBackup karpetan behar den software guztia utzi dugu gero B izeneko unitatean C unitatearen snapshot bat muntatu ahal izateko. B unitate hau ikusiko duen bakarra rsnync deamon edo zerbitzua izango da, eta kopia bukatzen denean  snapshot-a eta B unitatea desagertu egingo dira.
 
 ElkarBackup zerbitzaritik ezaugarri hau erabili nahi dugunez Windows bezero zehatz honekin, `TriggerSnapshotGenerateOrDelete.sh` scripta aktibatu behar diogu bezero mailan PRE eta POST moduan (bai, bietan).

@@ -1,3 +1,5 @@
+## GNU/Linux Bezeroak gehitzen
+
 Bezero bat gehitzeko, ***Berria*** botoiaren gainean klikatu eta formulario berri bat azalduko zaigu. Aplikazioa autodokumentatua izatea saiatu gara, eta azalpen gehienak formularioan bertan daudenez, ez ditugu hemen azalpenak errepikatuko.
 
 Gure adibidean erabiliko ditugun GNU/Linux zerbitzariaren datuak hauek izango dira:

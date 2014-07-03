@@ -1,23 +1,18 @@
+## Parametroak Kudeatu
 
-Parametroak Kudeatu
-=====================
-
-SSH Gakoak
------------
+### SSH Gakoak
 
 Gako publikoari buruz lehen ere hitz egin dugu. Hemendik deskargatu dezakegu aurrez ere hemen bertan sortu dugun ElkarBackup zerbitzariaren gako publikoa.
 
 
-MySQL Zerbitzaria
-------------------
+### MySQL Zerbitzaria
 
 Ondoren MySQL zerbitzariaren konfigurazioa kudeatzeko parametroak dauzkagu. Rsnapshot bitartez kopiatzen diren fitxategiak diskoan gordetzen dira, baina beste datu guztiak (bezero eta lanen datuak, politikak, eta abar) datu basean gordetzen dira.
 
 MySQL zerbitzaria ElkarBackup zerbitzarian edo beste zerbitzari baten egon daiteke, beraz hemen konfiguratuko dugu datu base atzipenerako behar diren datuak.
 
 
-Posta elektroniko bidezko mezuak
----------------------------------
+### Posta elektroniko bidezko mezuak
 
 Lan bat definitzerakoan lan honek alertak bidaltzea nahi ote dugun erabaki behar dugu, zein mailako alertak bidaliko dituen eta nori.
 
@@ -34,8 +29,7 @@ Baina zerbitzariak mezuak bidali ahal izateko bere konfigurazioa ere behar du, h
 Atal hau programatzerakoan Symfony framework-ak dituen baliabideak erabili dira, eta informazioa gehiago aurkitu daiteke [Symfony proiektuko dokumentazioan](http://symfony.com/doc/current/cookbook/email/email.html).
 
 
-Kuota abisuak
----------------
+## Kuota abisuak
 
 Kuotaren gaia ere ez dugu orain arte aipatu, baina diskoaren erabileran bezero bakoitzak izango duen muga zehaztu dezakegu. Hau praktikoa izan daiteke bezero batek datu gehiegi dituenean eta ez dugunean beste bezeroak kaltetu nahi batek leku guztia agortzen duelako.
 
@@ -52,8 +46,7 @@ Muga gainditu aurretik sistemak alerta edo abisuak bidaliko dizkigu. Parametro h
 ![Bezeroak eta Lanak](../assets/parametroak6.png)
 
 
-Beste parametroak
-------------------
+### Beste parametroak
 
 - Aplikazioaren Log-ak zenbat denboraz mantendu behar diren automatikoki ezabatzen joan aurretik
 - Aplikazioak orrialde bakoitzean erakutsiko duen lerro kopurua

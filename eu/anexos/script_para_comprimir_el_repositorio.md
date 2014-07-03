@@ -1,3 +1,5 @@
+## Errepositorioa konprimitzeko scripta
+
 Demagun erabiltzaile ezberdin batzuk fitxategi berdinen kopia ezberdinak gordetzen dituztela sarean, bakoitzak bere karpetan kopia bat duelarik. Dokumentu hauek ofimatikoak direnean (normalean ez oso handiak) ez da hain arazo handia izaten, baina beste mota batzuetakoak direnean, bideoak, software eguneraketak, eta abar, sarean leku asko jaten dute, informazio berdina delarik.
 
 Badakigu kopia egin ondoren datu hauek segurtasun kopia mantentzen duen diskoan ez direla aldatuko, beraz aukera izan dezakegu diskoan behin bakarrik gorde eta beste kopia guztiak  hardlink bidez estekatzeko.

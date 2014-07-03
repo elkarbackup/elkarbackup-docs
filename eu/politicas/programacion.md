@@ -1,3 +1,5 @@
+## Programazioa
+
 Hau da ulertu beharreko kontu garrantzitsuenetako bat. Alde batetik programazioa konfiguratzeko area ikus dezakegu, 5 fitxaz osatzen dena:
 
 - Hourly edo Egunean zehar: Egunaren barruan, ordu ezberdinetan egingo dituen kopiak.

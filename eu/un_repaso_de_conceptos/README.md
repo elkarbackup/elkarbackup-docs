@@ -1,3 +1,5 @@
+# Oinarrien errepaso txiki bat: RSnapshot
+
 Aurrez aipatu bezala, ElkarBackup rsnyc eta batez ere rsnapshot tresna libreetan oinarritzen den aplikazioa da, eta gure aplikazioak erabiliko duen logika hein handi batean rsnapshot-ek erabiltzen duen berdina denez, merezi du hau pixkat bada ere azaltzea.
 
 Rsnapshot tresnak bere oinarrian kontzeptu hauek erabiltzen ditu:

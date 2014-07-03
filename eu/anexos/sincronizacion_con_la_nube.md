@@ -1,3 +1,5 @@
+## Hordeiarekin sinkronizazioa
+
 Gaur egun segurtasun kopiak kudeatzeko izango den soluzio bat garatzerakoan ezinbestekoa da hodeian dauden zerbitzuekin sinkronizatzeko aukerak jartzea merezi ote duen pentsatzea.
 
 Aplikazioan ez da helburu honekin ezer garatu ikusi dugulako zerbitzu hauek ematen dituzten aukerekin ezer garatu beharrik ez dagoela.

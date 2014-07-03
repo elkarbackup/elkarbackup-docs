@@ -1,3 +1,5 @@
+# Scriptak
+
 Kasu askotan lan baten exekuzioa hasi aurretik edo bukatu ondoren ***zerbait*** egitea interesatuko zaigu, adibidez:
 
 Aurretik:

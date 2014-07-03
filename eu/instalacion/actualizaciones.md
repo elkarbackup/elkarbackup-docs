@@ -1,3 +1,5 @@
+## Eguneraketak
+
 Instalazioa prozedura edozein dela ere, Debian zerbitzarian paketea eguneratzeko beste edozein pakete eguneratzeko erabiltzen den teknika berdina erabiliko da:
 
 ```bash

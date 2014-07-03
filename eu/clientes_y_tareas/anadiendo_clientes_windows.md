@@ -1,3 +1,5 @@
+## Windows Bezeroak gehitzen
+
 Windows eta Linux bezeroen arteko desberdintasuna ***URL*** parametroan dator, beste guztia berdina da.
 
 Windows zerbitzariekin ez dugu ***ssh*** protokoloa erabiliko, ***rsync*** baizik. Hau egin ahal izateko Windows makinak rsync konexioak onartzeko prestatuta egon behar da, hau da, rsync zerbitzari bat martxan izan behar du.

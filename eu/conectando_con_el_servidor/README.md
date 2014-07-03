@@ -1,3 +1,5 @@
+# Zerbitzarira konektatzen
+
 Orain web nabigatzaile bat zabaldu eta [ElkarBackup](http://elkarbackup.org) zerbitzariaren helbidea jartzearekin nahiko litzateke aplikaziora konektatzeko. Hemen bi aukera ditugu:
 
 - ***Host*** izena erabiltzea: Apache konfigurazioan ***elkarbackup*** izena ***ServerName*** atalean jarrita dugunez, http://elkarbackup helbidea erabili dezakegu atzipena lortzeko, beti ere gure sareko DNSan ***elkarbackup*** izena jarri dugun IP helbidearekin lotuta badaukagu.

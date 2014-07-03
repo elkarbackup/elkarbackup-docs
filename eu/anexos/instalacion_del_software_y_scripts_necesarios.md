@@ -1,3 +1,5 @@
+### Behar den softwarea eta scriptak instalatzen
+
 ElkarBackup zerbitzariko `/usr/share/elkarbackup/extra/windows` karpetan aurkituko ditugu Windows bezeroaren `c:\ElkarBackup` karpetan kopiatu behar ditugun fitxategiak. Garrantzitsua da ElkarBackup izena ondo idatzita egotea, E eta B hizkiak larriz edo maiuskulaz, eta beste hizkiak xehez edo minuskulaz idatzita. Scriptak hizki xeheak eta larriak desberdintzen ditu, eta karpetaren izena ondo ez badago, scriptak akatsak emango ditu. Ahaztu gabe, `c:\ElkarBackup\token`  karpeta sortu behar da, scriptak beharrezkoa du.
 
 Windows bezeroan cwRsyncServer softwarea instalatuta izan behar dugu,  “***4.3 Windows Bezeroak gehitzen***“ atalean azaltzen den moduan.

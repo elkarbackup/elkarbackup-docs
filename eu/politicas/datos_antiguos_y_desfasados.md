@@ -1,3 +1,5 @@
+## Arrasto zaharrak
+
 Demagun Politika baten hourly-ak 6ko erretentzioa duela, horrek esan nahi du Hourly.0, ..., Houry.5 karpetak izango ditugula kopia ezberdinekin. Arrazoiren batengatik, erabakitzen dugu gehiegizkoa dela eta 4ko erretentzioa izan behar duela, beraz  Hourly.0, ..., Houry.3 karpetak erabiliko dituela.
 
 Zer gertatzen da Hourly.4 eta Houry.5 karpetekin ? Ba inork ezabatzen ez baditu hor egongo dira. Ez dira eguneratuko, zaharkituta geratuko dira eta ez dute errotazioetan parte hartuko, baina hor egongo dira “***zarata egiten***”. Hoberena guk geuk eskuz sistematik ezabatzea litzateke.

@@ -1,3 +1,5 @@
+## Irudi bat erabili
+
 Debian batean oinarritutako instalazioa duen RAW irudia deskargatu eta zure birtualizazio sisteman gehitzea: Aukera desberdinak daude, guk proposatzen ditugunak Proxmox eta KVM dira, baina gehiago ere badaude: XEN, VMWare, eta abar. Dokumentu honen bukaeran dagoen “***Irudia beste birtualizazio sistema batzuetara bihurtzen***” atalean RAW irudia VMWare eta VirtualBox birtualizazio sistemetarako nola bihurtu daitekeen azaltzen dugu.
 
 Azkeneko Irudiak hemendik deskargatu daitezke:

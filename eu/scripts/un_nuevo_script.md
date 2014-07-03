@@ -1,3 +1,5 @@
+## Script berri bat
+
 Hauek dira script bat sortzerakoan eskatzen dizkigun datuak:
 
 - Izena eta azalpena

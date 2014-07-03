@@ -1,3 +1,5 @@
+### Automatizazioa
+
 Exekuzio hau automatizatu nahi badugu, hau da, ***Morroia*** zerbitzariak programaturiko egunean eta orduan ***ElkarBackup*** zerbitzariko biltegia automatikoki sinkronizatzea nahi badugu, ezinbestekoa izango zaigu berriro ere gako publiko/pribatuaren estrategia erabiltzea.
 
 Kasu honetan ***Morroia*** zerbitzariko gako publikoa ***ElkarBackup*** zerbitzarian inportatu beharko dugu, edo hobeto esanda, ***Authorized_keys*** fitxategian gehitu beharko dugu. Hau egiteko ***Gakoa gehitu*** botoiaren gainean klikatuko dugu.

@@ -1,3 +1,5 @@
+## DEB paketea erabili
+
 Irudia erabili beharrean aurrez dugun Debian batean instalatu nahi badugu, kontutan izan hainbat pakete agian eskuz instalatu beharko direla. Elkabackup paketeak besteak beste MySQL datu base bat behar du, beraz hemen aukeraketak egiteko unea heldu da:
 - Edo aurrez gure ElkarBackup-Debian zerbitzarian ***mysql-server*** paketea instalatzen dugu berak datu basea ere kudeatu dezan
 - Edo beste zerbitzari batean instalatuta daukagun MySQL zerbitzaria erabiltzen dugu datu basea kudeatzeko.

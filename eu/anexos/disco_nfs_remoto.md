@@ -1,3 +1,5 @@
+## NFS urruneko diskoa
+
 Gure sarean dugun NFS diskoa erabiltzeko asmoa dugunez, suposatzen dugu urruneko NFS diskoa erabiltzeko prest daukagula. Atal honetan azkar batean NFS zerbitzari bat debian ingurune batean nola instalatu dezakegun ikusiko dugu, eta baita ere nola erabili dezakegun disko hau sareko beste ordenagailuetatik. Gai honetan sakontzeko Internet sarean informazio asko dago.
 
 NFS diskoa publikatuko duen zerbitzarian beharrezkoak diren paketeak instalatuko ditugu:

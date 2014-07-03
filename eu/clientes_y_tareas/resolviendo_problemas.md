@@ -1,3 +1,5 @@
+## Akatsak konpontzen
+
 Kontutan izan behar da zerbitzari ezberdinen arteko komunikazioa erabiltzen dugunez, arazoak suertatu daitezkeela komunikazio hauetan. Arazo hauen jarraipena ***Logak*** atalaren bitartez egin ahal izango dugu.
 
 Dokumentu hau idazterakoan arazo bat izan dut Windows bezeroaren komunikazioarekin, eta mezu hau ikusten nuen ***Logak*** atalean:

@@ -1,3 +1,5 @@
+## Biltegiaren kopia
+
 Orain arte egin dugunarekin hainbat zerbitzarietan dauzkagun datuen kopia egitea lortu dugu, diskoan ahalik eta leku gutxien okupatzen eta politika ezberdinak erabiliaz.
 
 Baina datu hauek disko batean dauzkagu, eta disko horri zerbait gertatuko balitzaio, agur gure kopiak.

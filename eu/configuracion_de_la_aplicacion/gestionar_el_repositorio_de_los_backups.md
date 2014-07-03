@@ -1,3 +1,5 @@
+## Backup kokapena kudeatu
+
 Datuak diskoan kopiatzen ari gara, eta sistemari datuak gordetzeko erabiliko duen karpeta nagusia zein izan behar den esan behar diogu. Ez badiogu besterik esaten, balio lehenetsi moduan `/var/spool/elkarbackup/backups` karpeta erabiliko du.
 
 Kopiak egiten hasi ondoren balio hau aldatzen badugu, sistemak ez ditu datu zaharrak ezabatuko, baina restore botoiari klikatu eta datuak berreskuratzera joaten garenean ez ditu aurkituko. Kopiak egiten hasi ondoren datu hau aldatu beharra badugu, zerbitzarira kontsola bidez konektatu eta orain arteko datuak path zaharretik path berrira mugitu beharko genituzke.

@@ -1,3 +1,5 @@
+## Lanak ordenatu
+
 Politika berdinean dauden lan guztiak bata bestearen ondoren exekutatzen dira. Lanen batek exekutatzen denbora asko behar badu atzetik daudenen exekuzioa nabarmen atzeratzea posible da. Hau gertatzeko bi kasu detektatu dira:
 - Hasierako kopia egitean informazio asko transmititu behar bada.
 - Lan batek fitxategi asko badauzka (probetan 302000 fitxategi).

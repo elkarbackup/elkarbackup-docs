@@ -1,3 +1,5 @@
+## Erretentzioa
+
 Erretentzioarekin maiztasun bakoitzean ***zenbat karpeta*** gorde behar dituen adierazten diogu. Adibidez:
 
 - Egunean zehar (Hourly) egiten dituen kopietan 4ko erretentzioa jartzen badiogu, horrek esan nahi du berak Hourly.0, Hourly.1, Hourly.2 eta Hourly.3 karpetetan azken 4 kopiak mantenduko dituela. Hourly.0 karpetan datu berrienak, eta  Hourly.3 karpetan datu zaharrenak.

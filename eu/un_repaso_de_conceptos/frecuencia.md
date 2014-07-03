@@ -1,3 +1,5 @@
+## Maiztasuna
+
 Kopiak zenbatero egin behar dituen adierazi beharko diogu, aukerak honako hauek direlarik:
 
 - Egunean zehar (Hourly): Ordu ezberdinetan ***egingo dituen*** kopiak zehaztuko ditugu. Sistemak azpitik Hourly.0, Hourly.1, Hourly.2 ..... izendatuko ditu.

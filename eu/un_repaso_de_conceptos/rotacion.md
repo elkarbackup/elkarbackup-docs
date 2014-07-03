@@ -1,3 +1,5 @@
+## Errotazioa
+
 Hau ez da zaila, baina ondo ulertu behar da. Maiztasuna definitzerakoan hauen arteko mailakatzea ere definitzen ari gara, nolabait Monthly-aren ***azpitik*** Weekly-a dagoela esanez, Weekly-aren ***azpitik*** Daily-a, eta azkenik Daily-aren ***azpitik*** Hourly-a. Hourly-aren azpitik ez dago beste mailarik.
 
 ![Bezeroak eta Lanak](../assets/conceptos1.png)

@@ -1,3 +1,5 @@
+## Baina, zer dira bezeroak eta lanak?
+
 Arkitektura honetan ***bezero*** eta ***lanei*** buruz hitz egingo dugu:
 
 - ***Bezeroa***: GNU/Linux edo Windows makina bat. Makina honetan (gehienetan beste zerbitzari bat izango dena) dauzkagun karpeta ezberdinak kopiatu nahi ditugu.
