@@ -1,10 +1,10 @@
-En la carpeta ***/usr/share/elkarbackup/extra/windows*** del servidor ElkarBackup tenemos los ficheros que tenemos que copiar en el path ***c:\ElkarBackup*** de la máquina cliente en la que vamos a generar los snapshots. Es importante que el nombre ElkarBackup esté escrito correctamente, con la E y la B en mayúscula y el resto de letras en minúsculas, ya que es scritp es sensible a mayúsculas y minúsculas, y si no está bien escrito nos dará errores. Tambien es necesario crear la carpeta ***c:\ElkarBackup\token***, que será utilizada por los scripts.
+En la carpeta `/usr/share/elkarbackup/extra/windows` del servidor ElkarBackup tenemos los ficheros que tenemos que copiar en el path `c:\ElkarBackup` de la máquina cliente en la que vamos a generar los snapshots. Es importante que el nombre ElkarBackup esté escrito correctamente, con la E y la B en mayúscula y el resto de letras en minúsculas, ya que es scritp es sensible a mayúsculas y minúsculas, y si no está bien escrito nos dará errores. Tambien es necesario crear la carpeta `c:\ElkarBackup\token`, que será utilizada por los scripts.
 
 Esta máquina, debe tener instado el software cwRsyncServer, tal y como se describe en el apartado “***4.3 Añadiendo Clientes Windows***“.
 
-En el cliente Windows ejecutamos el programa ***C:\ElkarBackup\INSTALL.bat*** el cual modificará el fichero de configuración de cwRsyncServer (***c:\Archivos de Programa\ICW\rsyncd.conf***) , incorporando las líneas que mostramos a continuación.
+En el cliente Windows ejecutamos el programa `C:\ElkarBackup\INSTALL.bat` el cual modificará el fichero de configuración de cwRsyncServer (`c:\Archivos de Programa\ICW\rsyncd.conf`) , incorporando las líneas que mostramos a continuación.
 
-```
+```ini
 # Phony modules to trigger snapshot creation and mounting
 [MakeSnapshotCMountB]
 path = /cygdrive/c/ElkarBackup/token

@@ -4,7 +4,7 @@ Si modificamos este parámetro una vez que hemos comenzado a realizar copias, el
 
 Además, deberíamos asignar los permisos correspondientes en la nueva carpeta para el  usuario y grupo elkarbackup
 
-```
+```bash
 root@backups:~# chown -Rf elkarbackup.elkarbackup nuevopath
 ```
 

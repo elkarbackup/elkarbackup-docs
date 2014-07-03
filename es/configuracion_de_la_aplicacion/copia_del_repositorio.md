@@ -10,7 +10,7 @@ En el menú podemos ver la opción ***Configuración → Script de copia del rep
 
 Si hacemos clic en ese botón, descargaremos el siguiente script:
 
-```
+```bash
 #!/bin/bash
 
 MYSQL_DB=ElkarBackup
@@ -39,7 +39,7 @@ Si ejecutamos este script en otra máquina (en adelante ***Secundario***):
 
 1. Se conectara al servidor donde tenemos instalado ElkarBackup y lanzará la sincronización de las copias de seguridad existentes.
 2. A continuación realizará una copia de seguridad del servidor MySQL en el fichero  ElkarBackup.sql
-3. Por último también copiará los scritps que se hayan cargado en la carpeta  ***/var/spool/ElkarBackup/uploads***.
+3. Por último también copiará los scripts que se hayan cargado en la carpeta  `/var/spool/ElkarBackup/uploads`.
 
 Por lo tanto sería suficiente programar y lanzar la ejecución de este script en el servidor ***Secundario*** para tener la copia sincronizada de nuestro repositorio en su propio disco.
 

@@ -2,9 +2,9 @@ Imaginémonos que distintos usuarios tienen copias distintas del mismo fichero e
 
 Sabemos que una vez se ha realizado la copia de estos ficheros, estos no van a cambiar en el disco de la copia de seguridad, por lo que tenemos la posibilidad de mantener una sola copia y enlazar mediante hardlinks el resto de apariciones del mismo fichero.
 
-En el ejemplo, copiamos y pegamos con otro nombre un fichero de los que tenemos en la carpeta ***/media/Backups*** del Cliente Debian. A pesar de ser el mismo fichero lo tenemos dos veces en el disco por lo que ocupa el doble.
+En el ejemplo, copiamos y pegamos con otro nombre un fichero de los que tenemos en la carpeta `/media/Backups` del Cliente Debian. A pesar de ser el mismo fichero lo tenemos dos veces en el disco por lo que ocupa el doble.
 
-```
+```bash
 root@DebianCliente:~# cd /media/Backups/Software/
 root@DebianCliente:/media/Backups/Software# cp vlc-2.0.6-win32.exe vlc-2.0.6-win32-kopia.exe
 root@DebianCliente:/media/Backups/Software# ls -lah
@@ -20,7 +20,7 @@ drwxr-xr-x 4 root root 4,0K jun  7 11:24 ..
 
 Accedemos a la tarea encargada de hacer la copia de estos datos y pulsamos el botón ***Ejecutar ahora***. Al finalizar la tarea podremos observar que en la carpeta del servidor ElkarBackup están los dos ficheros
 
-```
+```bash
 #cd /var/spool/elkarbackup/backups/0001/0001/Hourly.0/media/Backups/Software/
 # ls -lah
 total 209M
@@ -35,7 +35,7 @@ drwxrwxr-x 4 elkarbackup elkarbackup 4,0K jun  7 11:24 ..
 
 y como podemos observar no están enlazados mediante hardlinks, ya que no tienen el mismo ***inode***
 
-```
+```bash
 # ls -lahi
 total 209M
 40831 drwxrwxr-x 2 elkarbackup elkarbackup 4,0K jun 12 12:44 .
@@ -50,7 +50,7 @@ total 209M
 A continuación veremos como podemos utilizar un script postscript para resolver este problema.
 Este script busca y enlaza mediante hardlinks aquellos ficheros que tienen el mismo [Hash](https://es.wikipedia.org/wiki/Función_hash)
 
-```
+```bash
 #!/bin/bash
 # Compara por tamaño para descartar los que no se repiten
 
@@ -77,7 +77,7 @@ Subimos el Script:
 
 Ahora editamos la tarea del Cliente Debian, seleccionamos este script en la sección PostScript, y lanzamos la ejecución de la tarea.
 
-```
+```bash
 # ls -lahi
 total 209M
 40838 drwxrwxr-x 2 elkarbackup elkarbackup 4,0K jun 12 15:22 .

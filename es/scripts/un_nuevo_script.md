@@ -12,7 +12,7 @@ Estos son los datos que nos pide al crear un nuevo script:
  - ELKARBACKUP_STATUS: Estado de salida de Post-scripts,  en principio siempre 0.
 
 Si vamos a visualizar o editar la información de un script previamente creado, podremos ver dónde está siendo utilizado, y también tendremos la opción de descargarlo a nuestro equipo.
-Los scripts se guardan en la carpeta ***/var/spool/ElkarBackup/uploads*** del servidor.
+Los scripts se guardan en la carpeta `/var/spool/ElkarBackup/uploads` del servidor.
 
 ![Clientes y Tareas](../assets/scripts1.png)
 

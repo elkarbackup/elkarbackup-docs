@@ -33,7 +33,7 @@ En las conexiones SSH que se crean para copiar los datos, los roles se reparten 
 
 Ahora veremos como instalar la clave ***Publickey.pub*** en el Cliente. En mi equipo personal lo descargo a través del navegador, y utilizando el comando ***ssh-copy-id*** lo instalo en el usuario ***root*** del cliente. No hay ni que decir que para poder hacer esto necesitamos conocer la contraseña del usuario root del cliente.
 
-```
+```bash
 pedro@portatil59:~/Deskargak$ ssh-copy-id -i Publickey.pub root@10.15.181.155
 root@10.15.181.155's password:
 Now try logging into the machine, with "ssh 'root@10.15.181.155'", and check in:
@@ -45,14 +45,14 @@ to make sure we haven't added extra keys that you weren't expecting.
 
 En el caso de que no tengamos a mano un equipo con GNU/Linux desde el cual lanzar el comando, podemos lanzarlo también desde el propio servidor Elkarbackup. En este caso no haría falta descargar el fichero Publickey.pub, lo cogeríamos de su ubicación original en el servidor:
 
-```
+```bash
 root@elkarbackup:~# ssh-copy-id -i /var/lib/elkarbackup/.ssh/id_rsa.pub root@10.15.181.155
 ```
 
 
 Con lo que hemos hecho hemos introducido en la configuración ssh del usuario root del cliente la clave pública generada en el servidor ElkarBackup, lo cual nos habilitará para lanzar conexiones automatizadas entre ambos en adelante.
 
-```
+```bash
 root@DebianCliente:~# ls -la /root/.ssh/authorized_keys
 -rw------- 1 root root 428 jun  7 11:11 /root/.ssh/authorized_keys
 root@DebianCliente:~# cat /root/.ssh/authorized_keys
@@ -62,7 +62,7 @@ ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQC3HO3zn8XhBW1JqxA5qKEQZe+/fPcC47pu5l9c+s1Q
 
 En el cliente Debian se requiere el paquete ***rsync***. Si no estuviera instalado, lo podemos instalar con el siguiente comando
 
-```
+```bash
 root@DebianCliente:~# apt-get install rsync
 ```
 

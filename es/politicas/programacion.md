@@ -28,14 +28,14 @@ Cuando llegue el momento de realizar la rotación de las carpetas Hourly hará l
 
 Borra el último Hourly:
 
-```
+```bash
 rm -Rf Hourly.4
 ```
 
 
 Cambia el nombre al resto para hacer la rotación
 
-```
+```bash
 mv Hourly.3 Hourly.4
 mv Hourly.2 Hourly.3
 mv Hourly.1 Hourly.2

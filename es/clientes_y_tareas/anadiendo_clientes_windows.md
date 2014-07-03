@@ -30,7 +30,7 @@ Una vez finalizada la instalación nos aparecerá entre los programas disponible
 Esta sería la configuración para configurar la carpeta  C:\Backups
 
 Al principio ponemos estas dos líneas:
-```
+```ini
 uid=0
 gid=0
 ```
@@ -38,7 +38,7 @@ gid=0
 
 A continuación añadimos un bloque para cada carpeta que queremos sincronizar. En el ejemplo hemos nombrado la carpeta como ***[Datos]*** :
 
-```
+```ini
 [Datos]
 path = /cygdrive/c/Backups
 read only = false
@@ -48,7 +48,7 @@ transfer logging = yes
 
 Si la carpeta que queremos copiar en vez de estar en **c:\**Backups estuviera en **d:\**Backups , la línea path sería esta:
 
-```
+```ini
 path = /cygdrive/d/Backups
 ```
 
