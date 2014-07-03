@@ -1,3 +1,0 @@
-- Aplikazioaren Log-ak zenbat denboraz mantendu behar diren automatikoki ezabatzen joan aurretik
-- Aplikazioak orrialde bakoitzean erakutsiko duen lerro kopurua
-- Interfazea erabiltzeko DNS izen bat erabili beharrean (adibidez http://elkarbackup )IP finkoa erabiltzen dugunean (adibidez http://IP/elkarbackup/app.php/login) , sistemak hainbat lekutan URLak osatzeko erabiliko duen aurrizkia (gure adibidean ***/elkarbackup*** izango litzateke)
