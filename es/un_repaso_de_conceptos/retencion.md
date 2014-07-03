@@ -1,3 +1,5 @@
+## Retención
+
 Con la retención vamos a especificar ***cuantas carpetas*** de cada frecuencia va a tener que guardar. Por ejemplo:
 
 - Si ponemos una retención de 4 en las copias que se realizan durante el día (Hourly), eso significa que el sistema mantendrá las últimas 4 copias en las carpetas Hourly.0, Hourly.1, Hourly.2 y Hourly.3, donde Hourly.0 será la más nueva y Hourly.3 la mas antigua.

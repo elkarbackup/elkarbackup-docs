@@ -1,3 +1,5 @@
+## Ordenar tareas
+
 Las tareas que pertenecen a la misma política se ejecutan todas una detrás de la otra. Cuando la ejecución de una tarea requiere mucho tiempo, puede retrasar de forma considerable la ejecución de las tareas que vienen por detrás. Se han detectado al menos dos casos en los que esto puede ocurrir:
 - Cuando se hace la primera copia y el volumen de datos a transferir es grande.
 - Cuando en una tarea hay muchos ficheros (en las pruebas 302000 ficheros).

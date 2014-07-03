@@ -1,3 +1,5 @@
+# Políticas
+
 Con lo visto hasta ahora hemos conseguido realizar copias, pero en un sistema de backups hay que definir más cosas:
 - Programación: ¿ Cuándo se hacen las copias ?
 - Retención: ¿ Hasta cuándo hay que mantener las copias antiguas ?

@@ -1,4 +1,6 @@
-al y como hemos comentado anteriormente ElkarBackup es una herramienta basada en  otras herramientas libres, sobre todo en rsnyc y rsnapshot, y como la mayor parte de su lógica responde a la lógica de rsnapshot, merece la pena detenerse para analizar su comportamiento.
+# Un repaso de conceptos: RSnapshot
+
+Tal y como hemos comentado anteriormente ElkarBackup es una herramienta basada en  otras herramientas libres, sobre todo en rsnyc y rsnapshot, y como la mayor parte de su lógica responde a la lógica de rsnapshot, merece la pena detenerse para analizar su comportamiento.
 
 Rsnapshot se basa en los siguientes conceptos:
 

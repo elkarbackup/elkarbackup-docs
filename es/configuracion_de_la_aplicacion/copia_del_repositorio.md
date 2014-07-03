@@ -1,3 +1,5 @@
+## Copia del repositorio
+
 Con lo visto hasta hemos conseguido realizar copias de los datos de varios servidores, optimizando el espacio en disco y utilizando distintas políticas.
 
 Pero ahora mismo tenemos todos los datos en un único disco, y si le pasara algo ya podemos ir diciendo adiós a nuestras copias.

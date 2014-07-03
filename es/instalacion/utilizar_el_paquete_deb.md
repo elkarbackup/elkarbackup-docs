@@ -1,3 +1,5 @@
+## Utilizar el paquete DEB
+
 Si en lugar de utilizar la imagen preferimos instalar el software en un servidor que tengamos con Debian, tendremos que realizar también la instalación de algunos otros paquetes de software. ElkaBackup utiliza una base de datos MySQL, por lo que en este punto habrá que tomar una decisión:
 - O bien instalamos previamente en nuestro servidor ElkarBackup-Debian el paquete ***mysql-server*** para que el mismo sea quien gestione la base de datos
 - O bien utilizamos otro servidor MySQL para gestionar la base de datos
@@ -7,7 +9,7 @@ El servidor MySQL se utilizará para guardar la configuración del sistema de ba
 Además será necesario instalar otros paquetes: cliente mysql, PHP, etc. En nuestro caso los instalamos todos aquí (incluido el servidor mysql):
 
 ```bash
-root@ElkarBackup:~# aptitude install debconf php5 php5-cli rsnapshot mysql-server php5-mysql acl bzip2 
+root@ElkarBackup:~# aptitude install debconf php5 php5-cli rsnapshot mysql-server php5-mysql acl bzip2
 ```
 
 
@@ -29,7 +31,7 @@ Si estamos instalando elkarbackup en una Debian6, tenemos que activar las ACL en
 
 ```bash
 # / was on /dev/sda1 during installation
-UUID=e3b77e85-df06-4659-b143-5939ccbf7d52 / ext3    errors=remount-ro,acl 0       1 
+UUID=e3b77e85-df06-4659-b143-5939ccbf7d52 / ext3    errors=remount-ro,acl 0       1
 ```
 
 
@@ -44,7 +46,7 @@ root@backups:~# wget -O - http://elkarbackup.org/apt/archive.gpg.key | apt-key a
 
 Editamos el `sources.list`
 ```bash
-root@backups:~# nano /etc/apt/sources.list 
+root@backups:~# nano /etc/apt/sources.list
 ```
 
 
@@ -59,7 +61,7 @@ Por último actualizamos e instalamos:
 ```bash
 root@ElkarBackup:~# aptitude update
 root@ElkarBackup:~# aptitude safe-upgrade -y
-root@ElkarBackup:~# aptitude install autofs elkarbackup 
+root@ElkarBackup:~# aptitude install autofs elkarbackup
 ```
 
 

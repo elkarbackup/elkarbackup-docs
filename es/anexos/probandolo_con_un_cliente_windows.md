@@ -1,3 +1,5 @@
+### Probándolo con un cliente Windows
+
 Lo que hemos hecho en los pasos anteriores ha sido copiar en la carpeta c:\ElkarBackup los scripts necesarios para montar en la unidad B un snapshot de la unidad C que solo es visible para el demonio rsync. Este snapshot es desmontado una vez finaliza la copia.
 
 Para utilizar esta funcionalidad desde nuestro servidor elkarbackup, simplemente tenemos que  activar el script `TriggerSnapshotGenerateOrDelete.sh` como PRE y POST (si, ambos) del cliente Windows con el que estamos trabajando.

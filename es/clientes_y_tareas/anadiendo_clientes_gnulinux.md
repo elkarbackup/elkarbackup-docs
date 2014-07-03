@@ -1,3 +1,5 @@
+## Añadiendo clientes GNU/Linux
+
 Para añadir un cliente hay que hacer clic sobre el botón Nuevo y se nos mostrará un nuevo formulario para introducir los datos. Hemos intentado que la aplicación sea auto-documentada, por lo que las explicaciones necesarias se encuentran en el propio formulario, y no vamos a repetirlas aquí.
 
 Estos son los datos que utilizamos en nuestro ejemplo para el cliente GNU/Linux:
@@ -39,7 +41,7 @@ root@10.15.181.155's password:
 Now try logging into the machine, with "ssh 'root@10.15.181.155'", and check in:
   ~/.ssh/authorized_keys
 
-to make sure we haven't added extra keys that you weren't expecting. 
+to make sure we haven't added extra keys that you weren't expecting.
 ```
 
 
@@ -56,7 +58,7 @@ Con lo que hemos hecho hemos introducido en la configuración ssh del usuario ro
 root@DebianCliente:~# ls -la /root/.ssh/authorized_keys
 -rw------- 1 root root 428 jun  7 11:11 /root/.ssh/authorized_keys
 root@DebianCliente:~# cat /root/.ssh/authorized_keys
-ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQC3HO3zn8XhBW1JqxA5qKEQZe+/fPcC47pu5l9c+s1Q+ppUD5CLaDQjUsF+0VBHtPP2Wx1HaDidFURwge5GcnRnoXV32B+Vj9rfW9wPdk6siuZ2McoS0xyqbToS2CTdbsxyjibn2CdM3RZjJa81haOllciu38V9F1t4mylJVMxBgQmNwkTBwYGt66+wpT/nQVxiDeyVK98SHb8oGKJZljpczlqgYwckRAEPSARvxFm9yyWOad3Qm7QYYGslBij4LXG1aUAARivoJdYtB4kbOnEdOO3n5BU/0Q8eIqxDw7eFdnx4UDINX+mtSuHfpRkoORoU9IZZWGz9vrLnaxqh91G3 Automatically generated key for tknikabackups. 
+ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQC3HO3zn8XhBW1JqxA5qKEQZe+/fPcC47pu5l9c+s1Q+ppUD5CLaDQjUsF+0VBHtPP2Wx1HaDidFURwge5GcnRnoXV32B+Vj9rfW9wPdk6siuZ2McoS0xyqbToS2CTdbsxyjibn2CdM3RZjJa81haOllciu38V9F1t4mylJVMxBgQmNwkTBwYGt66+wpT/nQVxiDeyVK98SHb8oGKJZljpczlqgYwckRAEPSARvxFm9yyWOad3Qm7QYYGslBij4LXG1aUAARivoJdYtB4kbOnEdOO3n5BU/0Q8eIqxDw7eFdnx4UDINX+mtSuHfpRkoORoU9IZZWGz9vrLnaxqh91G3 Automatically generated key for tknikabackups.
 ```
 
 

@@ -1,3 +1,5 @@
+## Configuración del servidor de correo local
+
 Si al configurar los parámetros de la aplicación decidimos que el envío de correos se tiene que realizar a través de SMTP, tenemos que tener configurado el servidor de correo local para que pueda enviar los mensajes a través del host que hemos configurado a través del interfaz web.
 
 Una forma sencilla de hacerlo es la de instalar y configurar postfix en modo satélite1 en el propio servidor ElkarBackup. Al hacerlo eliminará exim4, el servidor SMTP por defecto (esto se podría hacer también utilizando exim4, cuestión de gustos).

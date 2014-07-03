@@ -1,9 +1,11 @@
+## Resolviendo problemas
+
 Para la transferencia de los ficheros nos estamos basando en las comunicaciones entre servidores, y estas a veces suelen ser problemáticas. El apartado de ***Logs*** puede ser muy útil al detectar la causa de estos problemas.
 
 Al escribir este documento he tenido un problema de comunicación con el cliente Windows, y esto es lo que veía en el apartado de ***Logs***:
 
 ```bash
-Command "/usr/bin/rsnapshot" -c "/tmp/rsnapshot.2_2.cfg" sync 2>&1 failed. Diagnostic information follows: rsync: failed to connect to 10.15.181.156: Connection timed out (110) rsync error: error in socket IO (code 10) at clientserver.c(122) [Receiver=3.0.7] 
+Command "/usr/bin/rsnapshot" -c "/tmp/rsnapshot.2_2.cfg" sync 2>&1 failed. Diagnostic information follows: rsync: failed to connect to 10.15.181.156: Connection timed out (110) rsync error: error in socket IO (code 10) at clientserver.c(122) [Receiver=3.0.7]
 ```
 
 
@@ -24,7 +26,7 @@ Intentamos la misma conexión pero esta vez desde el servidor ElkarBackup hasta 
 ```bash
 root@ElkarBackup:~# telnet 192.168.3.109 873
 Trying 192.168.3.109...
-telnet: Unable to connect to remote host: Connection timed out 
+telnet: Unable to connect to remote host: Connection timed out
 ```
 
 

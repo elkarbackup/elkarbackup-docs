@@ -1,3 +1,5 @@
+## Pero, ¿Qué son los clientes y tareas?
+
 En esta arquitectura hablaremos de *clientes* y *tareas* :
 
 - **Cliente**: Una máquina GNU/Linux o Windows. Queremos copiar distintas carpetas que tenemos en esta máquina (que generalmente será un servidor).

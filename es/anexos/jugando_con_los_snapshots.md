@@ -1,3 +1,5 @@
+### "Jugando" con los snapshots
+
 Tal y como hemos comentado anteriormente, la unidad B es visible solamente para el demonio rsync, por lo que tenemos que “creer” que lo genera, lo utiliza y finalmente lo destruye. Si somos personas de poca fé, podemos jugar a generar el snapshot con el usuario local de windows desde el propio escritorio utilizando los scripts que utiliza el demonio rsync.
 
 Si ejecutamos el script `C:\ElkarBackup\MakeSnapshotCMountB.cmd` podremos observar que aparece una nueva unidad de disco RAM en la unidad B. Ahora la vemos porque la hemos generado con nuestro usuario

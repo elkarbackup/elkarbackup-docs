@@ -1,3 +1,5 @@
+## Uso de políticas distintas
+
 En nuestras redes tenemos distinto tipo de información, y el tener que tener copias de seguridad de todos estos datos no significa que debamos darles a todos el mismo tratamiento.
 
 En algunos casos la información deberá ser guardada por mucho tiempo (meses o años), y en otros casos tras una semana los datos no tendrán validez y quisiéramos borrarlos.

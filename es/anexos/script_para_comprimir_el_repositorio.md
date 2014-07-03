@@ -1,3 +1,5 @@
+## Script para comprimir el repositorio
+
 Imaginémonos que distintos usuarios tienen copias distintas del mismo fichero en la red, cada uno en su carpeta. Cuando se trata de documentos ofimáticos (generalmente no muy grandes) no suele suponer demasiado problema, pero con otro tipo de ficheros (vídeos, actualizaciones de software, etc) el sitio que pueden estar consumiendo en la red suele ser grande, siendo información duplicada.
 
 Sabemos que una vez se ha realizado la copia de estos ficheros, estos no van a cambiar en el disco de la copia de seguridad, por lo que tenemos la posibilidad de mantener una sola copia y enlazar mediante hardlinks el resto de apariciones del mismo fichero.
@@ -14,7 +16,7 @@ drwxr-xr-x 4 root root 4,0K jun  7 11:24 ..
 -rw-r--r-- 1 root root 1,1M nov 18  2010 7z920.exe
 -rw-r--r-- 1 root root 164M may  3 18:16 LibreOffice_4.0.3_Linux_x86_deb.tar.gz
 -rw-r--r-- 1 root root  22M abr 15 19:11 vlc-2.0.6-win32.exe
--rw-r--r-- 1 root root  22M jun 12 12:44 vlc-2.0.6-win32-kopia.exe 
+-rw-r--r-- 1 root root  22M jun 12 12:44 vlc-2.0.6-win32-kopia.exe
 ```
 
 
@@ -29,7 +31,7 @@ drwxrwxr-x 4 elkarbackup elkarbackup 4,0K jun  7 11:24 ..
 -rw-rw-r-- 3 elkarbackup elkarbackup 1,1M nov 18  2010 7z920.exe
 -rw-rw-r-- 3 elkarbackup elkarbackup 164M may  3 18:16 LibreOffice_4.0.3_Linux_x86_deb.tar.gz
 -rw-rw-r-- 3 elkarbackup elkarbackup  22M abr 15 19:11 vlc-2.0.6-win32.exe
--rw-rw-r-- 2 elkarbackup elkarbackup  22M jun 12 12:44 vlc-2.0.6-win32-kopia.exe 
+-rw-rw-r-- 2 elkarbackup elkarbackup  22M jun 12 12:44 vlc-2.0.6-win32-kopia.exe
 ```
 
 
@@ -43,7 +45,7 @@ total 209M
 29332 -rw-rw-r-- 3 elkarbackup elkarbackup 1,1M nov 18  2010 7z920.exe
 29333 -rw-rw-r-- 3 elkarbackup elkarbackup 164M may  3 18:16 LibreOffice_4.0.3_Linux_x86_deb.tar.gz
 29334 -rw-rw-r-- 3 elkarbackup elkarbackup  22M abr 15 19:11 vlc-2.0.6-win32.exe
-74101 -rw-rw-r-- 2 elkarbackup elkarbackup  22M jun 12 12:44 vlc-2.0.6-win32-kopia.exe 
+74101 -rw-rw-r-- 2 elkarbackup elkarbackup  22M jun 12 12:44 vlc-2.0.6-win32-kopia.exe
 ```
 
 
@@ -67,7 +69,7 @@ do
         fi
         lastHash=$currentHash
         lastFile="$file"
-done 
+done
 ```
 
 
@@ -85,7 +87,7 @@ total 209M
 29332 -rw-rw-r-- 4 elkarbackup elkarbackup 1,1M nov 18  2010 7z920.exe
 29333 -rw-rw-r-- 4 elkarbackup elkarbackup 164M may  3 18:16 LibreOffice_4.0.3_Linux_x86_deb.tar.gz
 29334 -rw-rw-r-- 8 elkarbackup elkarbackup  22M abr 15 19:11 vlc-2.0.6-win32.exe
-29334 -rw-rw-r-- 8 elkarbackup elkarbackup  22M abr 15 19:11 vlc-2.0.6-win32-kopia.exe 
+29334 -rw-rw-r-- 8 elkarbackup elkarbackup  22M abr 15 19:11 vlc-2.0.6-win32-kopia.exe
 ```
 
 

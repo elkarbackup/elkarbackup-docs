@@ -1,3 +1,5 @@
+### Automatización
+
 Si queremos automatizar esta tarea, es decir, que el servidor ***Secundario*** sincronice de forma automática el repositorio del servidor ***ElkarBackup***, es necesario volver a utilizar la estrategia de claves públicas/privadas.
 
 En esta ocasión importaremos la clave pública del servidor ***Secundario*** en el servidor ***ElkarBackup***, o dicho de otra forma, añadiremos la clave en el fichero ***Authorized_keys***. Para ello haremos clic en el botón ***Añadir clave***.
@@ -26,14 +28,14 @@ Idatzi balio berria, edo sakatu 'Sartu' tekla lehenetsirako
 	Laneko telefonoa []:
 	Etxeko telefonoa []:
 	Bestelakoa []:
-Informazioa zuzena da? [B/e] B 
+Informazioa zuzena da? [B/e] B
 ```
 
 
 A continuación abrimos una sesión con ese usuario
 
 ```bash
-root@Secundario:~$ su - elkarbackup 
+root@Secundario:~$ su - elkarbackup
 ```
 
 
@@ -61,7 +63,7 @@ The key's randomart image is:
 |+o.= ..          |
 |    .            |
 |                 |
-+-----------------+ 
++-----------------+
 ```
 
 
@@ -86,7 +88,7 @@ ElkarBackup@Secundario:~$ ls -la copiarepositorio/
 guztira 12
 drwxrwxr-x 2 elkarbackup elkarbackup 4096 eka 10 17:02 .
 drwxr-xr-x 4 elkarbackup elkarbackup 4096 eka 10 16:53 ..
--rwxrwxr-x 1 elkarbackup elkarbackup  695 eka 10 15:24 copyrepository.sh 
+-rwxrwxr-x 1 elkarbackup elkarbackup  695 eka 10 15:24 copyrepository.sh
 ```
 
 
@@ -113,7 +115,7 @@ drwxrwxr-x 3 elkarbackup elkarbackup   4096 eka 10 17:04 0001
 drwxrwxr-x 3 elkarbackup elkarbackup   4096 eka 10 17:04 0002
 -rwxrwxr-x 1 elkarbackup elkarbackup    695 eka 10 15:24 copyrepository.sh
 -rw-rw-r-- 1 elkarbackup elkarbackup 103785 eka 10 17:04 ElkarBackup.sql
-drwxr-xr-x 2 elkarbackup elkarbackup   4096 eka  6 15:32 uploads 
+drwxr-xr-x 2 elkarbackup elkarbackup   4096 eka  6 15:32 uploads
 ```
 
 

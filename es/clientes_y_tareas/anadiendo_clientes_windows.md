@@ -1,3 +1,5 @@
+## Añadiendo clientes Windows
+
 La diferencia entre los clientes Windows y Linux está en el parámetro ***URL***, el resto sería igual.
 
 Con los servidores Windows utilizaremos el protocolo ***rsync*** en lugar de ***ssh***. Para poder hacerlo, la máquina Windows tiene que aceptar conexiones rsync, es decir, necesita un servidor rsync activo.

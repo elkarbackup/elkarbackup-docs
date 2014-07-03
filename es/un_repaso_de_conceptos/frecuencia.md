@@ -1,3 +1,5 @@
+## Frecuencia
+
 Hay que definir cada cuanto tiene que hacer las copias, y estas son las opciones
 
 - Durante el día (Hourly): Definimos las copias ***que hará*** en distintas horas del día. El sistema por debajo las nombra Hourly.0, Hourly.1, Hourly.2 .....

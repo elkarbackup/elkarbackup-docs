@@ -1,3 +1,5 @@
+## Programación
+
 Este es otro punto importante que hay que entender. Por un lado podemos ver el área de configuración de la programación compuesto por 5 fichas:
 
 - Hourly o Durante el día: Copias que se realizarán durante el día en horas distintas.

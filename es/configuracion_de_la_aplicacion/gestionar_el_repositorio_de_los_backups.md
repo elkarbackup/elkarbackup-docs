@@ -1,3 +1,5 @@
+## Gestionar el repositorio de los backups
+
 Estamos copiando los datos en disco, y tenemos que decirle al sistema cual va a ser la carpeta principal bajo la cual guardará los datos. El valor por defecto es la carpeta  `/var/spool/elkarbackup/backups`.
 
 Si modificamos este parámetro una vez que hemos comenzado a realizar copias, el sistema no eliminará los datos antiguos, pero si intentamos acceder a ellos a través del botón Restore el sistema no los encontrará. Si por alguna razón necesitamos modificar este parámetro una vez que tenemos copias realizadas, deberíamos conectarnos a la consola del servidor y mover los datos de la ubicación antigua a la nueva.

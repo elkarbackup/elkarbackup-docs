@@ -1,3 +1,5 @@
+## Disco NFS remoto
+
 En un principio se supone que si queremos utilizar un disco NFS que tengamos accesible en nuestra red interna, todo lo necesario ya estará preparado para ser utilizado. En este apartado vamos a ver de forma muy rápida cual sería la forma de instalar una servidor NFS en un entorno debian, y como podríamos publicar un recurso para ser utilizado como disco remoto desde otras máquinas. Para profundizar sobre este tema en Internet hay muchísima documentación.
 
 En el servidor que publicará el disco NSF procederemos a la instalación de los paquetes necesarios:

@@ -1,18 +1,18 @@
-# Gestionar parámetros
+## Gestionar parámetros
 
-## Claves SSH
+### Claves SSH
 
 Ya hemos hablado algo acerca de la clave pública. Desde aquí podemos descarga la clave pública del servidor ElkarBackup que previamente se ha generado desde este mismo sitio.
 
 
-## Servidor MySQL
+### Servidor MySQL
 
 A continuación tenemos los parámetros para gestionar la configuración del servidor MySQL. Los ficheros de backup que se copian con Rsnapshot se guardan en disco, pero el resto de los datos  (datos de clientes y tareas, políticas, etc) se guardan en la base de datos.
 
 El servidor MySQL puede estar ubicado en el servidor ElkarBackup o en cualquier otro servidor de nuestra red, aquí será donde se configurará la ubicación y los parámetros de conexión.
 
 
-## Mensajes a través de correo electrónico
+### Mensajes a través de correo electrónico
 
 Si nos interesa recibir alertas por correo, debemos decidir que nivel de alertas queremos que envíe y a quién a de enviárselas.
 
@@ -30,7 +30,7 @@ En la programación de esta sección se han utilizado los recursos del framework
 
 
 
-## Avisos de cutoas
+### Avisos de cuotas
 
 Hasta el momento no hemos hablado de las cuotas, pero podremos definir cuál va a ser la cuota de utilización de disco para cada cliente. Esto puede llegar a ser práctico cuando un cliente consume mucho espacio y no queremos perjudicar al resto de clientes que pueden quedarse sin espacio en disco.
 
@@ -48,7 +48,7 @@ Antes de que este límite sea sobrepasado el sistema nos enviará alertas. Media
 
 
 
-## Otros parámetros
+### Otros parámetros
 
 - Cuánto tiempo mantendrá la información de LOG antes de eliminarla
 - Número máximo de líneas por página que mostrará

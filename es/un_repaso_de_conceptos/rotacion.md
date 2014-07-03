@@ -1,3 +1,5 @@
+## Rotación
+
 Esto no es algo complicado, pero hay que entenderlo bien. Al definir la frecuencia, también estamos estableciendo distintos niveles de copia, especificando de alguna forma que el Weekly ***precede*** al Monthly, que el Daily ***precede*** al Weekly, y que el Hourly ***precede*** al Daily. No hay ningún nivel que ***preceda*** al Hourly.
 
 ![Clientes y Tareas](../assets/conceptos1.png)

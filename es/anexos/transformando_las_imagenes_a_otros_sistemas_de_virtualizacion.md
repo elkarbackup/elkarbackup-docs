@@ -1,3 +1,5 @@
+## Transformando las imágenes a otros sistemas de virtualización
+
 Si el sistema de virtualización admite imágenes en formato RAW no vas a tener demasiado trabajo, en otros casos necesitarás transformar la imagen al sistema que  utilices.
 
 Si utilizas Vmware aquí hay información que puedes utilizar: http://wiki.laptop.org/go/VMware/Convert
