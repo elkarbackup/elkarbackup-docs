@@ -1,3 +1,5 @@
+# Zer da ElkarBackup?
+
 Ez da gure asmoa hemen segurtasun kopia sistema bat zer den azaltzea, ezta ere datuen segurtasuna bermatzea zein garrantzitsua den azpimarratzea, edo zergatik izan behar dugun kopia prozesu hau automatizatua. Hala ere, argi izan behar dugu:
 
 - Murphy, gure aspaldiko lagun hori, gutxien espero dugunean agertu daitekeela bisita egitera, eta prestatuta egotea komeni dela
