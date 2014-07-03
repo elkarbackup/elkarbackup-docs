@@ -4,13 +4,13 @@ Vmware erabilitzen baduzu, hemen duzu hau nola egiten den ikusteko laguntza: htt
 
 Guk komando hau erabili dugu
 
-```
+```bash
 :~# qemu-img convert  ElkarBackupServerBase2GB1.0.9.img -O vmdk ElkarBackupServerBase2GB1.0.9.vmdk
 ```
 
 VirtualBox-erako beste hau:
 
-```
+```bash
 :~# VBoxManage convertfromraw ElkarBackupServerBase2GB1.0.9.img ElkarBackupServerBase2GB1.0.9.vdi
 ```
 

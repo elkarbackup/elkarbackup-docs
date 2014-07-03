@@ -2,7 +2,7 @@ Kontutan izan behar da zerbitzari ezberdinen arteko komunikazioa erabiltzen dugu
 
 Dokumentu hau idazterakoan arazo bat izan dut Windows bezeroaren komunikazioarekin, eta mezu hau ikusten nuen ***Logak*** atalean:
 
-```
+```bash
 Command "/usr/bin/rsnapshot" -c "/tmp/rsnapshot.2_2.cfg" sync 2>&1 failed. Diagnostic information follows: rsync: failed to connect to 10.15.181.156: Connection timed out (110) rsync error: error in socket IO (code 10) at clientserver.c(122) [Receiver=3.0.7]
 ```
 
@@ -21,7 +21,7 @@ eta bere erantzuna hau bada, zerbitzua ondo dagoela esan nahi du
 
 Ondoren konexio saiakera berdina egin dut baina oraingoan ElkarBackup zerbitzaritik Windows bezerora:
 
-```
+```bash
 root@ElkarBackup:~# telnet 192.168.3.109 873
 Trying 192.168.3.109...
 telnet: Unable to connect to remote host: Connection timed out

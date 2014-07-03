@@ -2,7 +2,7 @@ Aplikazioaren konfigurazioan posta elektronikoak SMTP zerbitzari baten bitartez 
 
 Hau egiteko era ezberdinak daude, bat ElkarBackup zerbitzarian Postfix zebitzari bat instalatu eta satelite moduan konfiguratzea da. Postfix instalatzerakoan exim4 kenduko du (antzerako zerbait egin daiteke exim4 erabiliz, baina Postfix gehiago gustatzen zait ***:-)***  )
 
-```
+```bash
 root@ElkarBackup:~# apt-get install mailutils postfix
 ```
 

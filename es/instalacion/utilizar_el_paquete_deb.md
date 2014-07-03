@@ -65,7 +65,7 @@ root@ElkarBackup:~# aptitude install autofs elkarbackup
 
 En la instalación necesita crear una base de datos MySQL para la aplicación, por lo que nos pedirá el nombre de usuario y contraseña del usuario administrador. Estos datos son los que acabamos de introducir en la instalación del servidor MySQL, y decíamos que en nuestro ejemplo eran el usuario  ***root*** con la contraseña ***root*** .
 
-Por último otro detalle. Cuando nos conectamos a una máquina por SSH la primera vez, nuestro servidor nos dice que no conoce a esa máquina y que debemos confirmar su [fingerprint](http://linuxcommando.blogspot.com.es/2008/10/how-to-disable-ssh-host-key-checking.html). Esta es una medida de seguridad, pero en nuestro caso y de cara a la automatización se convierte en problema, por lo que editaremos el fichero  ***/etc/ssh/ssh_config***  del servidor ElkarBackup y le añadiremos esto:
+Por último otro detalle. Cuando nos conectamos a una máquina por SSH la primera vez, nuestro servidor nos dice que no conoce a esa máquina y que debemos confirmar su [fingerprint](http://linuxcommando.blogspot.com.es/2008/10/how-to-disable-ssh-host-key-checking.html). Esta es una medida de seguridad, pero en nuestro caso y de cara a la automatización se convierte en problema, por lo que editaremos el fichero  `/etc/ssh/ssh_config`  del servidor ElkarBackup y le añadiremos esto:
 ```bash
 StrictHostKeyChecking no
 ```

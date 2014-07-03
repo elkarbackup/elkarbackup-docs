@@ -28,13 +28,13 @@ Hourly errotazioa heltzen denean hau egingo du:
 
 Azken Hourly-a ezabatu:
 
-```
+```bash
 rm -Rf Hourly.4
 ```
 
 beste guztiei izena aldatu errotazioa osatuz
 
-```
+```bash
 mv Hourly.3 Hourly.4
 mv Hourly.2 Hourly.3
 mv Hourly.1 Hourly.2

@@ -16,7 +16,7 @@ Hauek dira script bat sortzerakoan eskatzen dizkigun datuak:
 
 Aurrez sortutako Script baten informaziora sartzen bagara goian aipaturiko informazioaz gain, script hau non ari garen erabiltzen ikusi ahal izango dugu, deskargatzeko aukera ere emango digu.
 
-Igotzen ditugun script hauek zerbitzariko ***/var/spool/ElkarBackup/uploads*** karpetan gordetzen dira.
+Igotzen ditugun script hauek zerbitzariko `/var/spool/ElkarBackup/uploads` karpetan gordetzen dira.
 
 ![Bezeroak eta Lanak](../assets/scripts1.png)
 

@@ -6,15 +6,15 @@ Azkeneko Irudiak hemendik deskargatu daitezke:
 
 Irudiak instalazioa egina duenez lanean hasteko martxan jartzea besterik ez dago. Hala ere, eta gure sarera egokitzeko pare bat gauza aldatu beharko ditugu.
 
-Zerbitzariak DHCP bidez jasotzen du bere helbidea, eta hau aldatu beharra daukagu beti helbide berdina izatea interesatzen zaigulako. IP finkoa jartzeko ***/etc/network/interfaces*** fitxategia editatuko dugu
+Zerbitzariak DHCP bidez jasotzen du bere helbidea, eta hau aldatu beharra daukagu beti helbide berdina izatea interesatzen zaigulako. IP finkoa jartzeko `/etc/network/interfaces` fitxategia editatuko dugu
 
-```
+```bash
 root@ElkarBackup:~# nano /etc/network/interfaces
 ```
 
 
 Eta hor Ipa, maskara, gateway eta DNSak jarriko ditugu.
-```
+```bash
 # This file describes the network interfaces available on your system
 # and how to activate them. For more information, see interfaces(5).
 
@@ -34,14 +34,14 @@ dns-nameservers DNSak
 
 
 Seguruenez arrankatzen duenean ez du sare txartela aktibatuko, bere txartela (kasu honetan birtuala) aldatu dela konturatzen delako. ***70-persistent-net*** rules fitxategia editatu eta bere edukia ezabatu. Gero berrabiarazi ondoren hau berak zuzenduko du sare txartel birtualaren informazio egokia jarriz.
-```
+```bash
 root@ElkarBackup:~# nano /etc/udev/rules.d/70-persistent-net.rules
 
 ```
 
 Makina birtualean ***root*** erabiltzaileak ***root*** pasahitza du. Hori ere produkzioko zerbitzarian aldatu beharko litzateke.
 
-```
+```bash
 root@ElkarBackup:~# passwd root
 Introduzca la nueva contraseña de UNIX:
 Vuelva a escribir la nueva contraseña de UNIX:
@@ -50,7 +50,7 @@ passwd: contraseña actualizada correctamente
 ```
 
 Aldaketa hauek  egin ondoren makina birtuala berrabiarazi.
-```
+```bash
 root@ElkarBackup:~# shutdown -r now
 
 ```

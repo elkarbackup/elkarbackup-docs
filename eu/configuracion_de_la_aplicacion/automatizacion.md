@@ -9,7 +9,7 @@ Ikusten dugunez bi eremu dira bete behar ditugunak:
 
 Gauzak errazteko, ***Morroia*** zerbitzarian elkarbackup izeneko erabiltzaile bat sortuko dugu
 
-```
+```bash
 root@morroia:~$ adduser elkarbackup
 'elkarbackup' erabiltzailea gehitzen...
 'elkarbackup' (1001) talde berria gehitzen...
@@ -31,13 +31,13 @@ Informazioa zuzena da? [B/e] B
 
 Ondoren erabiltzaile horrekin saioa ireki
 
-```
+```bash
 root@morroia:~$ su - elkarbackup
 ```
 
 eta RSA gakoa sortuko dugu
 
-```
+```bash
 elkarbackup@morroia:~$ ssh-keygen -t rsa
 Generating public/private rsa key pair.
 Enter file in which to save the key (/home/elkarbackup/.ssh/id_rsa):
@@ -65,13 +65,13 @@ The key's randomart image is:
 
 Orain gako publikoa zein den ikusi eta kopiatu egingo dugu
 
-```
+```bash
 elkarbackup@morroia:~$ cat .ssh/id_rsa.pub
 ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQCuklE6TI16fU5pmTeU4APrSgG24eblwQdnHNtntUIIRSyAkAemPil2GDpufXgPKqT+FQV02z4JiaoTMMhQpsGqS/Shz/KE/MA7pm8k9v6qnFKVpY6HXZZyvgYhH+Yy6FxxDk+QGQqQMnabzmanyxcBBdQ3ZdluYbwT5kdlgAJR8eTlN/M08hrKKeQGbEVXP3GCPWYsiDV2p6VgRgkPzCSWUgMP63668ZAoNq8mlhW8RF+BEYDF9TPh7PJaEhc+Ea5LiiggD/E2lqQmFGYTqbjELKT4b97y6nDj+2UIG0pvqZ/dN0ZMdsCMX577e8ppkafMqgwGT3D7Af4gD9KninL3 ElkarBackup@morroia
 ```
 
 
-eta ElkarBackup  web aplikazioaren interfazeak ematen digun aukera aprobetxatuz, gakoa hau gehituko dugu zerbitzariko ***authorized_keys*** fitxategian.
+eta ElkarBackup  web aplikazioaren interfazeak ematen digun aukera aprobetxatuz, gakoa hau gehituko dugu zerbitzariko `authorized_keys` fitxategian.
 
 ![Bezeroak eta Lanak](../assets/parametroak9.png)
 
@@ -79,7 +79,7 @@ Gorde botoiari eman eta nahiko.
 
 Ondoren Morroia zerbitzarian karpeta bat sortuko dugu erreplika bertan izateko, eta bertara kopiatuko dugu web interfazetik deskargatu dugun scripta.
 
-```
+```bash
 ElkarBackup@morroia:~$ ls -la biltegiarenkopia/
 guztira 12
 drwxrwxr-x 2 elkarbackup elkarbackup 4096 eka 10 17:02 .
@@ -89,7 +89,7 @@ drwxr-xr-x 4 elkarbackup elkarbackup 4096 eka 10 16:53 ..
 
 eta exekuzioa testatuko dugu
 
-```
+```bash
 elkarbackup@portatil59:~$ cd biltegiarenkopia/
 elkarbackup@portatil59:~/biltegiarenkopia ./copyrepository.sh
 Backing up job 0002/0002
@@ -100,7 +100,7 @@ Backing up uploads
 
 Ikusten dugunez erreplikazioa egiten du inongo erabiltzaile eta pasahitzik eskatu gabe.
 
-```
+```bash
 elkarbackup@portatil59:~/biltegiarenkopia ls -la
 guztira 128
 drwxrwxr-x 5 elkarbackup elkarbackup   4096 eka 10 17:04 .

@@ -4,7 +4,7 @@ Kopiak egiten hasi ondoren balio hau aldatzen badugu, sistemak ez ditu datu zaha
 
 Hortaz gain, elkarbackup erabiltzaile eta taldeari karpeta berrian baimenak eman beharko genieke
 
-```
+```bash
 root@backups:~# chown -Rf elkarbackup.elkarbackup nuevopath
 ```
 

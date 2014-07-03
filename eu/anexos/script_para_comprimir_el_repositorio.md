@@ -2,9 +2,9 @@ Demagun erabiltzaile ezberdin batzuk fitxategi berdinen kopia ezberdinak gordetz
 
 Badakigu kopia egin ondoren datu hauek segurtasun kopia mantentzen duen diskoan ez direla aldatuko, beraz aukera izan dezakegu diskoan behin bakarrik gorde eta beste kopia guztiak  hardlink bidez estekatzeko.
 
-Adibiderako, Debian bezeroan daukagun fitxategiren bat kopiatu eta beste izen batekin itsatsiko dugu ***/media/Backups*** karpetan. Fitxategi berdina den arren, bi aldiz dago eta diskoan leku bikoitza ari da okupatzen.
+Adibiderako, Debian bezeroan daukagun fitxategiren bat kopiatu eta beste izen batekin itsatsiko dugu `/media/Backups` karpetan. Fitxategi berdina den arren, bi aldiz dago eta diskoan leku bikoitza ari da okupatzen.
 
-```
+```bash
 root@DebianBezeroa:~# cd /media/Backups/Software/
 root@DebianBezeroa:/media/Backups/Software# cp vlc-2.0.6-win32.exe vlc-2.0.6-win32-kopia.exe
 root@DebianBezeroa:/media/Backups/Software# ls -lah
@@ -20,7 +20,7 @@ drwxr-xr-x 4 root root 4,0K jun  7 11:24 ..
 
 Lan honen kopia egiteko ardura duen lanean sartu eta ***Exekutatu orain*** botoiaren bidez abiatuko dugu. Lana bukatzen denean ikusiko dugu ElkarBackup zerbitzariko karpetan fitxategi biak daudela.
 
-```
+```bash
 #cd /var/spool/elkarbackup/backups/0001/0001/Hourly.0/media/Backups/Software/
 # ls -lah
 total 209M
@@ -35,7 +35,7 @@ drwxrwxr-x 4 elkarbackup elkarbackup 4,0K jun  7 11:24 ..
 
 eta ikusten dugu ere ez daudela hardlink moduan estekatuta, ***inode*** ezberdina dutelako
 
-```
+```bash
 # ls -lahi
 total 209M
 40831 drwxrwxr-x 2 elkarbackup elkarbackup 4,0K jun 12 12:44 .
@@ -51,7 +51,7 @@ Orain ikusiko dugu nola erabili dezakegun postscript script bat hau konpontzeko.
 
 Script honek [Hash](https://es.wikipedia.org/wiki/Función_hash) berdina duten fitxategiak bilatu eta hardlink bidez estekatuko ditu
 
-```
+```bash
 #!/bin/bash
 # lehenengo tamainaz konparatu eta errepikatuta ez daudenak deskartatu
 
@@ -78,7 +78,7 @@ Scripta igoko dugu:
 
 Orain Debian bezeroaren lana editatu eta script hau ***PostScript*** bezala aukeratuko dugu, eta azkenik lanaren exekuzioa abiatuko dugu.
 
-```
+```bash
 # ls -lahi
 total 209M
 40838 drwxrwxr-x 2 elkarbackup elkarbackup 4,0K jun 12 15:22 .

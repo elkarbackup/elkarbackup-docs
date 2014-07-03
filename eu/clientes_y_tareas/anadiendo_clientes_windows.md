@@ -24,16 +24,16 @@ Orain deskargatu dugun ***cwRsyncServer***  instalatuko dugu. Zerbitzurentzako e
 
 ![Bezeroak eta Lanak](../assets/clientes-tareas13.png)
 
-Instalazioa bukatzen denean programen artean beste bat aurkituko dugu, eta hor ikusten dugun ***rsyncd.conf*** fitxategia editatuko dugu sinkronizatu nahi ditugun karpetak zeintzuk diren zehazteko
+Instalazioa bukatzen denean programen artean beste bat aurkituko dugu, eta hor ikusten dugun `rsyncd.conf` fitxategia editatuko dugu sinkronizatu nahi ditugun karpetak zeintzuk diren zehazteko
 
 Windows7an derrigorrezkoa da administratzaile moduan zabaltzea, bestela ez ditu aldaketak gordeko. Beraz, saguaren eskuineko botoiarekin klikatu eta administratzaile mdouan "exekutatu" beharko dugu.
 
 ![Clientes y Tareas](../assets/clientes-tareas14.png)
 
-Ondorengo irudian ikusten da nola utzi dudan C:\Backups karpeta konfiguratzeko.
+Ondorengo irudian ikusten da nola utzi dudan `C:\Backups` karpeta konfiguratzeko.
 
 Hasieran bi lerro jarriko ditugu:
-```
+```ini
 uid=0
 gid=0
 ```
@@ -41,7 +41,7 @@ gid=0
 
 Ondoren sinkronizatu nahi dugun karpeta bakoitzeko bloke bat gehitu behar dugu. Adibidean blokeari ***[Datuak]*** izena jartzen diogu:
 
-```
+```ini
 [Datuak]
 path = /cygdrive/c/Backups
 read only = false
@@ -51,7 +51,7 @@ transfer logging = yes
 
 Kopiatu nahi dugun karpeta **c:\**Backups izan beharrean **d:\**Backups izan balitz, path lerroa horrela geratuko litzateke
 
-```
+```ini
 path = /cygdrive/d/Backups
 ```
 

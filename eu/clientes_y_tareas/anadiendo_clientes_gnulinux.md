@@ -2,11 +2,11 @@ Bezero bat gehitzeko, ***Berria*** botoiaren gainean klikatu eta formulario berr
 
 Gure adibidean erabiliko ditugun GNU/Linux zerbitzariaren datuak hauek izango dira:
 
-- Izena: Debian Bezeroa
-- URL: root@10.15.181.155
-- KUOTA: -1 (ez dugu oraingoz kuotarik ezarriko)
-- Azalpena: Gure sareko Linux zerbitzari bat
-- Pre/Post script: ezer aukeratu gabe
+ - Izena: Debian Bezeroa
+ - URL: root@10.15.181.155
+ - KUOTA: -1 (ez dugu oraingoz kuotarik ezarriko)
+ - Azalpena: Gure sareko Linux zerbitzari bat
+ - Pre/Post script: ezer aukeratu gabe
 
 Menuan ***Bezeroak → Erakutsi*** klikatzen badugu ikusiko dugu bezeroa zerrendan agertzen dela, nahiz eta oraindik lanik ez izan.
 
@@ -33,7 +33,7 @@ Segurtasun kopian SSH bidez datuak kopiatzen direnean rolak honela banatzen dira
 
 Gure adibidean honela instalatuko dugu ***Publickey.pub*** gakoa bezeroan. Erabiltzaile moduan web nabigatzailea erabiliz nire ekipora deskargatzen dut, eta ***ssh-copy-id*** komandoa erabiliz bezeroaren ***root*** erabiltzailean instalatzen dut. Normala den bezala hau egin ahal izateko bezeroaren root erabiltzaileak duen pasahitza ezagutu behar dut.
 
-```
+```bash
 pedro@portatil59:~/Deskargak$ ssh-copy-id -i Publickey.pub root@10.15.181.155
 root@10.15.181.155's password:
 Now try logging into the machine, with "ssh 'root@10.15.181.155'", and check in:
@@ -45,14 +45,14 @@ to make sure we haven't added extra keys that you weren't expecting.
 
 Demagun gure ekipo pertsonalean ez dugula GNU/Linux erabiltzen, eta ezin dugula komando hau erabili, kasu horretan gakoaren kopia ElkarBackup zerbitzaritik ere egin dezakegu. Honela egiten badugu, ez dago aurrez deskargatu beharrik, bere jatorriko helbidetik hartuko genuke:
 
-```
+```bash
 root@elkarbackup:~# ssh-copy-id -i /var/lib/elkarbackup/.ssh/id_rsa.pub root@10.15.181.155
 ```
 
 
 Egin dugunarekin bezeroaren root erabiltzaileko ssh konfigurazioan ElkarBackup zerbitzariak sortutako gakoa gehitu dugu, eta aurrerantzean bien arteko konexio automatizatuak abiatu ahal izango ditugu.
 
-```
+```bash
 root@DebianBezeroa:~# ls -la /root/.ssh/authorized_keys
 -rw------- 1 root root 428 jun  7 11:11 /root/.ssh/authorized_keys
 root@DebianBezeroa:~# cat /root/.ssh/authorized_keys
@@ -62,7 +62,7 @@ ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQC3HO3zn8XhBW1JqxA5qKEQZe+/fPcC47pu5l9c+s1Q
 
 Debian bezeroan ***rsync*** paketea ere instalatuta egon behar da. Ez balego honela instalatuko genuke
 
-```
+```bash
 root@DebianBezeroa:~# apt-get install rsync
 ```
 
@@ -73,10 +73,10 @@ Orain lan berri bat sortuko dugu Debian bezeroan daukagun ***/media/Backups*** k
 
 Agertzen zaigun formularioa ere autodokumentatua dago eta nahiko ondo ulertzen da sartu beharreko informazioa zein den. Guk datu hauek sartuko ditugu, beste guztia dagoen moduan utzita:
 
-- Izena: Backups karpeta
-- Path: /media/Backups/
-- Azalpena: Backups karpetan ditugun datuak
-- Politika: Default policy
+ - Izena: Backups karpeta
+ - Path: /media/Backups/
+ - Azalpena: Backups karpetan ditugun datuak
+ - Politika: Default policy
 
 Eta ***Gorde*** botoiari emango diogu konfigurazioa gorde dezan. Orain berriro Bezeroen ikuspegi orokorrera joaten bagara lana hor dagoela ikusiko dugu.
 

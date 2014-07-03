@@ -10,7 +10,7 @@ Menuan ***Konfigurazioa → Biltegiaren kopia egiteko script-a*** aukeran ***Bac
 
 Botoi horren gainean klikatzen badugu, ondorengo script hau deskargatuko dugu:
 
-```
+```bash
 #!/bin/bash
 
 MYSQL_DB=ElkarBackup
@@ -39,7 +39,7 @@ Script hau beste makina batean (aurrerantzean ***Morroia*** deituko diogu) exeku
 
 1. ElkarBackup paketea instalatuta dagoen zerbitzarira konektatuko da eta hor dauzkagun kopia guztien sinkronizazioa abiatuko du.
 2. Ondoren MySQL datu basearen backup bat egin eta ElkarBackup.sql fitxategian datu guztiak jasoko ditu
-3. 3. Azkenik ***/var/spool/ElkarBackup/uploads*** karpetara igo diren script guztiak ere kopiatuko ditu.
+3. 3. Azkenik `/var/spool/ElkarBackup/uploads` karpetara igo diren script guztiak ere kopiatuko ditu.
 
 Beraz nahikoa izango genuke script honen exekuzioa ***Morroia*** zerbitzarian guk nahi dugun egun eta orduan programatzea biltegiaren kopia osoa bere diskoan izateko.
 
