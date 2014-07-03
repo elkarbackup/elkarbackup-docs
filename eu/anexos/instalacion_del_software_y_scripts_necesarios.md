@@ -33,5 +33,5 @@ Scriptaren exekuzio bukaeran azaltzen den bezala, ***vss.exe*** programa deskarg
 
 ![Bezeroak eta Lanak](../assets/windows1.png)
 
-Deskargatu eta beste fitxategiekin batera ***C:\ElkarBackup*** karpetan utziko dugu.
+Deskargatu eta beste fitxategiekin batera `C:\ElkarBackup` karpetan utziko dugu.
 

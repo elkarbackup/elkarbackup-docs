@@ -33,5 +33,5 @@ Tal y como se nos indica tras la ejecución del script, es necesario descargar e
 
 ![Clientes y Tareas](../assets/windows1.png)
 
-Una vez descargado, lo dejaremos en la carpeta ***c:\ElkarBackup*** junto al resto de ficheros.
+Una vez descargado, lo dejaremos en la carpeta `c:\ElkarBackup` junto al resto de ficheros.
 
