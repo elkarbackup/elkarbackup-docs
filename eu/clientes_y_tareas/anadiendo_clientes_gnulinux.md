@@ -88,7 +88,11 @@ Inoiz exekutatu ez denez ***Azken log sarrera*** zutabea utzik dago. Aurrerantze
 
 Baina noiz izango ditugu datuak ? Ba hori ***Politika*** planifikazioan jarritakoaren arabera izango da. Guk ***Default policy*** politika jarri diogu, eta hor zer dagoen ikustera joaten bagara, ikusiko dugu zein den definituta daukan programazioa eta erretentzio politika.
 
-Politiken nondik norakoa ondo ulertzeko “***Oinarrien errepaso txiki bat: Rsnapshot***“ atalean azaldutako kontzeptuak argi izatea komeni da, azken finean hori delako hemen aplikatuko den logika. Bukaeran sakonduko dugu gai horretan.
+<div class="alert alert-info">
+	<p>
+Nahastuta? Politiken nondik norakoa ondo ulertzeko “***Oinarrien errepaso txiki bat: Rsnapshot***“ atalean azaldutako kontzeptuak argi izatea komeni da, azken finean hori delako hemen aplikatuko den logika. Bukaeran sakonduko dugu gai horretan.
+ </p>
+</div>
 
 Lehen kopia egiteko tartea utzi eta ***Restore*** botoian klikatuz zer gertatu den ikustera joaten bagara
 
