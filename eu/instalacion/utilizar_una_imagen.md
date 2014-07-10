@@ -2,9 +2,9 @@
 
 Debian batean oinarritutako instalazioa duen RAW irudia deskargatu eta zure birtualizazio sisteman gehitzea: Aukera desberdinak daude, guk proposatzen ditugunak Proxmox eta KVM dira, baina gehiago ere badaude: XEN, VMWare, eta abar. Dokumentu honen bukaeran dagoen “***Irudia beste birtualizazio sistema batzuetara bihurtzen***” atalean RAW irudia VMWare eta VirtualBox birtualizazio sistemetarako nola bihurtu daitekeen azaltzen dugu.
 
-Azkeneko Irudiak hemendik deskargatu daitezke:
-- http://ftp.tknika.net/elkarbackup/ElkarBackupServerBase2GB1.0.9_64b.img 64 biteko raw irudia KVM/Proxmox sistemetan erabiltzeko: 2,1Gb
-- http://ftp.tknika.net/elkarbackup/ElkarBackupServerBase2GB1.0.9_64b.vmdk  64 biteko VMDK irudia VMWare sistemetan erabiltzeko: 1,4Gb
+Azkeneko irudiak, Debian Wheezy 64-bit batean oinarrituak, hemendik deskargatu daitezke:
+- [**OVA** VirtualBox eta VMWare-rako baliagarria](http://ftp.tknika.net/elkarbackup/elkarbackup64b-1.0.23-ova.tar.gz) (672 MB)
+- [**QCOW2** KVM/Proxmox-entzako baliagarria](http://ftp.tknika.net/elkarbackup/elkarbackup64b-1.0.23-qcow2.tar.gz) (631 MB)
 
 Irudiak instalazioa egina duenez lanean hasteko martxan jartzea besterik ez dago. Hala ere, eta gure sarera egokitzeko pare bat gauza aldatu beharko ditugu.
 
