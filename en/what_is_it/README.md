@@ -18,4 +18,4 @@ ElkarBackup is a free open-source software and it's based in other open source t
 
 ## Who is behind it?
 
-The project was developed by [Tknika](http://www.tknika.eus) and [IMH](http://www.imh.eus), and was developed by [Binovo](http://www.binovo.es)
+The project was promoted by [Tknika](http://www.tknika.eus) and [IMH](http://www.imh.eus), and it was developed by [Binovo](http://www.binovo.es)
