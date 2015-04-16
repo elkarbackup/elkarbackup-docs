@@ -1,4 +1,4 @@
-# Intro
+# Introduction
 
 Elkarbackup it's a centralized backup solution based in [Rsnapshot](http://www.rsnapshot.org).
 
