@@ -1,5 +1,6 @@
 # Summary
 
+* [Sarrera](README.md)
 * [Zer da ElkarBackup?](que_es_elkarbackup/README.md)
 * [Instalazioa](instalacion/README.md)
    * [Irudi bat erabili](instalacion/utilizar_una_imagen.md)
@@ -40,3 +41,4 @@
    * [Posta zerbitzari lokalaren konfigurazioa](anexos/configuracion_del_servidor_de_correo_local.md)
    * [GitHub Errepositorioa](anexos/repositorio_github.md)
 * [Lizentzia](licencia/README.md)
+
