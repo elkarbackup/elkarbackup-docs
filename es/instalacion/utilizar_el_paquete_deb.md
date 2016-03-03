@@ -34,13 +34,22 @@ Si estamos instalando elkarbackup en una Debian6, tenemos que activar las ACL en
 UUID=e3b77e85-df06-4659-b143-5939ccbf7d52 / ext3    errors=remount-ro,acl 0       1
 ```
 
+Para asegurarte de que tu sistema de archivos está montado con ACL (la mayoría lo están), puedes ejecutar el siguiente comando: 
+```
+chacl -l /
+```
+Si te sale el siguiente error entonces no lo tienes habilitado. 
+```
+chacl: cannot get access ACL on '/the/mountpoint': Operation not supported
+```
+
 
 Ahora lo mejor sería reiniciar el servidor para asegurarnos de que todo va bien.
 
 Una vez que hemos arreglado el tema de las ACL, lo primero que haremos será importar la clave del repositorio. Lo haremos como usuario root:
 
 ```bash
-root@backups:~# wget -O - http://elkarbackup.org/apt/archive.gpg.key | apt-key add -
+root@backups:~# wget --quiet -O - http://elkarbackup.org/apt/archive.gpg.key | apt-key add -
 ```
 
 
