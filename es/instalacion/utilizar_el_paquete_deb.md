@@ -49,7 +49,7 @@ Ahora lo mejor sería reiniciar el servidor para asegurarnos de que todo va bien
 Una vez que hemos arreglado el tema de las ACL, lo primero que haremos será importar la clave del repositorio. Lo haremos como usuario root:
 
 ```bash
-root@backups:~# wget -O - http://elkarbackup.org/apt/archive.gpg.key | apt-key add -
+root@backups:~# wget --quiet -O - http://elkarbackup.org/apt/archive.gpg.key | apt-key add -
 ```
 
 
