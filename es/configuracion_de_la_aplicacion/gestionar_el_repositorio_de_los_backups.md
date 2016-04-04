@@ -21,3 +21,5 @@ La aplicación nos da la opción de definir cual va a ser el repositorio de las 
 ![Clientes y Tareas](../assets/parametros7.png)
 
 Es importante no olvidarse que si cambiamos la ubicación del repositorio el usuario ***elkarbackup*** de nuestro servidor Debian debe tener permisos de escritura en la nueva ubicación.
+
+Si Tahoe-LAFS está instalado en la máquina, podemos activar el almacenamiento secundario. Recordad que es necesario configurar Tahoe para que funcione.
