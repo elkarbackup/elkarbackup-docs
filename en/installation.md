@@ -82,7 +82,7 @@ At the time of writing this document \(november 2016\), the Elkarbackup installa
 
 3. Add this line to your \/etc\/apt\/sources.list file:
 
-  > deb http:\/\/elkarbackup.org\/apt\/debian wheezy main
+  > deb http:\/\/elkarbackup.org\/apt\/ubuntu trusty main
 
   And update package index files:
 
