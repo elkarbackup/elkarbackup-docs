@@ -7,4 +7,5 @@
 * Getting Started
 * Ready-to-use Virtual Machine
 * Why Elkarbackup ?
+* [FAQ](faq.md)
 
