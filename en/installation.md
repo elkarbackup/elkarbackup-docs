@@ -165,6 +165,8 @@ At the time of writing this document \(november 2016\), the Elkarbackup installa
   > 
   > yum-config-manager --enable remi-php56
 
+  More info: [http:\/\/rpms.remirepo.net\/wizard\/](http://rpms.remirepo.net/wizard/)
+
 2. Configure MySQL root password:
 
   > $ mysql\_secure\_installation
