@@ -107,9 +107,9 @@ At the time of writing this document \(november 2016\), the Elkarbackup installa
 
   > wget -O - http:\/\/elkarbackup.org\/apt\/archive.gpg.key \| apt-key add -
 
-3. Add this line to your \/etc\/apt\/sources.list file:
+3. Add the elkarbackup repo:
 
-  > deb http:\/\/elkarbackup.org\/apt\/ubuntu trusty main
+  > echo "deb http:\/\/elkarbackup.org\/apt\/ubuntu xenial main" &gt; \/etc\/apt\/sources.list.d\/elkarbackup.list
 
   And update package index files:
 
