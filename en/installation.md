@@ -134,19 +134,21 @@ At the time of writing this document \(november 2016\), the Elkarbackup installa
 
 2. Configure MySQL root password:
 
-  > wget -O - http:\/\/elkarbackup.org\/apt\/archive.gpg.key \| apt-key add -
+  > $ mysql\_secure\_installation
 
-3. Add the elkarbackup repo:
+3. Configure PHP Timezone:
 
-  > echo "deb http:\/\/elkarbackup.org\/apt\/ubuntu xenial main" &gt; \/etc\/apt\/sources.list.d\/elkarbackup.list
+  > $ sed -i "s\/;date.timezone =.\*\/date.timezone = Europe\\/London\/g" \/etc\/php.ini
 
-  And update package index files:
+4. Run ElkarBackup installer:
 
-  > apt-get update
-
-4. Install Elkarbackup:
-
-  > apt-get install elkarbackup
+  > $ bash -c "$\(curl -s https:\/\/gist.githubusercontent.com\/xezpeleta\/c5a5fe960b39cfab29e935dd381a4ab2\/raw\/eb-installer.sh\)"
+  > 
+  > \# Optional: set it to start automatically at boot time
+  > 
+  > $ systemctl enable mariadb
+  > 
+  > $ systemctl enable httpd.service
 
 
 ## 
