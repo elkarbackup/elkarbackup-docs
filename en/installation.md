@@ -196,7 +196,9 @@ At the time of writing this document \(november 2016\), the Elkarbackup installa
   > $ systemctl enable httpd.service
 
 
-## 
+## Docker
+
+ElkarBackup docker repo in Docker Hub: [https:\/\/hub.docker.com\/r\/elkarbackup\/elkarbackup\/](https://hub.docker.com/r/elkarbackup/elkarbackup/)
 
 
 
