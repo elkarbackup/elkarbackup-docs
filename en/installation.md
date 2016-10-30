@@ -93,5 +93,30 @@ At the time of writing this document \(november 2016\), the Elkarbackup installa
   > apt-get install elkarbackup
 
 
+## Ubuntu 14.04 LTS
+
+1. Install these recommended packages:
+
+  > apt-get install debconf php5 php5-cli rsnapshot mysql-server php5-mysql acl bzip2
+
+  Note: remember MySQL admin password!
+
+2. Add package repository key:
+
+  > wget -O - http:\/\/elkarbackup.org\/apt\/archive.gpg.key \| apt-key add -
+
+3. Add this line to your \/etc\/apt\/sources.list file:
+
+  > deb http:\/\/elkarbackup.org\/apt\/ubuntu trusty main
+
+  And update package index files:
+
+  > apt-get update
+
+4. Install Elkarbackup:
+
+  > apt-get install elkarbackup
+
+
 ## 
 
