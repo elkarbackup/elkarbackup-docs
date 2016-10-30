@@ -200,5 +200,17 @@ At the time of writing this document \(november 2016\), the Elkarbackup installa
 
 ElkarBackup docker repo in Docker Hub: [https:\/\/hub.docker.com\/r\/elkarbackup\/elkarbackup\/](https://hub.docker.com/r/elkarbackup/elkarbackup/)
 
+## After the installation
+
+Now you can access to Elkarbackup with: [http:\/\/ip-address\/elkarbackup\/app.php\/login](http://ip-address/elkarbackup/app.php/login) \(root\/root\)
+
+Note: you can also use the address [http:\/\/elkarbackup](http://elkarbackup) but first you need to add your IP\/name to your DNS\/hosts file.
+
+After the installation, is highly recommended:
+
+* Change root user's password and email address \(Users -&gt; Show -&gt; Users -&gt; "root"\)
+* Configure notification email server and protocol \(Config -&gt; Manage Parameters\)
+
+
 
 
