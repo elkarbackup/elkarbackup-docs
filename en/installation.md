@@ -55,9 +55,9 @@ At the time of writing this document \(november 2016\), the Elkarbackup installa
 
   > wget -O - http:\/\/elkarbackup.org\/apt\/archive.gpg.key \| apt-key add -
 
-3. Add elkarbackup repositories:
+3. Add  this line to your \/etc\/apt\/sources.list file:
 
-  > echo "deb http:\/\/elkarbackup.org\/apt\/debian main" &gt; \/etc\/apt\/sources.list.d\/elkarbackup.list
+  > deb http:\/\/elkarbackup.org\/apt\/debian wheezy main
 
   And update package index files:
 
@@ -65,7 +65,7 @@ At the time of writing this document \(november 2016\), the Elkarbackup installa
 
 4. Install Elkarbackup:
 
-  > apt-get install elkarbackup rsnapshot
+  > apt-get install elkarbackup
 
 
 ## 
