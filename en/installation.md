@@ -151,5 +151,38 @@ At the time of writing this document \(november 2016\), the Elkarbackup installa
   > $ systemctl enable httpd.service
 
 
+## CentOS 7
+
+1. Enable REMI repository \(PHP 5.6 or higer required\)
+
+  CentOS 7 provides PHP 5.4, so we need to upgrade it to PHP 5.6 or PHP7
+
+  > yum install https:\/\/dl.fedoraproject.org\/pub\/epel\/epel-release-latest-7.noarch.rpm
+  > 
+  > yum install http:\/\/rpms.remirepo.net\/enterprise\/remi-release-7.rpm
+  > 
+  > yum install yum-utils
+  > 
+  > yum-config-manager --enable remi-php56
+
+2. Configure MySQL root password:
+
+  > $ mysql\_secure\_installation
+
+3. Configure PHP Timezone:
+
+  > $ sed -i "s\/;date.timezone =.\*\/date.timezone = Europe\\/London\/g" \/etc\/php.ini
+
+4. Run ElkarBackup installer:
+
+  > $ bash -c "$\(curl -s https:\/\/gist.githubusercontent.com\/xezpeleta\/c5a5fe960b39cfab29e935dd381a4ab2\/raw\/eb-installer.sh\)"
+  > 
+  > \# Optional: set it to start automatically at boot time
+  > 
+  > $ systemctl enable mariadb
+  > 
+  > $ systemctl enable httpd.service
+
+
 ## 
 
