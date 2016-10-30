@@ -1,4 +1,4 @@
-Elkarbackup provides easy to configure and powerful open source backup solution. It was developed to make the management of our backups easier, regardless of the operative system of the client machine operative system. It has been developed in order to make the management of our backups and restores easier.
+Elkarbackup provides easy to configure and powerful open source backup solution. It was developed to make the management of our backups easier, regardless of the operative system of the client machine operative system.
 
 ElkarBackup is a free open-source software and it's based in other open source technologies:
 
@@ -9,17 +9,17 @@ ElkarBackup is a free open-source software and it's based in other open source t
 
 ## Features
 
-* Centralized backups
-* Backup GNU\/Linux and Windows computers
-* Easy-to-use and multilingual web interface
-* Minimal disk usage \(only changes\) but having the option to recover the whole backup with a mouse click.
+* Centralized backups to disk devices.
+* Backup GNU\/Linux and Windows computers.
+* Easy-to-use and multilingual web interface.
+* Minimal disk usage but having the option to recover the whole backup with a mouse click.
 * Instant recovery
 
 To achieve its magic, Elkarbackup stands on the shoulders of [RSnapshot](http://rsnapshot.org),  a fantastic command-line backup tool.
 
 ## How Elkabackup Benefits You
 
-If you are a sysadmin who need a backup solution in order to save files from diferent machines, sometimes in your own network, but sometimes in external networks through VPN or ssh connections, sometimes with requirement of doing some actions before or after the backup \(i.e. your own checks, test etc.\),  Elkarbackup
+If you are a sysadmin who need a backup solution in order to save files from diferent machines, sometimes in your own network, but sometimes in external networks through VPN or ssh connections, sometimes with requirement of doing some actions before or after the backup \(i.e. your own checks, test etc.\),  Elkarbackup is your solution.
 
 will isolate dependencies and their configuration within a single disposable, consistent environment, without sacrificing any of the tools you are used to working with \(editors, browsers, debuggers, etc.\). Once you or someone else creates a single Vagrantfile, you just need to vagrant up and everything is installed and configured for you to work. Other members of your team create their development environments from the same configuration, so whether you are working on Linux, Mac OS X, or Windows, all your team members are running code in the same environment, against the same dependencies, all configured the same way. Say goodbye to "works on my machine" bugs.
 

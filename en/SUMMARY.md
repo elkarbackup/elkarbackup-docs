@@ -1,6 +1,7 @@
 # Summary
 
 * [Overview](overview.md)
+* [Quick Start Guide](quick-start-guide.md)
 * [introduction](README.md)
 * Installation
 * Getting Started
