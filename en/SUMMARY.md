@@ -1,10 +1,7 @@
 # Summary
 
-* [Overview](overview.md)
-* [Quick Start Guide](quick-start-guide.md)
-* [introduction](README.md)
-* [Installation](installation.md)
-* Getting Started
+* [Overview](README.md)
+* [Getting Started](getting-started.md)
 * Ready-to-use Virtual Machine
 * Why Elkarbackup ?
 * [FAQ](faq.md)
