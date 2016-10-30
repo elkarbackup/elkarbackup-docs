@@ -1,6 +1,6 @@
-Elkarbackup provides easy to configure and powerful open source backup solution. It was developed to make the management of our backups easier, regardless of the operative system of the client machine operative system.
+Elkarbackup provides easy to configure and powerful open source backup solution. It was developed to make the management of our backups easier, regardless of the operating system of the client machine.
 
-ElkarBackup is a free open-source software and it's based in other open source technologies:
+ElkarBackup is a free open-source software and it's based on other open source technologies:
 
 * [RSnapshot](http://rsnapshot.org)
 * [RSync](https://rsync.samba.org)
