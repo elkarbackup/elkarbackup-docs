@@ -4,3 +4,5 @@ As you can read on [RSnapshot's web site](http://rsnapshot.org), _"rsnapshot is 
 
 Elkarbackup offers you an abstraction layer that helps you to use the power of rsnapshot through a web interface, so you don't need to work with the console in order to manage your backups. What is more, once you have set up your backup configuration, you can delegate the backup system management to other people who don't match the sysadmin role.
 
+![](/assets/overview_01.png)
+
