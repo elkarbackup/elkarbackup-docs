@@ -93,13 +93,15 @@ At the time of writing this document \(november 2016\), the Elkarbackup installa
   > apt-get install elkarbackup
 
 
-## Ubuntu 14.04 LTS
+## Ubuntu 16.04 LTS
 
 1. Install these recommended packages:
 
-  > apt-get install debconf php5 php5-cli rsnapshot mysql-server php5-mysql acl bzip2
+  > apt-get install debconf php php-cli rsnapshot apache2 mysql-server php-mysql acl bzip2 php-xml libapache2-mod-php libapache2-mod-php7.0 libssh2-1 mysql-client php-ssh2
 
   Note: remember MySQL admin password!
+
+  Note: should you have any problem with apt locking issues, have a look at this documented bug in Ubuntu 16.04 and how to solve it \([https:\/\/github.com\/boxcutter\/ubuntu\/issues\/73\#issuecomment-231679733](https://github.com/boxcutter/ubuntu/issues/73#issuecomment-231679733)\)
 
 2. Add package repository key:
 
