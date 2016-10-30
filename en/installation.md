@@ -167,15 +167,25 @@ At the time of writing this document \(november 2016\), the Elkarbackup installa
 
   More info: [http:\/\/rpms.remirepo.net\/wizard\/](http://rpms.remirepo.net/wizard/)
 
-2. Configure MySQL root password:
+2. Install the required packages:
+
+  > $ yum install bzip2 httpd mariadb-server rsnapshot zip php php-mysql php-xml php-process
+  > 
+  > \# Start apache and mysql server
+  > 
+  > $ systemctl start httpd
+  > 
+  > $ systemctl start mariadb
+
+3. Configure MySQL root password:
 
   > $ mysql\_secure\_installation
 
-3. Configure PHP Timezone:
+4. Configure PHP Timezone:
 
   > $ sed -i "s\/;date.timezone =.\*\/date.timezone = Europe\\/London\/g" \/etc\/php.ini
 
-4. Run ElkarBackup installer:
+5. Run ElkarBackup installer:
 
   > $ bash -c "$\(curl -s https:\/\/gist.githubusercontent.com\/xezpeleta\/c5a5fe960b39cfab29e935dd381a4ab2\/raw\/eb-installer.sh\)"
   > 
@@ -187,4 +197,6 @@ At the time of writing this document \(november 2016\), the Elkarbackup installa
 
 
 ## 
+
+
 
