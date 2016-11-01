@@ -2,7 +2,7 @@ In the next pages we will speak about  _clients_ and _tasks_ :
 
 * **Client**: A client is a host that contains the data we want to save. It could be any machine that supports ssh or rsync automated connectivity. In this manual we'll focus on GNU\/Linux and Windows clients.
 
-* **Job**: Each root folder we want to save from each client. Each task has it's own configuration with it's own frecuency and retention policy. A client could have \(and usually it has\) more than one task.
+* **Job**: Each root folder we want to save from each client. Each job has it's own configuration with it's own frecuency and retention policy. A client could have \(and usually it has\) more than one job.
 
 
 Our Elkarbackup server will be able to get and copy data from multiple clients, but they need to communicate using rsync or ssh protocols. As you know, this is in the box when we speak about GNU\/Linux computers, but for Windows systems prior to Windows 10 we need help, so we will install the [Cwrsync free edition](https://www.itefix.net/content/cwrsync-free-edition) to set up the rsync service in Windows clients.
