@@ -2,7 +2,7 @@ In our example, we want to backup the "\/var\/www" folder from a GNU\/Linux clie
 
 ## Add the client
 
-In order to add a new client, we have to click on the **_Add Client_** button, and we will face a self-documented form where we will enter the client data.
+In order to add a new client, we have to click on the _**Add Client**_ button, and we will face a self-documented form where we will enter the client data.
 
 In our example,
 
@@ -11,8 +11,16 @@ In our example,
 * URL: root@192.168.1.12
 
 
-Once we have enter this data, we will click on the **_Save_** button and we will see the new client in the main page, but we have not any job yet. 
+Once we have enter this data, we will click on the _**Save**_ button and we will see the new client in the main page.
 ![](/assets/clients_tasks_03.png)
 
-## Add the task
+As this has to be an automated proccess, our server need to use the correct credentials to connect to "My Linux Client", but we haven't given this data in the client configuration. As we are using the ssh protocol, we will use the public\/private key pair.
+
+We can download the Elkarbackup server public key from the _**Configuration menu --&gt; Manage parameters**_. 
+
+![](/assets/clients_jobs_04.png)
+
+## Add the job
+
+When we edit the client, 
 
