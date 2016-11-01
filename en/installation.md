@@ -15,7 +15,8 @@ At the time of writing this document \(november 2016\), the Elkarbackup installa
   * CentOS 7
 
 
-2. Docker
+
+1. Docker
 
 ## Debian Jessie 8.0
 
@@ -210,3 +211,4 @@ After the installation, is highly recommended:
 * Change root user's password and email address \(Users -&gt; Show -&gt; Users -&gt; "root"\)
 * Configure notification email server and protocol \(Config -&gt; Manage Parameters\)
 
+![](/assets/overview_01.png)
