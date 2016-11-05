@@ -2,7 +2,7 @@ In our example, we want to backup the "\/var\/www" folder from a GNU\/Linux clie
 
 ## Add the client
 
-In order to add a new client, we have to click on the _**Add Client**_ button, and we will face a self-documented form where we will enter the client data.
+In order to add a new client, we have to click on the **_Add Client_** button, and we will face a self-documented form where we will enter the client data.
 
 In our example,
 
@@ -11,14 +11,25 @@ In our example,
 * URL: root@192.168.1.12
 
 
-Once we have enter this data, we will click on the _**Save**_ button and we will see the new client in the main page.
+Once we have enter this data, we will click on the **_Save_** button and we will see the new client in the main page.
 ![](/assets/clients_tasks_03.png)
 
 As this has to be an automated proccess, our server need to use the correct credentials to connect to "My Linux Client", but we haven't given this information in the client configuration. As long as we are using the ssh protocol, we will use the public\/private key pair.
 
-We can download the Elkarbackup server public key from the _**Configuration menu --&gt; Manage parameters**_.
+We can download the Elkarbackup server public key from the **_Configuration menu --&gt; Manage parameters_**.
 
 ![](/assets/clients_jobs_04.png)
+
+Now, we have to configure this public key in the GNU\/Linux client. Once it is done, we will be able to automatice the ssh connections needed for the backup proccess. In this backup connections, we have two roles:
+
+* ElkarBackup _**Server**_: It has the _**client**_ role in the connection.
+* GNU\/Linux _**Client**_: It has the _**server**_ role in the ssh connection, so it is neccesary to install there the openssh-server package if it is not previosly installed.
+
+Now we will issue this command in order to copy the newly downloaded public key in the client.
+
+> ssh-copy-id -i Publickey.pub root@192.168.1.12
+
+Take into account that we are using the _**root**_ user in the client machine.
 
 ## Add the job
 
