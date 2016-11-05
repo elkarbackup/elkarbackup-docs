@@ -14,13 +14,13 @@ In our example,
 Once we have enter this data, we will click on the _**Save**_ button and we will see the new client in the main page.
 ![](/assets/clients_tasks_03.png)
 
-As this has to be an automated proccess, our server need to use the correct credentials to connect to "My Linux Client", but we haven't given this data in the client configuration. As we are using the ssh protocol, we will use the public\/private key pair.
+As this has to be an automated proccess, our server need to use the correct credentials to connect to "My Linux Client", but we haven't given this information in the client configuration. As long as we are using the ssh protocol, we will use the public\/private key pair.
 
-We can download the Elkarbackup server public key from the _**Configuration menu --&gt; Manage parameters**_. 
+We can download the Elkarbackup server public key from the _**Configuration menu --&gt; Manage parameters**_.
 
 ![](/assets/clients_jobs_04.png)
 
 ## Add the job
 
-When we edit the client, 
+When we edit the client,
 
