@@ -1,6 +1,6 @@
 In our networks we have different types of information, and having to have backup copies of all these data does not mean that we should give everyone the same treatment.
 
-In some cases the information should be kept for a long time \(months or years\), and in other cases after a week the data will not be valid and we would like to erase them.
+In some cases the information should be kept for a long time \(months or years\), and in other cases after a week the data will not be valid and we would like to delete them.
 
 On the other hand, for one type of data will be enough to make a copy at night, and for others we would like to have 3 copies scheduled during the day.
 
