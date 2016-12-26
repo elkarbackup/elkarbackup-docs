@@ -26,8 +26,6 @@ Before we install, we will add a local user to the Windows machine. In the virtu
 
 -- IMAGE-----
 
-
-
 As the service is going to run with this user, it is desirable that they have the necessary permissions, so in the example I have added it to the administrators group \(probably with fewer permissions will also be enough\)
 
 --- IMAGE --
@@ -50,7 +48,31 @@ At the beginning we put these two lines:
 
 Next we add a block for each folder we want to synchronize. In the example we have named the folder as_** \[Data\]:**_
 
+> \[Data\]
+>
+> path = /cygdrive/c/Backups
+>
+> read only = false
+>
+> transfer logging = yes
 
+If the folder you want to copy instead of being in _**c:\Backups**_ is in _**d:\Backups**_, the path line would be this:
 
+> path = /cygdrive/d/Backups
 
+-- IMAGE
+
+Now we check that the service is running, and if it was not, we would boot it specifying that the boot has to be automatic
+
+-- IMAGE
+
+-- IMAGE
+
+Now we go back to the ElkarBackup interface and add a task to our Windows client to make a copy of your _**Backups folder**_.
+
+We have to keep in mind that this folder in the configuration file of the Windows machine has been configured in the_** \[Data\]**_ block, and that will be the name that we will use in the _**Path**_ field. We also apply the policy _**Default policy**_.
+
+-- IMAGE
+
+We will save it and click the _**Run Now**_ button to verify that the copy is done without errors. This option allows us to launch the task without waiting for scheduled execution to arrive. The screen that gives us the overview will also give us information about the status of each task, showing those that are waiting \(_**QUEUED**_\) or running \(_**RUNNING**_\).
 
