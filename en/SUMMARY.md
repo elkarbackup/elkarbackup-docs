@@ -6,7 +6,7 @@
 * [Getting Started](getting-started.md)
     * [Clients and Jobs](clients_tasks/README.md)
     * [Add Linux clients](add-linux-hosts.md)
-    * Add Windows clients
+    * [Add Windows clients](add-windows-clients.md)
 * [Why Elkarbackup ?](why-elkarbackup-.md)
 * [Ready-to-use Virtual Machine](ready-to-use-virtual-machine.md)
 * [FAQ](faq.md)
