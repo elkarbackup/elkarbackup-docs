@@ -14,8 +14,8 @@ _**Copies**_** **_**or rotations**_ to be made _**once a day**_ at a certain tim
 1. First it will rotate the Daily folders, erasing the last folder and adding +1 to the rest.
 2. Is the previous level used \(Hourly\) ? 
 
-Yes: Daily.0 is created renaming the last folder Hourly  
-No: Create and fill in the Daily.0 folder: New files and hardlinks as it deems necessary
+Yes: _**Daily.0**_ is created renaming the Hourly _**last folder**_   
+No: Create and fill in the _**Daily.0**_ folder: New files and hardlinks as it deems necessary
 
 ### Weekly:
 
@@ -24,8 +24,8 @@ _**Copies**_** **_**or rotations**_ to be made** **_**once a week**_ at a certai
 1. First it will rotate the Weekly folders, erasing the last folder and adding +1 to the rest.
 2. Is the previous level used \(Daily\) ? 
 
-Yes: Weekly.0 is created renaming the last folder Daily  
-No: Create and fill in the Weekly.0 folder: New files and hardlinks as it deems necessary
+Yes: _**Weekly.0**_ is created renaming the Daily _**last folder **_  
+No: Create and fill in the _**Weekly.0**_ folder: New files and hardlinks as it deems necessary
 
 ### Monthly:
 
@@ -35,15 +35,29 @@ The logic described in the previous points is repeated
 
 The logic described in the previous points is repeated
 
-
-
 ---- IMAGE
 
+On more than one occasion we have referred to the _**last folder**_ of each level. That has a lot to do with the retention policy. When we say that at a given level the retention is N, this means that the folders that will be generated at that level will be named from 0 to \(N-1\).
 
+For example, if we define that the copies to be made during the day have a retention of 4, that means that the system will save 4 folders: Hourly.0, Hourly.1, Hourly.2 and Hourly.3.
 
+When the time  to perform the rotation of the Hourly folders comes, it will do the following:
 
+Delete the Last Hourly folder
 
+> rm -Rf Hourly.4
 
+Rename all other folders to do the rotation
+
+> mv Hourly.3 Hourly.4
+>
+> mv Hourly.2 Hourly.3
+>
+> mv Hourly.1 Hourly.2
+>
+> mv Hourly.0 Hourly.1
+
+And finally creates a new Hourly.0 with its content, copying the new files and linking through Hardlinks those that have not been modified.
 
 
 
