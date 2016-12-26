@@ -11,4 +11,5 @@
 * [Why Elkarbackup ?](why-elkarbackup-.md)
 * [Ready-to-use Virtual Machine](ready-to-use-virtual-machine.md)
 * [FAQ](faq.md)
+* [Policies](policies.md)
 
