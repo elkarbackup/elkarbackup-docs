@@ -76,3 +76,7 @@ We have to keep in mind that this folder in the configuration file of the Window
 
 We will save it and click the _**Run Now**_ button to verify that the copy is done without errors. This option allows us to launch the task without waiting for scheduled execution to arrive. The screen that gives us the overview will also give us information about the status of each task, showing those that are waiting \(_**QUEUED**_\) or running \(_**RUNNING**_\).
 
+If we wait, we will see that the copy has been made. In the _**Log**_ also we can see information of the process result.
+
+-- IMAGE
+
