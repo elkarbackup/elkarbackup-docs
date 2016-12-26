@@ -12,4 +12,5 @@
 * [Ready-to-use Virtual Machine](ready-to-use-virtual-machine.md)
 * [FAQ](faq.md)
 * [Policies](policies.md)
+* [Schedule](schedule.md)
 
