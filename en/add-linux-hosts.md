@@ -63,3 +63,7 @@ To better understand the concept of policies, it is convenient to have a clear u
 
 If we let the time to make the first copies and then we click on the _**Restore**_ button we will see the result
 
+--------------------------------- PICTURE
+
+As we can see the folder _**Hourly.0 **_contains the data of the last copy, and in the following executions there will be more folders containing backups made in different hours and days. If we go into any of them we can get to the concrete file that we are interested in recovering. We can download a single file or a compressed folder with many files inside.
+
