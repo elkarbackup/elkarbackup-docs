@@ -16,4 +16,5 @@
 * [Old and outdated data](old-and-outdated-data.md)
 * [Using different policies](using-different-policies.md)
 * [Scripts](scripts.md)
+    * [A new script](a-new-script.md)
 
