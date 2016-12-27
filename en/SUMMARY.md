@@ -23,4 +23,5 @@
     * [Configure Tahoe Storage](configure-tahoe-storage.md)
     * [Copy of the whole repository](copy-of-the-whole-repository.md)
 * [A review of concepts: RSnapshot](a-review-of-concepts-rsnapshot.md)
+    * [Frequency](frequency.md)
 
