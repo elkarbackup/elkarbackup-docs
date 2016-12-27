@@ -11,6 +11,7 @@ We can have different copy policies, but for the example imagine that our progra
 
 In this case the copies are made as follows:
 
+* When the hour arrives to execute the _**Hourly**_ copy first it deletes the last one \(_**Hourly.2**_\), and next it changes the name of the rest of folders. _**Hourly.1 → Hourly.2**_ and _**Hourly.0 → Hourly.1**_. Then it makes the new copy in the _**Hourly.0**_ folder.
 
 
 
