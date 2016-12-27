@@ -17,4 +17,7 @@
 * [Using different policies](using-different-policies.md)
 * [Scripts](scripts.md)
     * [A new script](a-new-script.md)
+* [Configuring Elkarbackup](configuring-elkarbackup.md)
+    * [Manage parameters](manage-parameters.md)
+    * [Manage Elkarbackup repository](manage-elkarbackup-repository.md)
 

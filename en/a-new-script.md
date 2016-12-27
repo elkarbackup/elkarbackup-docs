@@ -11,5 +11,9 @@ These are the data that Elkarbackup asks for when creating a new script:
   * ELKARBACKUP\_PATH: Full path of the root folder
   * ELKARBACKUP\_STATUS: Post-scripts output status, always 0.
 
+If we view or edit the information of a script previously created, we can see where it is being used, and we will also have the option to download it to our computer. The scripts are saved in the Elkarbackup server in _**/var/spool /elkarbackup/uploads**_ folder.
 
+--- IMAGE
+
+You can find an example of Script in the section _**"A script to compress the repository"**_.
 
