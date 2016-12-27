@@ -24,4 +24,6 @@
     * [Copy of the whole repository](copy-of-the-whole-repository.md)
 * [A review of concepts: RSnapshot](a-review-of-concepts-rsnapshot.md)
     * [Frequency](frequency.md)
+    * [Retention](retention.md)
+    * [Rotation](rotation.md)
 
