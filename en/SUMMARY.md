@@ -21,5 +21,5 @@
     * [Manage parameters](manage-parameters.md)
     * [Manage Elkarbackup repository](manage-elkarbackup-repository.md)
     * [Configure Tahoe Storage](configure-tahoe-storage.md)
-    * Copy of the whole repository
+    * [Copy of the whole repository](copy-of-the-whole-repository.md)
 
