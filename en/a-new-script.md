@@ -15,5 +15,5 @@ If we view or edit the information of a script previously created, we can see wh
 
 --- IMAGE
 
-You can find an example of Script in the section _**"A script to compress the repository"**_.
+You can find an example of Script in the section _**"Script to compress the repository"**_.
 

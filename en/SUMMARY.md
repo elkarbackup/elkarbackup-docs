@@ -17,6 +17,7 @@
 * [Using different policies](using-different-policies.md)
 * [Scripts](scripts.md)
     * [A new script](a-new-script.md)
+    * Script to compress the repository
 * [Configuring Elkarbackup](configuring-elkarbackup.md)
     * [Manage parameters](manage-parameters.md)
     * [Manage Elkarbackup repository](manage-elkarbackup-repository.md)
@@ -26,4 +27,5 @@
     * [Frequency](frequency.md)
     * [Retention](retention.md)
     * [Rotation](rotation.md)
+* [A review of concepts:  Tahoe-LAFS](a-review-of-concepts--tahoe-lafs.md)
 
