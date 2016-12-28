@@ -17,7 +17,7 @@
 * [Using different policies](using-different-policies.md)
 * [Scripts](scripts.md)
     * [A new script](a-new-script.md)
-    * Script to compress the repository
+    * [Script to compress the repository](script-to-compress-the-repository.md)
 * [Configuring Elkarbackup](configuring-elkarbackup.md)
     * [Manage parameters](manage-parameters.md)
     * [Manage Elkarbackup repository](manage-elkarbackup-repository.md)
