@@ -31,4 +31,5 @@
 * [Other](other.md)
     * Sort tasks
     * [Synchronization with the cloud](synchronization-with-the-cloud.md)
+    * Remote NFS disk
 
