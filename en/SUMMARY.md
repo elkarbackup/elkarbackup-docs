@@ -28,4 +28,6 @@
     * [Retention](retention.md)
     * [Rotation](rotation.md)
 * [A review of concepts:  Tahoe-LAFS](a-review-of-concepts--tahoe-lafs.md)
+* [Other](other.md)
+    * Sort tasks
 
