@@ -30,4 +30,5 @@
 * [A review of concepts:  Tahoe-LAFS](a-review-of-concepts--tahoe-lafs.md)
 * [Other](other.md)
     * Sort tasks
+    * [Synchronization with the cloud](synchronization-with-the-cloud.md)
 
