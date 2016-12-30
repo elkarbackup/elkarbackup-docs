@@ -44,7 +44,7 @@ Before this limit is exceeded the system will send us alerts. With this paramete
 
 * How long will it keep the LOG information before deleting it
 * Maximum number of lines per page to display
-* Prefix that the system will use to generate certain URLs if instead of using a DNS resolved name to access the interface \(eg http://elkarbackup\) a fixed IP address is used \(for example http://IP/elkarbackup/app.php/login\), \(in the example _**/elkarbackup**_\)
-* 
+* Prefix that the system will use to generate certain URLs if instead of using a DNS resolved name to access the interface \(eg [http://elkarbackup](http://elkarbackup\)\) a fixed IP address is used \(for example [http://IP/elkarbackup/app.php/login](http://IP/elkarbackup/app.php/login\)\), \(in the example _**/elkarbackup**_\)
+
 
 

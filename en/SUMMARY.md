@@ -26,7 +26,7 @@
     * [Rotation](rotation.md)
 * [A review of concepts:  Tahoe-LAFS](a-review-of-concepts--tahoe-lafs.md)
 * [Other](other.md)
-    * Sort tasks
+    * [Sort tasks](sort-tasks.md)
     * [Synchronization with the cloud](synchronization-with-the-cloud.md)
     * [Remote NFS disk](remote-nfs-disk.md)
 * [FAQ](faq.md)
