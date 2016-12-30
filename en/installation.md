@@ -1,6 +1,6 @@
 At the time of writing this document \(november 2016\), the Elkarbackup installation has been tested on the next systems:
 
-1. GNU\/Linux
+1. GNU/Linux
 
   * Debian Jessie 8.0
 
@@ -28,11 +28,11 @@ At the time of writing this document \(november 2016\), the Elkarbackup installa
 
 2. Add package repository key:
 
-  > wget -O - http:\/\/elkarbackup.org\/apt\/archive.gpg.key \| apt-key add -
+  > wget -O - http://elkarbackup.org/apt/archive.gpg.key \| apt-key add -
 
 3. Add elkarbackup repositories:
 
-  > echo "deb http:\/\/elkarbackup.org\/apt\/debian main" &gt; \/etc\/apt\/sources.list.d\/elkarbackup.list
+  > echo "deb http://elkarbackup.org/apt/debian main" &gt; /etc/apt/sources.list.d/elkarbackup.list
 
   And update package index files:
 
@@ -53,11 +53,11 @@ At the time of writing this document \(november 2016\), the Elkarbackup installa
 
 2. Add package repository key:
 
-  > wget -O - http:\/\/elkarbackup.org\/apt\/archive.gpg.key \| apt-key add -
+  > wget -O - http://elkarbackup.org/apt/archive.gpg.key \| apt-key add -
 
-3. Add  this line to your \/etc\/apt\/sources.list file:
+3. Add  this line to your /etc/apt/sources.list file:
 
-  > deb http:\/\/elkarbackup.org\/apt\/debian wheezy main
+  > deb http://elkarbackup.org/apt/debian wheezy main
 
   And update package index files:
 
@@ -78,11 +78,11 @@ At the time of writing this document \(november 2016\), the Elkarbackup installa
 
 2. Add package repository key:
 
-  > wget -O - http:\/\/elkarbackup.org\/apt\/archive.gpg.key \| apt-key add -
+  > wget -O - http://elkarbackup.org/apt/archive.gpg.key \| apt-key add -
 
-3. Add this line to your \/etc\/apt\/sources.list file:
+3. Add this line to your /etc/apt/sources.list file:
 
-  > deb http:\/\/elkarbackup.org\/apt\/ubuntu trusty main
+  > deb http://elkarbackup.org/apt/ubuntu trusty main
 
   And update package index files:
 
@@ -101,15 +101,15 @@ At the time of writing this document \(november 2016\), the Elkarbackup installa
 
   Note: remember MySQL admin password!
 
-  Note: should you have any problem with apt locking issues, have a look at this documented bug in Ubuntu 16.04 and how to solve it \([https:\/\/github.com\/boxcutter\/ubuntu\/issues\/73\#issuecomment-231679733](https://github.com/boxcutter/ubuntu/issues/73#issuecomment-231679733)\)
+  Note: should you have any problem with apt locking issues, have a look at this documented bug in Ubuntu 16.04 and how to solve it \([https://github.com/boxcutter/ubuntu/issues/73\#issuecomment-231679733](https://github.com/boxcutter/ubuntu/issues/73#issuecomment-231679733)\)
 
 2. Add package repository key:
 
-  > wget -O - http:\/\/elkarbackup.org\/apt\/archive.gpg.key \| apt-key add -
+  > wget -O - http://elkarbackup.org/apt/archive.gpg.key \| apt-key add -
 
 3. Add the elkarbackup repo:
 
-  > echo "deb http:\/\/elkarbackup.org\/apt\/ubuntu xenial main" &gt; \/etc\/apt\/sources.list.d\/elkarbackup.list
+  > echo "deb http://elkarbackup.org/apt/ubuntu xenial main" &gt; /etc/apt/sources.list.d/elkarbackup.list
 
   And update package index files:
 
@@ -138,11 +138,11 @@ At the time of writing this document \(november 2016\), the Elkarbackup installa
 
 3. Configure PHP Timezone:
 
-  > $ sed -i "s\/;date.timezone =.\*\/date.timezone = Europe\\/London\/g" \/etc\/php.ini
+  > $ sed -i "s/;date.timezone =.\*/date.timezone = Europe\/London/g" /etc/php.ini
 
 4. Run ElkarBackup installer:
 
-  > $ bash -c "$\(curl -s https:\/\/gist.githubusercontent.com\/xezpeleta\/c5a5fe960b39cfab29e935dd381a4ab2\/raw\/eb-installer.sh\)"
+  > $ bash -c "$\(curl -s https://gist.githubusercontent.com/xezpeleta/c5a5fe960b39cfab29e935dd381a4ab2/raw/eb-installer.sh\)"
   > 
   > \# Optional: set it to start automatically at boot time
   > 
@@ -157,15 +157,15 @@ At the time of writing this document \(november 2016\), the Elkarbackup installa
 
   CentOS 7 provides PHP 5.4, so we need to upgrade it to PHP 5.6 or PHP7
 
-  > yum install https:\/\/dl.fedoraproject.org\/pub\/epel\/epel-release-latest-7.noarch.rpm
+  > yum install https://dl.fedoraproject.org/pub/epel/epel-release-latest-7.noarch.rpm
   > 
-  > yum install http:\/\/rpms.remirepo.net\/enterprise\/remi-release-7.rpm
+  > yum install http://rpms.remirepo.net/enterprise/remi-release-7.rpm
   > 
   > yum install yum-utils
   > 
   > yum-config-manager --enable remi-php56
 
-  More info: [http:\/\/rpms.remirepo.net\/wizard\/](http://rpms.remirepo.net/wizard/)
+  More info: [http://rpms.remirepo.net/wizard/](http://rpms.remirepo.net/wizard/)
 
 2. Install the required packages:
 
@@ -183,11 +183,11 @@ At the time of writing this document \(november 2016\), the Elkarbackup installa
 
 4. Configure PHP Timezone:
 
-  > $ sed -i "s\/;date.timezone =.\*\/date.timezone = Europe\\/London\/g" \/etc\/php.ini
+  > $ sed -i "s/;date.timezone =.\*/date.timezone = Europe\/London/g" /etc/php.ini
 
 5. Run ElkarBackup installer:
 
-  > $ bash -c "$\(curl -s https:\/\/gist.githubusercontent.com\/xezpeleta\/c5a5fe960b39cfab29e935dd381a4ab2\/raw\/eb-installer.sh\)"
+  > $ bash -c "$\(curl -s https://gist.githubusercontent.com/xezpeleta/c5a5fe960b39cfab29e935dd381a4ab2/raw/eb-installer.sh\)"
   > 
   > \# Optional: set it to start automatically at boot time
   > 
@@ -198,13 +198,13 @@ At the time of writing this document \(november 2016\), the Elkarbackup installa
 
 ## Docker
 
-ElkarBackup docker repo in Docker Hub: [https:\/\/hub.docker.com\/r\/elkarbackup\/elkarbackup\/](https://hub.docker.com/r/elkarbackup/elkarbackup/)
+ElkarBackup docker repo in Docker Hub: [https://hub.docker.com/r/elkarbackup/elkarbackup/](https://hub.docker.com/r/elkarbackup/elkarbackup/)
 
 ## After the installation
 
-Now you can access to Elkarbackup with: [http:\/\/ip-address\/elkarbackup\/app.php\/login](http://ip-address/elkarbackup/app.php/login) \(root\/root\)
+Now you can access to Elkarbackup with: [http://ip-address/elkarbackup/app.php/login](http://ip-address/elkarbackup/app.php/login) \(root/root\)
 
-Note: you can also use the address [http:\/\/elkarbackup](http://elkarbackup) but first you need to add your IP\/name to your DNS\/hosts file.
+Note: you can also use the address [http://elkarbackup](http://elkarbackup) but first you need to add your IP/name to your DNS/hosts file.
 
 After the installation, is highly recommended:
 
