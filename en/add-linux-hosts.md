@@ -1,4 +1,4 @@
-In our example, we want to backup the _**/var/www**_ folder from a GNU\/Linux client that has the 192.168.1.2 IP address.
+In our example, we want to backup the _**/var/www**_ folder from a GNU/Linux client that has the 192.168.1.2 IP address.
 
 ## Add the client
 
@@ -19,10 +19,10 @@ We can download the Elkarbackup server public key from the _**Configuration menu
 
 ![](/assets/clients_jobs_04.png)
 
-Now, we have to configure this public key in the GNU\/Linux client. Once it is done, we will be able to automatice the ssh connections needed for the backup proccess. In this backup connections, we have two roles:
+Now, we have to configure this public key in the GNU/Linux client. Once it is done, we will be able to automatice the ssh connections needed for the backup proccess. In this backup connections, we have two roles:
 
 * ElkarBackup _**Server**_: It has the _**client**_ role in the connection.
-* GNU\/Linux _**Client**_: It has the _**server**_ role in the ssh connection, so it is neccesary to install there the openssh-server package if it is not previosly installed.
+* GNU/Linux _**Client**_: It has the _**server**_ role in the ssh connection, so it is neccesary to install there the openssh-server package if it is not previosly installed.
 
 Now we will issue this command in order to copy the newly downloaded public key in the client.
 
@@ -32,22 +32,22 @@ Take into account that we are using the _**root**_ user in the client machine. A
 
 If you don't have a linux machine to issue this command, you can do it from a console in the Elkarbackup server. In this case, you can issue the command using the path where the public key is stored:
 
-> root@elkarbackup:~\# ssh-copy-id -i \/var\/lib\/elkarbackup\/.ssh\/id\_rsa.pub root@192.168.1.2
+> root@elkarbackup:~\# ssh-copy-id -i /var/lib/elkarbackup/.ssh/id\_rsa.pub root@192.168.1.2
 
-Another package that we need in the GNU\/Linux client is _**rsync**_, so if it isn't installed, we can install it with this command:
+Another package that we need in the GNU/Linux client is _**rsync**_, so if it isn't installed, we can install it with this command:
 
 > root@LinuxClient:~\# apt-get install rsync
 
 ## Add the job
 
-The next step is to create the job. As we have said before, we want to backup the _**\/var\/www**_ folder, so we click in the _**Add job**_ button **\(+\)**
+The next step is to create the job. As we have said before, we want to backup the _**/var/www**_ folder, so we click in the _**Add job**_ button **\(+\)**
 
 ![](/assets/clients_jobs_05.png)
 
 We will receive a self-documented form where it is explained which data we have to fill. In our example, we will change only this fields:
 
 * **Name**: www
-* **Path**: \/var\/www
+* **Path**: /var/www
 * **Description**: Apache Web Server Folders
 * **Policy**: Default policy
 
