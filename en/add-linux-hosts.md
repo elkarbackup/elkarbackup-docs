@@ -1,4 +1,4 @@
-In our example, we want to backup the _**\/var\/www**_ folder from a GNU\/Linux client that has the 192.168.1.2 IP address.
+In our example, we want to backup the _**/var/www**_ folder from a GNU\/Linux client that has the 192.168.1.2 IP address.
 
 ## Add the client
 
@@ -13,7 +13,7 @@ In our example,
 Once we have enter this data, we will click on the _**Save**_ button and we will see the new client in the main page.  
 ![](/assets/clients_tasks_03.png)
 
-As this has to be an automated proccess, our server needs to use the correct credentials to connect to "My Linux Client", but we haven't given this information in the client configuration. As long as we are using the ssh protocol, we will use the public\/private key pair.
+As this has to be an automated proccess, our server needs to use the correct credentials to connect to "My Linux Client", but we haven't given this information in the client configuration. As long as we are using the ssh protocol, we will use the public/private key pair.
 
 We can download the Elkarbackup server public key from the _**Configuration menu --&gt; Manage parameters**_.
 
@@ -65,5 +65,5 @@ If we let the time to make the first copies and then we click on the _**Restore*
 
 --------------------------------- PICTURE
 
-As we can see the folder _**Hourly.0 **_contains the data of the last copy, and in the following executions there will be more folders containing backups made in different hours and days. If we go into any of them we can get to the concrete file that we are interested in recovering. We can download a single file or a compressed folder with many files inside.
+As we can see the folder \_**Hourly.0 **\_contains the data of the last copy, and in the following executions there will be more folders containing backups made in different hours and days. If we go into any of them we can get to the concrete file that we are interested in recovering. We can download a single file or a compressed folder with many files inside.
 
