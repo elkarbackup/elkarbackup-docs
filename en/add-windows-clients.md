@@ -38,7 +38,7 @@ Once the installation is finished, it will appear among the available programs, 
 
 --- IMAGE --
 
-This would be the configuration to configure the C: \ Backups folder
+This would be the configuration to configure the C:\Backups folder
 
 At the beginning we put these two lines:
 
