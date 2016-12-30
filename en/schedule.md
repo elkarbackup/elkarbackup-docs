@@ -13,9 +13,8 @@ _**Copies**_** **_**or rotations**_ to be made _**once a day**_ at a certain tim
 
 1. First it will rotate the Daily folders, erasing the last folder and adding +1 to the rest.
 2. Is the previous level used \(Hourly\) ? 
-
-Yes: _**Daily.0**_ is created renaming the Hourly _**last folder**_   
-No: Create and fill in the _**Daily.0**_ folder: New files and hardlinks as it deems necessary
+   1. Yes: _**Daily.0**_ is created renaming the Hourly _**last folder**_
+   2. No: Create and fill in the _**Daily.0**_ folder: New files and hardlinks as it deems necessary
 
 ### Weekly:
 
@@ -23,9 +22,8 @@ _**Copies**_** **_**or rotations**_ to be made** **_**once a week**_ at a certai
 
 1. First it will rotate the Weekly folders, erasing the last folder and adding +1 to the rest.
 2. Is the previous level used \(Daily\) ? 
-
-Yes: _**Weekly.0**_ is created renaming the Daily _**last folder **_  
-No: Create and fill in the _**Weekly.0**_ folder: New files and hardlinks as it deems necessary
+   1. Yes: _**Weekly.0**_ is created renaming the Daily _**last folder **_
+   2. No: Create and fill in the _**Weekly.0**_ folder: New files and hardlinks as it deems necessary
 
 ### Monthly:
 
@@ -58,6 +56,4 @@ Rename all other folders to do the rotation
 > mv Hourly.0 Hourly.1
 
 And finally creates a new Hourly.0 with its content, copying the new files and linking through Hardlinks those that have not been modified.
-
-
 
