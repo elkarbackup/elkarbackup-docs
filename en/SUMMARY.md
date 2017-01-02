@@ -17,7 +17,7 @@
     * [Script to compress the repository](script-to-compress-the-repository.md)
 * [Configuring Elkarbackup](configuring-elkarbackup.md)
     * [Manage parameters](manage-parameters.md)
-    * [Manage Elkarbackup repository](manage-elkarbackup-repository.md)
+    * [Manage backups location](manage-elkarbackup-repository.md)
     * [Configure Tahoe Storage](configure-tahoe-storage.md)
     * [Copy of the whole repository](copy-of-the-whole-repository.md)
 * [A review of concepts: RSnapshot](a-review-of-concepts-rsnapshot.md)
