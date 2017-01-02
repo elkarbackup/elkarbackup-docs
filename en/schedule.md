@@ -33,7 +33,7 @@ The logic described in the previous points is repeated
 
 The logic described in the previous points is repeated
 
----- IMAGE
+![](/assets/policies01.png)
 
 On more than one occasion we have referred to the _**last folder**_ of each level. That has a lot to do with the retention policy. When we say that at a given level the retention is N, this means that the folders that will be generated at that level will be named from 0 to \(N-1\).
 
