@@ -20,5 +20,13 @@ The node configuration file is _**.tahoe/tahoe.cfg**_
 
 If you want to use the ElkarBackup node to access the Tahoe network it is necessary to do it through the system user elkarbackup.
 
+Examples:
+
+* To restart the node: "_~$ tahoe restart"_
+* To do an _**ls**_ on the backups repository:_ "~$ tahoe ls elkarbackup:"_
+* To renew the rentals: "_~$ tahoe deep-check --add-lease elkarbackup:"_
+
+
+
 
 
