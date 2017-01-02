@@ -13,13 +13,9 @@ The application gives us the option to define what the repository of the copies 
 * Local disk \(leaving the _Host_ parameter empty\): We defined a local directory to the Debian server on which we installed the ElkarBackup application. It can be a physical disk or a disk mounted previously using other techniques \(for example through iscsi\).
 * We can configure a folder on an NFS server \(by setting the hostname or the IP address in the _**host**_ parameter\). In order to use this option on the Debian server where we have installed ElkarBackup we must have installed the _**autofs**_ package \(we have installed it at the beginning\)
 
--- IMAGE
-
-
+![](/assets/parameters7.png)
 
 It is important to remember that if we change the location of the repository the elkarbackup user of our Debian server must have write permissions to the new location.
 
 If Tahoe-LAFS is installed on the machine, we can enable secondary storage. Remember that it is necessary to configure Tahoe to work.
-
-
 
