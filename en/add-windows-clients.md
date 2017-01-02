@@ -24,19 +24,19 @@ We can find different Rsync servers for Windows platforms. We will use the free 
 
 Before we install, we will add a local user to the Windows machine. In the virtual machine with Windows7 that we are using in the example we have called the user _**SvcCWRSYNC**_ and we have given _**elkarbackup**_ as the user's password.
 
--- IMAGE-----
+![](/es/assets/clientes-tareas11.png)
 
 As the service is going to run with this user, it is desirable that they have the necessary permissions, so in the example I have added it to the administrators group \(probably with fewer permissions will also be enough\)
 
---- IMAGE --
+![](/es/assets/clientes-tareas12.png)
 
 We now proceed to the installation of the cwRsyncServer program. The installation will ask for the user and the password for this service, and we will introduce the ones we just created
 
---- IMAGE --
+![](/es/assets/clientes-tareas13.png)
 
 Once the installation is finished, it will appear among the available programs, and we will edit the file _**rsyncd.conf**_ to specify which are the folders we want to synchronize. In Windows 7 and higher it is necessary to open it as administrator, otherwise it does not allow to save the changes. We will do this by clicking the right button and "running" it as administrator.
 
---- IMAGE --
+![](/es/assets/clientes-tareas14.png)
 
 This would be the configuration to configure the C:\Backups folder
 
@@ -60,13 +60,13 @@ If the folder you want to copy instead of being in _**c:\Backups**_ is in _**d:\
 
 > path = /cygdrive/d/Backups
 
--- IMAGE
+![](/es/assets/clientes-tareas15.png)
 
 Now we check that the service is running, and if it was not, we would boot it specifying that the boot has to be automatic
 
--- IMAGE
+![](/es/assets/clientes-tareas16.png)
 
--- IMAGE
+![](/es/assets/clientes-tareas17.png)
 
 Now we go back to the ElkarBackup interface and add a task to our Windows client to make a copy of your _**Backups folder**_.
 
