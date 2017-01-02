@@ -20,7 +20,7 @@ By default the alerts will be sent to the owner \(we will see this later\), and 
 
 But the server also needs to be configured to send mail, that is, it needs to know how to send the messages, and for that we have the Mailer parameters.
 
--- IMAGE
+![](/assets/parameters3.png)
 
 As Elkarbackup is based on the Symfony framework, you can find more information about mailing configuration in the [documentation of the symfony project](http://symfony.com/doc/current/email.html).
 
@@ -38,7 +38,7 @@ Keep in mind that _**Elkarbackup will not make copies of the tasks of a client t
 
 Before this limit is exceeded the system will send us alerts. With this parameter we will define the threshold from which these alerts will be sent, by default when the use reaches 80% of the quota.
 
--- IMAGE
+![](/assets/parameters6.png)
 
 # Other parameters
 
