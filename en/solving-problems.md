@@ -11,11 +11,11 @@ The system tells me that we have communication problems. There may be at least t
 
 To see if it is the first option we make a telnet to the rsync port \(TCP 873\) from the same Windows client \(in Windows7 telnet does not come preinstalled\). As it is a local connection, we are avoiding other communication problems.
 
--- IMAGE
+![](/es/assets/clientes-tareas21.png)
 
 And if we see that we get a valid connection that means the service is fine
 
--- IMAGE
+![](/es/assets/clientes-tareas22.png)
 
 Now we try the same connection but this time from the ElkarBackup server to the Windows client:
 
@@ -28,6 +28,4 @@ Now we try the same connection but this time from the ElkarBackup server to the 
 We see that the connection is not established, so everything points to some firewall, surely in the Windows client.
 
 In our example Windows7 has the firewall enabled on the local network as well, and is blocking rsync traffic. Rules to allow rsync \(TCP 873\) between the ElkarBackup server and the Windows client should be added. In our example for going faster, we will choose to stop the firewall.
-
-
 
