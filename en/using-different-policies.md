@@ -4,7 +4,7 @@ In some cases the information should be kept for a long time \(months or years\)
 
 On the other hand, for one type of data will be enough to make a copy at night, and for others we would like to have 3 copies scheduled during the day.
 
-We can create different policies for different needs, and then it will be enough to apply the appropriate policy to each _**task**_.
+We can create different policies for different needs, and then it will be enough to apply the appropriate policy to each _**job**_.
 
 It is important to understand that the different tasks of a Client can be programmed with different policies, since the_** policies are linked with jobs**_, not with clients.
 
