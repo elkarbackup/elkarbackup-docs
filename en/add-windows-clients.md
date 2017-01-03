@@ -60,7 +60,7 @@ If the folder you want to copy instead of being in _**c:\Backups**_ is in _**d:\
 
 > path = /cygdrive/d/Backups
 
-![](/es/assets/clientes-tareas15.png)
+![](/assets/clients-jobs15.png)
 
 Now we check that the service is running, and if it was not, we would boot it specifying that the boot has to be automatic
 
