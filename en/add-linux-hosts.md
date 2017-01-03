@@ -61,9 +61,9 @@ But when? It depends on its _**Policy**_ configuration. We have assigned the _**
 
 To better understand the concept of policies, it is convenient to have a clear understanding of the concepts explained in the section _**"A review of concepts: Rsnapshot"**_, since it is the logic used in our application. In the end we will go deeper into this part.
 
-If we let the time to make the first copies and then we click on the _**Restore**_ button we will see the result
+If we let the time \(in this example some days\) to make the first copies and then we click on the _**Restore**_  ![](/assets/restore.png)  button we will see the result
 
---------------------------------- PICTURE
+![](/assets/clients-jobs8.png)
 
-As we can see the folder \_**Hourly.0 **\_contains the data of the last copy, and in the following executions there will be more folders containing backups made in different hours and days. If we go into any of them we can get to the concrete file that we are interested in recovering. We can download a single file or a compressed folder with many files inside.
+As we can see the folder **Daily.0 **contains the data of the last copy, but we have also more folders containing backups made in previous days. If we go into any of them we can get to the concrete file that we are interested in recovering. We can download a single file or a compressed folder with many files inside.
 
