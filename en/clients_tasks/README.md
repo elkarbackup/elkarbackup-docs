@@ -10,3 +10,13 @@ With rsync managing the data transfer, we have an important advantage: Before to
 
 ![](/assets/clients_tasks_02.png)
 
+
+
+In GNU/Linux environments it is quite common to have to copy the same folders from some clients: configuration folders, logs, etc.
+
+To avoid having to create the job configuration for each client, we can create and configure the jobs for the first one, and then clone all the configuration using the **Clone** button. 
+
+![](/assets/clone-client.png)
+
+Once this is done we should modify the own and different parameters for each client \(address, etc\).
+
