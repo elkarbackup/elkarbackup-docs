@@ -6,5 +6,5 @@ On the other hand, for one type of data will be enough to make a copy at night, 
 
 We can create different policies for different needs, and then it will be enough to apply the appropriate policy to each _**task**_.
 
-It is important to understand that the different tasks of a Client can be programmed with different policies, since the_** policies are linked with tasks**_, not with clients.
+It is important to understand that the different tasks of a Client can be programmed with different policies, since the_** policies are linked with jobs**_, not with clients.
 
