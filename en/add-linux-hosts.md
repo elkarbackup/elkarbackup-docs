@@ -67,3 +67,5 @@ If we let the time \(in this example some days\) to make the first copies and th
 
 As we can see the folder **Daily.0 **contains the data of the last copy, but we have also more folders containing backups made in previous days. If we go into any of them we can get to the concrete file that we are interested in recovering. We can download a single file or a compressed folder with many files inside.
 
+In the _**Advanced options**_ section you can customize also some parameters related to the ssh and rsync connections, as the ssh connection port, bandwith used in the connection, etc.
+
