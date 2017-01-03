@@ -12,11 +12,11 @@ The MySQL server can be located on the same ElkarBackup server or on any other s
 
 If we are interested in receiving alerts by mail, we must decide what  alert levels we want to send and who to send them.
 
--- IMAGE
+![](/assets/parameters1.png)
 
 By default the alerts will be sent to the owner \(we will see this later\), and the messages that will be sent will be _**"Errors and higher"**_. If we are interested that in addition to the owner alerts are also sent to another email address , we have to select the _**Email**_ option and add the new address in the text box that is displayed.
 
--- IMAGE
+![](/assets/parameters2.png)
 
 But the server also needs to be configured to send mail, that is, it needs to know how to send the messages, and for that we have the Mailer parameters.
 
@@ -30,9 +30,9 @@ So far we have not talked about quotas, but we can define the disk quota for eac
 
 If we define a maximum in the parameter QUOTA of a client and is exceeded, we will see it highlighted from both the client view and the main view of clients and tasks.
 
--- IMAGE
+![](/assets/parameters4.png)
 
--- IMAGE
+![](/assets/parameters5.png)
 
 Keep in mind that _**Elkarbackup will not make copies of the tasks of a client that has exceeded their QUOTA**_.
 
