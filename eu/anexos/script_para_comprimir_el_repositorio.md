@@ -61,7 +61,7 @@ cd $ELKARBACKUP_PATH
 lastHash=''
 lastFile=''
 
-find . -mount -type f -printf '%15s %p\0'|sort -nrz|uniq -zDw15|tr "\0" "\n"|cut -b17- |tr "\n" "\0"|xargs$
+find . -mount -type f -printf '%15s %p\0'|sort -nrz|uniq -zDw15|tr "\0" "\n"|cut -b17- |tr "\n" "\0"|xargs -0 sha256sum|sort|uniq -Dw40|while read currentHash file
 do
         if [ "x$lastHash" = "x$currentHash" ]
         then
