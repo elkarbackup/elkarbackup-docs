@@ -1,6 +1,6 @@
 ElkarBackup ist eine mächtige Open-Source Sicherungslösung. Es wurde entwickelt, um die Verwaltung von Backups zu vereinfachen, unabhängig vom Betriebssystem des Geräts.
 
-Elkarbackup ist freie Open-Source-Software \(unter den Bedingungen der GPL V3\) und basiert auf anderen Open-Source-Technologien:
+Elkarbackup ist freie Open-Source-Software \(unter den Bedingungen der [GPL V3](https://www.gnu.org/licenses/gpl-3.0.de.html)\) und basiert auf anderen Open-Source-Technologien:
 
 * [RSnapshot](http://rsnapshot.org)
 * [RSync](https://rsync.samba.org)
