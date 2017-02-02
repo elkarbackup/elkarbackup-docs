@@ -70,28 +70,19 @@ Here's how we can use a postscript script to solve this problem. This script loo
 >
 > \# Compare by size to discard those that do not repeat
 >
->
->
 > cd $ELKARBACKUP\_PATH
->
 > lastHash=''
->
 > lastFile=''
 >
->
->
-> find . -mount -type f -printf '%15s %p\0'\|sort -nrz\|uniq -zDw15\|tr "\0" "\n"\|cut -b17- \|tr "\n" "\0"\|xargs$
+> find . -mount -type f -printf '%15s %p\0'|sort -nrz|uniq -zDw15|tr "\0" "\n"|cut -b17- |tr "\n" "\0"|xargs -0 sha256sum|sort|uniq -Dw40|while read currentHash file
 >
 > do
 >
->         if \[ "x$lastHash" = "x$currentHash" \]
+>         if [ "x$lastHash" = "x$currentHash" ]
 >
 >         then
->
 >                 rm "$file"
->
 >                 ln "$lastFile" "$file"
->
 >         fi
 >
 >         lastHash=$currentHash
