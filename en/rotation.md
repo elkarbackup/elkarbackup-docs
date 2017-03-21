@@ -23,7 +23,7 @@ That is to say:
 * If the Hourly retention is 3, Daily rotation will only move the Hourly.2, never the rest.
 * If the Hourly retention is 2, the Daily rotation will only move the Hourly.1, never the Hourly.0
 
-In this logic there is a condition that we must have clear; Never touching the folders that end in .0, and for this reason _**the retention can not be 1 when in politics there are higher levels**_, the Daily will never touch the Hourly.0, and the Weekly will not touch the Daily.0 either.
+In this logic there is a condition that we must have clear; Never touching the folders that end in .0, and for this reason _**the retention can not be 1 when in policies there are higher levels**_, the Daily will never touch the Hourly.0, and the Weekly will not touch the Daily.0 either.
 
 It is important to understand this, since it is the logic that will be used below when we define the policies from the web interface.
 
