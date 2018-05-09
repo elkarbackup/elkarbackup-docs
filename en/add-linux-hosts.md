@@ -55,7 +55,7 @@ Just click on _**Save**_ and the task will be listed in the main page as shown i
 
 ![](/assets/clients_tasks_04.png)
 
-As you noticed, the _**Last log entry**_ and _**Status**_ columns don't show anything yet. Sooner than later, you will noticed that in these columns we will see the last execution timestamp and it's state.
+As you noticed, the _**Last log entry**_ and _**Last Result**_ columns don't show anything yet. Sooner than later, you will noticed that in these columns we will see the last execution timestamp and it's state.
 
 But when? It depends on its _**Policy**_ configuration. We have assigned the _**Default Policy**_ to this job, so if we see how it is configurated we could see which are it's _**schedule**_ and _**retention policy**_.
 
