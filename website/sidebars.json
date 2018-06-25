@@ -1,0 +1,47 @@
+{
+  "docs": {
+    "Introduction": [
+        "introduction",
+        "why-elkarbackup"
+    ],
+    "Installation": [
+      "installation",
+      "getting-started"
+    ],
+    "Clients and jobs": [
+      "clients-jobs",
+      "hosts-linux",
+      "hosts-windows",
+      "hosts-solving-problems"
+    ],
+    "Backup status": [
+      "backup-status"
+    ],
+    "Backup policies": [
+      "policies-new",
+      "policies-schedule",
+      "policies-outdated-data",
+      "policies-different",
+      "sort-jobs"
+    ],
+    "Scripts": [
+      "script-intro",
+      "script-new",
+      "script-example"
+    ],
+    "Settings": [
+      "manage-parameters",
+      "storages",
+      "storage-nfs",
+      "storage-tahoe",
+      "backup-mirror"
+    ],
+    "A review of concepts": [
+      "concepts-rsnapshot",
+      "concepts-tahoe"
+    ],
+    "Troubleshooting": [
+      "troubleshooting"
+    ]
+  }
+}

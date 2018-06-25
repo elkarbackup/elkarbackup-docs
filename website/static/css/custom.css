@@ -1,0 +1,98 @@
+/*
+ * Based in Prettier documentation style: https://prettier.io/docs/en/install.html
+*/
+
+html body {
+  font-family: "Apple SD Gothic Neo", "AppleSDGothicNeo", -apple-system, BlinkMacSystemFont, Helvetica, Arial, sans-serif;
+  overflow-x: hidden;
+}
+
+a {
+  color: #56b3b4;
+}
+
+.navigationSlider .slidingNav ul{
+  font-weight: 300;
+  line-height: 1.2em;
+  padding: 6px 10px;
+  /*height: 32px;*/
+  font-size: 1em;
+}
+
+.post p a {
+  text-decoration: underline !important;
+}
+.post a {
+  font-weight: 600;
+}
+
+@media only screen and (min-device-width: 360px) and (max-device-width: 736px) {
+}
+
+@media only screen and (min-width: 1024px) {
+  .toc {
+    padding: 0px;
+  }
+  
+  .toc section .navGroups {
+    display: block;
+    padding-top: 0px;
+    padding-bottom: 60px;
+  }
+  
+  .toc .toggleNav .navGroup .navGroupCategoryTitle {
+    color: #fff;
+  }
+  
+  .toc .toggleNav .navGroup h3 {
+    background: #1A2B34;
+    color: #fff;
+    font-family: -apple-system,system-ui,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen,Ubuntu,Cantarell,"Fira Sans","Droid Sans","Helvetica Neue",Arial,sans-serif;
+    line-height: 1.2em;
+    margin: 0;
+    padding: 10px;
+  }
+  
+  .toc .toggleNav .navGroup {
+    background: #e0e0e0;
+    margin: 0px !important;
+    /*color: #393939;*/
+  }
+  
+  .docsNavContainer {
+    background: none;
+    box-sizing: border-box;
+    height: auto;
+    /*margin: 40px 40px 0 0;*/
+    overflow-y: auto;
+    position: relative;
+    width: 300px;
+  }
+  
+  .toc .toggleNav .navGroup h3 {
+    background: #1A2B34;
+    color: #fff;
+  }
+  
+  .container .wrapper h3 {
+    color: #1A2B34;
+    font-size: 18px;
+    margin-top: 10px;
+    padding: 10px 0;
+  }
+  
+  .toc .toggleNav .navGroup.navGroupActive ul {
+    display: block;
+    padding-bottom: 10px;
+    padding-top: 10px;
+  }
+}
+
+@media only screen and (max-width: 1023px) {
+}
+
+@media only screen and (min-width: 1400px) {
+}
+
+@media only screen and (min-width: 1500px) {
+}

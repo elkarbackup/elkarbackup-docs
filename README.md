@@ -1,10 +1,27 @@
-# ElkarBackup
+# Elkarbackup Documentation
 
-[ElkarBackup](http://elkarbackup.org) is a free open-source backup solution based in [RSnapshot](http://www.rsnapshot.org)
+This is the repository for the official documentation of [ElkarBackup](https://www.elkarbackup.org).
 
-Documentation is build with [GitBook](https://www.gitbook.io) project. So you can get it in HTML, PDF or Ebook format.
+Maintained by @parreitu and @xezpeleta
 
-version v1.2
+## Contribution
 
-[](https://www.gitbook.io/book/elkarnet/elkarbackup/activity)
+Want to contribute?
+We appreciate any insights and improvements.
+Feel free to fork and open pull requests, every page of documentation on the website has an 'Edit' button to help you navigate
 
+## Misc
+
+This website has been built using [Docusaurus](https://docusaurus.io).
+
+### Building the website with Docker
+
+Build the image:
+```
+docker build -t elkarbackup-docs .
+```
+
+Run the container:
+```
+docker run -it --rm -p 3000:80 --env-file .env elkarbackup-docs
+```
