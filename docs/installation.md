@@ -281,6 +281,8 @@ The Elkarbackup installation has been tested on the next systems:
   ### Docker
 
   ElkarBackup docker repo in Docker Hub: https://hub.docker.com/r/elkarbackup/elkarbackup/
+  
+  Demo: [![asciicast](https://asciinema.org/a/CRZZ2NITZJueRU36oGDInxHrN.png)](https://asciinema.org/a/CRZZ2NITZJueRU36oGDInxHrN)
 
   ### After the installation
 
