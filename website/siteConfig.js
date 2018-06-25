@@ -86,7 +86,7 @@ const siteConfig = {
   ],
   
   algolia: {
-    apiKey: process.env.ALGOLIA_PRETTIER_API_KEY,
+    apiKey: "7f2bf4bca0a9b06c05b54d12e953811d",
     indexName: "elkarbackup"
   },
 
