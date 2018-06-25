@@ -11,10 +11,10 @@
 const siteConfig = {
   title: 'Elkarbackup Docs' /* title for your website */,
   tagline: 'Keep your data safe from harm',
-  //url: 'https://docs.elkarbackup.org' /* your website url */,
-  //baseUrl: '/' /* base url for your project */,
-  url: 'https://elkarbackup.github.io',
-  baseUrl: '/elkarbackup-docs/',
+  url: 'https://docs.elkarbackup.org' /* your website url */,
+  baseUrl: '/' /* base url for your project */,
+  //url: 'https://elkarbackup.github.io',
+  //baseUrl: '/elkarbackup-docs/',
   // For github.io type URLs, you would set the url and baseUrl like:
   //   url: 'https://facebook.github.io',
   //   baseUrl: '/test-site/',
