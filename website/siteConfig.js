@@ -67,6 +67,10 @@ const siteConfig = {
     ]
   },*/
 
+  highlight: {
+    theme: 'atom-one-dark',
+  },
+
   // This copyright info is used in /core/Footer.js and blog rss/atom feeds.
   copyright:
     'Copyright © ' +
