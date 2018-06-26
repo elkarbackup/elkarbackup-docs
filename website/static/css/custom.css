@@ -55,7 +55,8 @@ a {
   
   .toc .toggleNav .navGroup {
     background: #e0e0e0;
-    margin: 0px !important;
+    margin: 0px;
+    margin-bottom: -16px !important;
     /*color: #393939;*/
   }
   
