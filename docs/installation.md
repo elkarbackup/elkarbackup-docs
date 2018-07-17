@@ -34,7 +34,7 @@ The Elkarbackup installation has been tested on the next systems:
   #### 1. Install these recommended packages:
 
   ```sh
-  apt install debconf php php-cli rsnapshot apache2 mysql-server php-mysql acl bzip2 php-xml libapache2-mod-php libapache2-mod-php7.0 libssh2-1 mysql-client php-ssh2
+  apt install debconf php php-cli rsnapshot apache2 mysql-server php-mysql acl bzip2 php-xml libapache2-mod-php libapache2-mod-php7.0 libssh2-1 mysql-client
   ```
   #### 2. Configure MySQL root password:
 
@@ -170,7 +170,7 @@ The Elkarbackup installation has been tested on the next systems:
   #### 1. Install these recommended packages:
 
   ```sh
-  apt install debconf php php-cli rsnapshot apache2 mysql-server php-mysql acl bzip2 php-xml libapache2-mod-php libapache2-mod-php7.0 libssh2-1 mysql-client php-ssh2
+  apt install debconf php php-cli rsnapshot apache2 mysql-server php-mysql acl bzip2 php-xml libapache2-mod-php libapache2-mod-php7.0 libssh2-1 mysql-client
   ```
   Note: remember MySQL admin password!
 
