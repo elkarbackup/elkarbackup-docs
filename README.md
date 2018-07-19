@@ -1,5 +1,7 @@
 # Elkarbackup Documentation
 
+[![Build Status](https://api.travis-ci.com/elkarbackup/elkarbackup-docs.svg?branch=master)](https://travis-ci.com/elkarbackup/elkarbackup-docs)
+
 This is the repository for the official documentation of [ElkarBackup](https://www.elkarbackup.org).
 
 Maintained by @parreitu and @xezpeleta
