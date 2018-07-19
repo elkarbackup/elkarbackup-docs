@@ -39,9 +39,15 @@
 </ul>
 <p>Once we have enter this data, we will click on the <em><strong>Save</strong></em> button and we will see the new client in the main page.<br>
 <img src="/docs/assets/screenshots/clients_tasks_03.png" alt=""></p>
-<p>As this has to be an automated proccess, our server needs to use the correct credentials to connect to &quot;My Linux Client&quot;, but we haven't given this information in the client configuration. As long as we are using the ssh protocol, we will use the public/private key pair.</p>
+<p>As this has to be an automated proccess, our server needs to use the correct credentials to connect to <em>&quot;My Linux Client&quot;</em>, but we haven't given this information in the client configuration. As long as we are using the SSH protocol, we will use the public/private key pair.</p>
 <p>We can download the Elkarbackup server public key from the <em><strong>Configuration menu --&gt; Manage parameters</strong></em>.</p>
 <p><img src="/docs/assets/screenshots/clients_jobs_04.png" alt=""></p>
+<p><details>
+<summary>An alternative way to download the public key</summary>
+You can also dowload the public key directly into your client using the CLI with <code>curl</code> or <code>wget</code>:</p>
+<pre><code class="hljs css languages- sh">curl -k https://&lt;elkarbackup-server-address&gt;/config/publickey/get
+</code></pre>
+<p></details></p>
 <p>Now, we have to configure this public key in the GNU/Linux client. Once it is done, we will be able to automatice the ssh connections needed for the backup proccess. In this backup connections, we have two roles:</p>
 <ul>
 <li>ElkarBackup <em><strong>Server</strong></em>: It has the <em><strong>client</strong></em> role in the connection.</li>
