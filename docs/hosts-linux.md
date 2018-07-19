@@ -19,11 +19,19 @@ In our example,
 Once we have enter this data, we will click on the _**Save**_ button and we will see the new client in the main page.  
 ![](assets/screenshots/clients_tasks_03.png)
 
-As this has to be an automated proccess, our server needs to use the correct credentials to connect to "My Linux Client", but we haven't given this information in the client configuration. As long as we are using the ssh protocol, we will use the public/private key pair.
+As this has to be an automated proccess, our server needs to use the correct credentials to connect to *"My Linux Client"*, but we haven't given this information in the client configuration. As long as we are using the SSH protocol, we will use the public/private key pair.
 
 We can download the Elkarbackup server public key from the _**Configuration menu --&gt; Manage parameters**_.
 
 ![](assets/screenshots/clients_jobs_04.png)
+
+<details>
+<summary>An alternative way to download the public key</summary>
+  You can also dowload the public key directly into your client using the CLI with `curl` or `wget`:
+  ```sh
+  curl -k https://<elkarbackup-server-address>/config/publickey/get
+  ```
+</details>
 
 Now, we have to configure this public key in the GNU/Linux client. Once it is done, we will be able to automatice the ssh connections needed for the backup proccess. In this backup connections, we have two roles:
 
