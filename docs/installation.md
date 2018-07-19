@@ -6,11 +6,12 @@ title: Installation
 The Elkarbackup installation has been tested on the next systems:
 
   1. GNU/Linux
-     2. [Debian Stretch 9.0](#debian-stretch-90)
-     3. [Debian Jessie 8.0](#debian-jessie-80)
-     4. [Debian Wheezy 7.0](#debian-wheezy-70)
-     5. [Ubuntu 14.04](#ubuntu-1404-lts)
-     6. [Ubuntu 16.04](#ubuntu-1604-lts)
+     1. [Debian Stretch 9.0](#debian-stretch-90)
+     2. [Debian Jessie 8.0](#debian-jessie-80)
+     3. [Debian Wheezy 7.0](#debian-wheezy-70)
+     4. [Ubuntu 18.04](#ubuntu-1804-lts)
+     5. [Ubuntu 16.04](#ubuntu-1604-lts)
+     6. [Ubuntu 14.04](#ubuntu-1404-lts)
      7. [Fedora 24](#fedora-24)
      8. [CentOS 7](#centos-7)
   2. [Docker](#docker)
@@ -132,6 +133,78 @@ The Elkarbackup installation has been tested on the next systems:
   ```sh
   apt-get install elkarbackup
   ```
+  
+  ### Ubuntu 18.04 LTS
+  
+  #### 1. Install these recommended packages:
+
+  ```sh
+  apt install debconf php php-cli rsnapshot apache2 mysql-server php-mysql acl bzip2 php-xml libapache2-mod-php libapache2-mod-php libssh2-1 mysql-client
+  ```
+  #### 2. Configure MySQL root password:
+
+  ```sh
+  $ mysql_secure_installation
+  ```
+
+  #### 3. Add package repository key:
+
+  ```sh
+  wget -O - http://elkarbackup.org/apt/archive.gpg.key | apt-key add -
+  ```
+
+  #### 4. Add elkarbackup repositories:
+
+  ```sh
+  echo "deb http://elkarbackup.org/apt/ubuntu bionic main" > /etc/apt/sources.list.d/elkarbackup.list
+  ```
+  And update package index files:
+      
+  ```sh
+  apt update
+  ```
+
+  #### 5. Install Elkarbackup:
+
+  ```sh
+  apt install elkarbackup
+  ```
+
+  ***
+
+  
+  ### Ubuntu 16.04 LTS
+
+  #### 1. Install these recommended packages:
+
+  ```sh
+  apt install debconf php php-cli rsnapshot apache2 mysql-server php-mysql acl bzip2 php-xml libapache2-mod-php libapache2-mod-php7.0 libssh2-1 mysql-client
+  ```
+  Note: remember MySQL admin password!
+
+  #### 2. Add package repository key:
+
+  ```sh
+  wget -O - http://elkarbackup.org/apt/archive.gpg.key | apt-key add -
+  ```
+
+  #### 3. Add the elkarbackup repo:
+
+  ```sh
+  echo "deb http://elkarbackup.org/apt/ubuntu xenial main" > /etc/apt/sources.list.d/elkarbackup.list
+  ```
+  And update package index files:
+      
+  ```sh
+  apt update
+  ```
+
+  #### 4. Install Elkarbackup:
+
+  ```sh
+  apt install elkarbackup
+  ```
+
 
   ### Ubuntu 14.04 LTS
 
@@ -163,38 +236,6 @@ The Elkarbackup installation has been tested on the next systems:
 
   ```sh
   apt-get install elkarbackup
-  ```
-
-  ### Ubuntu 16.04 LTS
-
-  #### 1. Install these recommended packages:
-
-  ```sh
-  apt install debconf php php-cli rsnapshot apache2 mysql-server php-mysql acl bzip2 php-xml libapache2-mod-php libapache2-mod-php7.0 libssh2-1 mysql-client
-  ```
-  Note: remember MySQL admin password!
-
-  #### 2. Add package repository key:
-
-  ```sh
-  wget -O - http://elkarbackup.org/apt/archive.gpg.key | apt-key add -
-  ```
-
-  #### 3. Add the elkarbackup repo:
-
-  ```sh
-  echo "deb http://elkarbackup.org/apt/ubuntu xenial main" > /etc/apt/sources.list.d/elkarbackup.list
-  ```
-  And update package index files:
-      
-  ```sh
-  apt update
-  ```
-
-  #### 4. Install Elkarbackup:
-
-  ```sh
-  apt install elkarbackup
   ```
 
   ### Fedora 24
