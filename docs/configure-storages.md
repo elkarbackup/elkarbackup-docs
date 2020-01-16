@@ -3,7 +3,7 @@ id: storages
 title: Backup storages
 ---
 
-We are copying the data to disk so we have to define which will be the main folder under which each job will save the data. The ElkarBackup application will give you the option to define multiple backup locations in which you will be able to store your data. When defining a job you will be asked to specify the location to store the backup. By default it is the _**/var/spool/elkarbackup/backups**_ folder.
+We are copying the data to disk so we have to define which will be the main folder under which each job will save the data. The _ElkarBackup_ application will give you the option to define multiple backup locations in which you will be able to store your data. When defining a job you will be asked to specify the location to store the backup. By default it is the _**/var/spool/elkarbackup/backups**_ folder.
 
 ![](assets/screenshots/BackupLocations.png)
 
