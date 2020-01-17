@@ -73,9 +73,9 @@
 <li>We have communication problems between our Elkarbackup server and the client using the Rsync protocol</li>
 </ul>
 <p>To see if it is the first option we make a telnet to the rsync port (TCP 873) from the same Windows client (in Windows7 telnet does not come preinstalled). As it is a local connection, we are avoiding other communication problems.</p>
-<p><img src="/docs/assets/screenshots/clientes-tareas21.png" alt=""></p>
+<p><img src="/docs/assets/screenshots/clients_jobs_21.png" alt=""></p>
 <p>And if we see that we get a valid connection that means the service is fine</p>
-<p><img src="/docs/assets/screenshots/clientes-tareas22.png" alt=""></p>
+<p><img src="/docs/assets/screenshots/clients_jobs_22.png" alt=""></p>
 <p>Now we try the same connection but this time from the ElkarBackup server to the Windows client:</p>
 <blockquote>
 <p>root@ElkarBackup:~# telnet 10.15.181.156 873</p>
