@@ -81,13 +81,13 @@
 <p>Pay attention to the URL parameter. After putting the IP address we have to put &quot;<em><strong>:</strong></em>&quot;, this way we say that it uses the rsync protocol.</p>
 <p>We can find different Rsync servers for Windows platforms. We will use the free version of <a href="https://www.backupassist.com/rsync/cwRsyncServer_4.1.0_Installer.zip">cwRsync</a>, for which we will download the cwRsyncServer 4.0.5 Installer.</p>
 <p>Before we install, we will add a local user to the Windows machine. In the virtual machine with Windows7 that we are using in the example we have called the user <em><strong>SvcCWRSYNC</strong></em> and we have given <em><strong>elkarbackup</strong></em> as the user's password.</p>
-<p><img src="/docs/assets/screenshots/clients-jobs11.png" alt=""></p>
+<p><img src="/docs/assets/screenshots/clients_jobs_11.png" alt=""></p>
 <p>As the service is going to run with this user, it is desirable that they have the necessary permissions, so in the example I have added it to the administrators group (probably with fewer permissions will also be enough)</p>
-<p><img src="/docs/assets/screenshots/clients-jobs12.png" alt=""></p>
+<p><img src="/docs/assets/screenshots/clients_jobs_12.png" alt=""></p>
 <p>We now proceed to the installation of the cwRsyncServer program. The installation will ask for the user and the password for this service, and we will introduce the ones we just created</p>
-<p><img src="/docs/assets/screenshots/clients-jobs13.png" alt=""></p>
+<p><img src="/docs/assets/screenshots/clients_jobs_13.png" alt=""></p>
 <p>Once the installation is finished, it will appear among the available programs, and we will edit the file <em><strong>rsyncd.conf</strong></em> to specify which are the folders we want to synchronize. In Windows 7 and higher it is necessary to open it as administrator, otherwise it does not allow to save the changes. We will do this by clicking the right button and &quot;running&quot; it as administrator.</p>
-<p><img src="/docs/assets/screenshots/clients-jobs14.png" alt=""></p>
+<p><img src="/docs/assets/screenshots/clients_jobs_14.png" alt=""></p>
 <p>This would be the configuration to configure the C:\Backups folder</p>
 <p>At the beginning we put these two lines:</p>
 <blockquote>
@@ -105,13 +105,13 @@
 <blockquote>
 <p>path = /cygdrive/d/Backups</p>
 </blockquote>
-<p><img src="/assets/screenshots/clients-jobs15.png" alt=""></p>
+<p><img src="/assets/screenshots/clients_jobs_15.png" alt=""></p>
 <p>Now we check that the service is running, and if it was not, we would boot it specifying that the boot has to be automatic</p>
-<p><img src="/assets/screenshots/clients-jobs16.png" alt=""></p>
-<p><img src="/assets/screenshots/clients-jobs17.png" alt=""></p>
+<p><img src="/assets/screenshots/clients_jobs_16.png" alt=""></p>
+<p><img src="/assets/screenshots/clients_jobs_17.png" alt=""></p>
 <p>Now we go back to the ElkarBackup interface and add a task to our Windows client to make a copy of your <em><strong>Backups folder</strong></em>.</p>
 <p>We have to keep in mind that this folder in the configuration file of the Windows machine has been configured in the_** [Data]<strong>_ block, and that will be the name that we will use in the _</strong>Path<strong>_ field. We also apply the policy _</strong>Default policy**_.</p>
-<p><img src="/assets/screenshots/clients-jobs18.png" alt=""></p>
+<p><img src="/assets/screenshots/clients_jobs_18.png" alt=""></p>
 <p>We will save it and click the <em><strong>Run Now</strong></em> button to verify that the copy is done without errors. This option allows us to launch the task without waiting for scheduled execution to arrive. The screen that gives us the overview will also give us information about the status of each task, showing those that are waiting (<em><strong>QUEUED</strong></em>) or running (<em><strong>RUNNING</strong></em>).</p>
 <p>If we wait, we will see that the copy has been made. In the <em><strong>Log</strong></em> also we can see information of the process result.</p>
 </span></div></article></div><div class="docs-prevnext"><a class="docs-prev button" href="/docs/hosts-linux.html"><span class="arrow-prev">← </span><span>Linux hosts</span></a><a class="docs-next button" href="/docs/hosts-solving-problems.html"><span>Solving problems</span><span class="arrow-next"> →</span></a></div></div></div><nav class="onPageNav"></nav></div><footer class="nav-footer" id="footer"><section class="sitemap"><a href="/" class="nav-home"></a><div><h5>Documentation</h5><a href="/docs/en/getting-started.html">Getting Started</a><a href="/docs/en/installation.html">Installation</a><a href="/docs/en/troubleshooting.html">Troubleshooting</a></div><div><h5>Community</h5><a href="http://stackoverflow.com/questions/tagged/elkarbackup" target="_blank" rel="noreferrer noopener">Stack Overflow</a><a href="https://crowdin.com/project/elkarbackup">Translate</a><a href="https://twitter.com/elkarbackup/" target="_blank" rel="noreferrer noopener">Twitter</a></div><div><h5>More</h5><a href="https://www.elkarbackup.org">Website</a><a href="https://github.com/elkarbackup/elkarbackup">GitHub</a><a class="github-button" href="https://github.com/elkarbackup/elkarbackup" data-icon="octicon-star" data-count-href="/facebook/docusaurus/stargazers" data-show-count="true" data-count-aria-label="# stargazers on GitHub" aria-label="Star this project on GitHub">Star</a></div></section><section class="copyright">Copyright © 2020 ElkarBackup</section></footer></div><script type="text/javascript" src="https://cdn.jsdelivr.net/docsearch.js/1/docsearch.min.js"></script><script>
