@@ -66,19 +66,19 @@ If the folder you want to copy instead of being in _**c:\Backups**_ is in _**d:\
 
 > path = /cygdrive/d/Backups
 
-![](/assets/screenshots/clients_jobs_15.png)
+![](assets/screenshots/clients_jobs_15.png)
 
 Now we check that the service is running, and if it was not, we would boot it specifying that the boot has to be automatic
 
-![](/assets/screenshots/clients_jobs_16.png)
+![](assets/screenshots/clients_jobs_16.png)
 
-![](/assets/screenshots/clients_jobs_17.png)
+![](assets/screenshots/clients_jobs_17.png)
 
 Now we go back to the ElkarBackup interface and add a task to our Windows client to make a copy of your _**Backups folder**_.
 
 We have to keep in mind that this folder in the configuration file of the Windows machine has been configured in the_** \[Data\]**_ block, and that will be the name that we will use in the _**Path**_ field. We also apply the policy _**Default policy**_.
 
-![](/assets/screenshots/clients_jobs_18.png)
+![](assets/screenshots/clients_jobs_18.png)
 
 We will save it and click the _**Run Now**_ button to verify that the copy is done without errors. This option allows us to launch the task without waiting for scheduled execution to arrive. The screen that gives us the overview will also give us information about the status of each task, showing those that are waiting \(_**QUEUED**_\) or running \(_**RUNNING**_\).
 
