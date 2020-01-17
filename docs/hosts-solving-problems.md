@@ -16,11 +16,11 @@ The system tells me that we have communication problems. There may be at least t
 
 To see if it is the first option we make a telnet to the rsync port \(TCP 873\) from the same Windows client \(in Windows7 telnet does not come preinstalled\). As it is a local connection, we are avoiding other communication problems.
 
-![](assets/screenshots/clientes-tareas21.png)
+![](assets/screenshots/clients_jobs_21.png)
 
 And if we see that we get a valid connection that means the service is fine
 
-![](assets/screenshots/clientes-tareas22.png)
+![](assets/screenshots/clients_jobs_22.png)
 
 Now we try the same connection but this time from the ElkarBackup server to the Windows client:
 
