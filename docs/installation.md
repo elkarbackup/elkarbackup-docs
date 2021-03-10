@@ -20,7 +20,7 @@ The Elkarbackup installation has been tested on the next systems:
 
   </details>
 
-  [After the installation](/get-started.html)
+  [After the installation](/getting-started.md)
 
   ***
   
