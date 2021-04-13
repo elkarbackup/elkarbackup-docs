@@ -41,7 +41,7 @@ The Elkarbackup installation has been tested on the next systems:
   #### 4. Add elkarbackup repositories:
 
   ```sh
-  echo "deb http://elkarbackup.org/apt/debian stretch main" > /etc/apt/sources.list.d/elkarbackup.list
+  echo "deb http://elkarbackup.org/apt/debian buster main" > /etc/apt/sources.list.d/elkarbackup.list
   ```
   And update package index files:
       
@@ -117,7 +117,7 @@ The Elkarbackup installation has been tested on the next systems:
   #### 4. Add elkarbackup repositories:
 
   ```sh
-  echo "deb http://elkarbackup.org/apt/ubuntu bionic main" > /etc/apt/sources.list.d/elkarbackup.list
+  echo "deb http://elkarbackup.org/apt/ubuntu focal main" > /etc/apt/sources.list.d/elkarbackup.list
   ```
   And update package index files:
       
