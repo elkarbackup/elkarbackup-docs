@@ -20,3 +20,7 @@ After:
 
 We will use the scripts to program these actions, and we will be able to develop new scripts and even to share them with others.
 
+Execution order:
+* Pre scripts will be executed in alphabetic ascending order by script name
+* Post scripts will be executed in alphabetic descending order by script name
+
