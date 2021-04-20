@@ -7,7 +7,8 @@ The Elkarbackup installation has been tested on the next systems:
 
   1. GNU/Linux
      1. [Debian Buster 10.0](#debian-buster-100)
-     2. [Ubuntu 20.04](#ubuntu-2004-lts)
+     2. [Debian Bullseye 11.0](#debian-bullseye-110)
+     3. [Ubuntu 20.04](#ubuntu-2004-lts)
   2. [Docker](#docker)
 
   <details>
@@ -63,6 +64,50 @@ The Elkarbackup installation has been tested on the next systems:
 
   ***
 
+  ### Debian Bullseye (11.0)
+
+  #### 1. Install rsnaphost package from Debian 10 Buster:
+
+  Debian 11 Bullseye won't distribute rsnaphost due to not being actively maintained, 
+  so we must use the package from Debian 10 Buster.: https://bugs.debian.org/cgi-bin/bugreport.cgi?bug=986709
+
+  ```sh
+  wget http://ftp.debian.org/debian/pool/main/r/rsnapshot/rsnapshot_1.4.2-1_all.deb
+  apt-get install rsnapshot_1.4.2-1_all.deb
+  ```
+
+  #### 2. Install mariadb-server and configure root password if you want a dedicated local DB server for Elkarbackup:
+
+  ```sh
+  apt install mariadb-server
+  $ mysql_secure_installation
+  ```
+
+  #### 3. Add package repository key:
+
+  ```sh
+  apt install gpg
+  wget -O - http://elkarbackup.org/apt/archive.gpg.key | apt-key add -
+  ```
+
+  #### 4. Add elkarbackup repositories:
+
+  ```sh
+  echo "deb http://elkarbackup.org/apt/debian bullseye main" > /etc/apt/sources.list.d/elkarbackup.list
+  ```
+  And update package index files:
+      
+  ```sh
+  apt update
+  ```
+
+  #### 5. Install Elkarbackup:
+
+  ```sh
+  apt install elkarbackup
+  ```
+
+  ***
 
  
   
