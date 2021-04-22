@@ -1,0 +1,112 @@
+<!DOCTYPE html><html lang="en"><head><meta charSet="utf-8"/><meta http-equiv="X-UA-Compatible" content="IE=edge"/><title>Manage parameters · Elkarbackup Docs</title><meta name="viewport" content="width=device-width, initial-scale=1.0"/><meta name="generator" content="Docusaurus"/><meta name="description" content="## SSH Keys"/><meta name="docsearch:version" content="1.3.5"/><meta name="docsearch:language" content="en"/><meta property="og:title" content="Manage parameters · Elkarbackup Docs"/><meta property="og:type" content="website"/><meta property="og:url" content="https://docs.elkarbackup.org/index.html"/><meta property="og:description" content="## SSH Keys"/><meta property="og:image" content="https://docs.elkarbackup.org/img/docusaurus.png"/><meta name="twitter:card" content="summary"/><meta name="twitter:image" content="https://docs.elkarbackup.org/img/docusaurus.png"/><link rel="shortcut icon" href="/undefined"/><link rel="stylesheet" href="https://cdn.jsdelivr.net/docsearch.js/1/docsearch.min.css"/><link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/atom-one-dark.min.css"/><script>
+              (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+              (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+              m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+              })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+              ga('create', 'UA-3914088-13', 'auto');
+              ga('send', 'pageview');
+            </script><script type="text/javascript" src="https://buttons.github.io/buttons.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/docsearch.js@2/dist/cdn/docsearch.min.js"></script><script type="text/javascript" src="/js/elkarbackup.js"></script><script src="/js/scrollSpy.js"></script><link rel="stylesheet" href="/css/main.css"/><script src="/js/codetabs.js"></script></head><body class="sideNavVisible separateOnPageNav"><div class="fixedHeaderContainer"><div class="headerWrapper wrapper"><header><a href="/"><h2 class="headerTitle">Elkarbackup Docs</h2></a><a href="/versions.html"><h3>1.3.5</h3></a><div class="navigationWrapper navigationSlider"><nav class="slidingNav"><ul class="nav-site nav-site-internal"><li class="siteNavGroupActive"><a href="/docs/1.3.5/installation.html" target="_self">Installation</a></li><li class="siteNavGroupActive"><a href="/docs/1.3.5/introduction.html" target="_self">Documentation</a></li><li class="siteNavGroupActive"><a href="/docs/1.3.5/troubleshooting.html" target="_self">Troubleshooting</a></li><li class="navSearchWrapper reactNavSearchWrapper"><input type="text" id="search_input_react" placeholder="Search" title="Search"/></li></ul></nav></div></header></div></div><div class="navPusher"><div class="docMainWrapper wrapper"><div class="docsNavContainer" id="docsNav"><nav class="toc"><div class="toggleNav"><section class="navWrapper wrapper"><div class="navBreadcrumb wrapper"><div class="navToggle" id="navToggler"><div class="hamburger-menu"><div class="line1"></div><div class="line2"></div><div class="line3"></div></div></div><h2><i>›</i><span>Settings</span></h2><div class="tocToggler" id="tocToggler"><i class="icon-toc"></i></div></div><div class="navGroups"><div class="navGroup"><h3 class="navGroupCategoryTitle">Introduction</h3><ul class=""><li class="navListItem"><a class="navItem" href="/docs/1.3.5/introduction.html">What is it?</a></li><li class="navListItem"><a class="navItem" href="/docs/1.3.5/why-elkarbackup.html">Why Elkarbackup?</a></li></ul></div><div class="navGroup"><h3 class="navGroupCategoryTitle">Installation</h3><ul class=""><li class="navListItem"><a class="navItem" href="/docs/1.3.5/installation.html">Installation</a></li><li class="navListItem"><a class="navItem" href="/docs/1.3.5/getting-started.html">Getting started</a></li></ul></div><div class="navGroup"><h3 class="navGroupCategoryTitle">Clients and jobs</h3><ul class=""><li class="navListItem"><a class="navItem" href="/docs/1.3.5/clients-jobs.html">Clients and jobs</a></li><li class="navListItem"><a class="navItem" href="/docs/1.3.5/hosts-linux.html">Linux hosts</a></li><li class="navListItem"><a class="navItem" href="/docs/1.3.5/hosts-windows.html">Windows hosts</a></li><li class="navListItem"><a class="navItem" href="/docs/1.3.5/advanced-connection-options.html">Advanced connection options</a></li><li class="navListItem"><a class="navItem" href="/docs/1.3.5/hosts-solving-problems.html">Solving problems</a></li></ul></div><div class="navGroup"><h3 class="navGroupCategoryTitle">Backup status</h3><ul class=""><li class="navListItem"><a class="navItem" href="/docs/1.3.5/backup-status.html">Backup status</a></li></ul></div><div class="navGroup"><h3 class="navGroupCategoryTitle">Backup policies</h3><ul class=""><li class="navListItem"><a class="navItem" href="/docs/1.3.5/policies-new.html">Adding policies</a></li><li class="navListItem"><a class="navItem" href="/docs/1.3.5/policies-schedule.html">Schedule</a></li><li class="navListItem"><a class="navItem" href="/docs/1.3.5/policies-outdated-data.html">Outdated data</a></li><li class="navListItem"><a class="navItem" href="/docs/1.3.5/policies-different.html">Using different policies</a></li><li class="navListItem"><a class="navItem" href="/docs/1.3.5/sort-jobs.html">Sort Jobs</a></li></ul></div><div class="navGroup"><h3 class="navGroupCategoryTitle">Scripts</h3><ul class=""><li class="navListItem"><a class="navItem" href="/docs/1.3.5/script-intro.html">Scripts</a></li><li class="navListItem"><a class="navItem" href="/docs/1.3.5/script-new.html">Creating a new script</a></li><li class="navListItem"><a class="navItem" href="/docs/1.3.5/script-example.html">Script example</a></li></ul></div><div class="navGroup"><h3 class="navGroupCategoryTitle">Settings</h3><ul class=""><li class="navListItem navListItemActive"><a class="navItem" href="/docs/1.3.5/manage-parameters.html">Manage parameters</a></li><li class="navListItem"><a class="navItem" href="/docs/1.3.5/storages.html">Backup storages</a></li><li class="navListItem"><a class="navItem" href="/docs/1.3.5/storage-nfs.html">NFS storage</a></li><li class="navListItem"><a class="navItem" href="/docs/1.3.5/storage-tahoe.html">Configure Tahoe-LAFS storage</a></li><li class="navListItem"><a class="navItem" href="/docs/1.3.5/backup-mirror.html">Backup mirror</a></li></ul></div><div class="navGroup"><h3 class="navGroupCategoryTitle">A review of concepts</h3><ul class=""><li class="navListItem"><a class="navItem" href="/docs/1.3.5/concepts-rsnapshot.html">Rsnapshot</a></li><li class="navListItem"><a class="navItem" href="/docs/1.3.5/concepts-tahoe.html">Tahoe</a></li></ul></div><div class="navGroup"><h3 class="navGroupCategoryTitle">Troubleshooting</h3><ul class=""><li class="navListItem"><a class="navItem" href="/docs/1.3.5/troubleshooting.html">Troubleshooting</a></li></ul></div></div></section></div><script>
+            var coll = document.getElementsByClassName('collapsible');
+            var checkActiveCategory = true;
+            for (var i = 0; i < coll.length; i++) {
+              var links = coll[i].nextElementSibling.getElementsByTagName('*');
+              if (checkActiveCategory){
+                for (var j = 0; j < links.length; j++) {
+                  if (links[j].classList.contains('navListItemActive')){
+                    coll[i].nextElementSibling.classList.toggle('hide');
+                    coll[i].childNodes[1].classList.toggle('rotate');
+                    checkActiveCategory = false;
+                    break;
+                  }
+                }
+              }
+
+              coll[i].addEventListener('click', function() {
+                var arrow = this.childNodes[1];
+                arrow.classList.toggle('rotate');
+                var content = this.nextElementSibling;
+                content.classList.toggle('hide');
+              });
+            }
+
+            document.addEventListener('DOMContentLoaded', function() {
+              createToggler('#navToggler', '#docsNav', 'docsSliderActive');
+              createToggler('#tocToggler', 'body', 'tocActive');
+
+              var headings = document.querySelector('.toc-headings');
+              headings && headings.addEventListener('click', function(event) {
+                var el = event.target;
+                while(el !== headings){
+                  if (el.tagName === 'A') {
+                    document.body.classList.remove('tocActive');
+                    break;
+                  } else{
+                    el = el.parentNode;
+                  }
+                }
+              }, false);
+
+              function createToggler(togglerSelector, targetSelector, className) {
+                var toggler = document.querySelector(togglerSelector);
+                var target = document.querySelector(targetSelector);
+
+                if (!toggler) {
+                  return;
+                }
+
+                toggler.onclick = function(event) {
+                  event.preventDefault();
+
+                  target.classList.toggle(className);
+                };
+              }
+            });
+        </script></nav></div><div class="container mainContainer docsContainer"><div class="wrapper"><div class="post"><header class="postHeader"><a class="edit-page-link button" href="https://github.com/elkarbackup/elkarbackup-docs/edit/master/docs/manage-parameters.md" target="_blank" rel="noreferrer noopener">Edit</a><h1 id="__docusaurus" class="postHeaderTitle">Manage parameters</h1></header><article><div><span><h2><a class="anchor" aria-hidden="true" id="ssh-keys"></a><a href="#ssh-keys" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>SSH Keys</h2>
+<p>We've already talked about the public key. From here we can download the public key of the server ElkarBackup that previously has been generated from this same site.</p>
+<h2><a class="anchor" aria-hidden="true" id="mysql-server"></a><a href="#mysql-server" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>MySQL Server</h2>
+<p>Here are the parameters to manage the configuration of the MySQL Server. The  backup files that are copied with Rsnapshot are saved to disk, but all other data (client and task data, policies, etc.) are stored in the database.</p>
+<p>The MySQL server can be located on the same ElkarBackup server or on any other server in our network, here is where the location and connection parameters will be configured.</p>
+<h2><a class="anchor" aria-hidden="true" id="messages-via-email"></a><a href="#messages-via-email" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Messages via email</h2>
+<p>If we are interested in receiving alerts by mail, we must decide what  alert levels we want to send and who to send them.</p>
+<p><img src="/docs/assets/screenshots/parameters1.png" alt=""></p>
+<p>By default the alerts will be sent to the owner (we will see this later), and the messages that will be sent will be <em><strong>&quot;Errors and higher&quot;</strong></em>. If we are interested that in addition to the owner alerts are also sent to another email address , we have to select the <em><strong>Email</strong></em> option and add the new address in the text box that is displayed.</p>
+<p><img src="/docs/assets/screenshots/parameters2.png" alt=""></p>
+<p>But the server also needs to be configured to send mail, that is, it needs to know how to send the messages, and for that we have the Mailer parameters.</p>
+<p><img src="/docs/assets/screenshots/parameters3.png" alt=""></p>
+<p>As Elkarbackup is based on the Symfony framework, you can find more information about mailing configuration in the <a href="http://symfony.com/doc/current/email.html">documentation of the symfony project</a>.</p>
+<h2><a class="anchor" aria-hidden="true" id="quota-alerts"></a><a href="#quota-alerts" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Quota Alerts</h2>
+<p>So far we have not talked about quotas, but we can define the disk quota for each client. This can be practical when a client consumes a lot of space and we do not want to harm the other clients that can run out of disk space.</p>
+<p>If we define a maximum in the parameter QUOTA of a client and is exceeded, we will see it highlighted from both the client view and the main view of clients and tasks.</p>
+<p><img src="/docs/assets/screenshots/parameters4.png" alt=""></p>
+<p><img src="/docs/assets/screenshots/parameters5.png" alt=""></p>
+<p>Keep in mind that <em><strong>Elkarbackup will not make copies of the tasks of a client that has exceeded their QUOTA</strong></em>.</p>
+<p>Before this limit is exceeded the system will send us alerts. With this parameter we will define the threshold from which these alerts will be sent, by default when the use reaches 80% of the quota.</p>
+<p><img src="/docs/assets/screenshots/parameters6.png" alt=""></p>
+<h2><a class="anchor" aria-hidden="true" id="other-parameters"></a><a href="#other-parameters" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Other parameters</h2>
+<ul>
+<li>How long will it keep the LOG information before deleting it</li>
+<li>Maximum number of lines per page to display</li>
+<li>Maximum number of parallel jobs that can be executed.</li>
+<li>If Post Job scripts should be executed on Pre Job scripts failure.</li>
+<li>Prefix that the system will use to generate certain URLs if instead of using a DNS resolved name to access the interface (eg [<a href="http://elkarbackup">http://elkarbackup</a>](<a href="http://elkarbackup">http://elkarbackup</a>)) a fixed IP address is used (for example [<a href="http://IP/elkarbackup/app.php/login](http://IP/elkarbackup/app.php/login)">http://IP/elkarbackup/app.php/login](http://IP/elkarbackup/app.php/login)</a>), (in the example <em><strong>/elkarbackup</strong></em>)</li>
+</ul>
+</span></div></article></div><div class="docs-prevnext"><a class="docs-prev button" href="/docs/1.3.5/script-example.html"><span class="arrow-prev">← </span><span>Script example</span></a><a class="docs-next button" href="/docs/1.3.5/storages.html"><span>Backup storages</span><span class="arrow-next"> →</span></a></div></div></div><nav class="onPageNav"><ul class="toc-headings"><li><a href="#ssh-keys">SSH Keys</a></li><li><a href="#mysql-server">MySQL Server</a></li><li><a href="#messages-via-email">Messages via email</a></li><li><a href="#quota-alerts">Quota Alerts</a></li><li><a href="#other-parameters">Other parameters</a></li></ul></nav></div><footer class="nav-footer" id="footer"><section class="sitemap"><a href="/" class="nav-home"></a><div><h5>Documentation</h5><a href="/docs/en/getting-started.html">Getting Started</a><a href="/docs/en/installation.html">Installation</a><a href="/docs/en/troubleshooting.html">Troubleshooting</a></div><div><h5>Community</h5><a href="http://stackoverflow.com/questions/tagged/elkarbackup" target="_blank" rel="noreferrer noopener">Stack Overflow</a><a href="https://crowdin.com/project/elkarbackup">Translate</a><a href="https://twitter.com/elkarbackup/" target="_blank" rel="noreferrer noopener">Twitter</a></div><div><h5>More</h5><a href="https://www.elkarbackup.org">Website</a><a href="https://github.com/elkarbackup/elkarbackup">GitHub</a><a class="github-button" href="https://github.com/elkarbackup/elkarbackup" data-icon="octicon-star" data-count-href="/facebook/docusaurus/stargazers" data-show-count="true" data-count-aria-label="# stargazers on GitHub" aria-label="Star this project on GitHub">Star</a></div></section><section class="copyright">Copyright © 2021 ElkarBackup</section></footer></div><script type="text/javascript" src="https://cdn.jsdelivr.net/docsearch.js/1/docsearch.min.js"></script><script>
+                document.addEventListener('keyup', function(e) {
+                  if (e.target !== document.body) {
+                    return;
+                  }
+                  // keyCode for '/' (slash)
+                  if (e.keyCode === 191) {
+                    const search = document.getElementById('search_input_react');
+                    search && search.focus();
+                  }
+                });
+              </script><script>
+              var search = docsearch({
+                
+                apiKey: '7f2bf4bca0a9b06c05b54d12e953811d',
+                indexName: 'elkarbackup',
+                inputSelector: '#search_input_react'
+              });
+            </script></body></html>

@@ -1,0 +1,113 @@
+<!DOCTYPE html><html lang="en"><head><meta charSet="utf-8"/><meta http-equiv="X-UA-Compatible" content="IE=edge"/><title>NFS storage · Elkarbackup Docs</title><meta name="viewport" content="width=device-width, initial-scale=1.0"/><meta name="generator" content="Docusaurus"/><meta name="description" content="At first it is assumed that if we want to use an NFS disk that we have accessible in our internal network, everything necessary is already ready to be used. In this section we will see very quickly what would be the way to install an NFS server in a debian environment, and how we could publish a resource to be used as a remote disk from other machines. There is a lot of documentation to go deeper into this topic on the Internet."/><meta name="docsearch:version" content="1.3.5"/><meta name="docsearch:language" content="en"/><meta property="og:title" content="NFS storage · Elkarbackup Docs"/><meta property="og:type" content="website"/><meta property="og:url" content="https://docs.elkarbackup.org/index.html"/><meta property="og:description" content="At first it is assumed that if we want to use an NFS disk that we have accessible in our internal network, everything necessary is already ready to be used. In this section we will see very quickly what would be the way to install an NFS server in a debian environment, and how we could publish a resource to be used as a remote disk from other machines. There is a lot of documentation to go deeper into this topic on the Internet."/><meta property="og:image" content="https://docs.elkarbackup.org/img/docusaurus.png"/><meta name="twitter:card" content="summary"/><meta name="twitter:image" content="https://docs.elkarbackup.org/img/docusaurus.png"/><link rel="shortcut icon" href="/undefined"/><link rel="stylesheet" href="https://cdn.jsdelivr.net/docsearch.js/1/docsearch.min.css"/><link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/atom-one-dark.min.css"/><script>
+              (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+              (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+              m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+              })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+              ga('create', 'UA-3914088-13', 'auto');
+              ga('send', 'pageview');
+            </script><script type="text/javascript" src="https://buttons.github.io/buttons.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/docsearch.js@2/dist/cdn/docsearch.min.js"></script><script type="text/javascript" src="/js/elkarbackup.js"></script><script src="/js/scrollSpy.js"></script><link rel="stylesheet" href="/css/main.css"/><script src="/js/codetabs.js"></script></head><body class="sideNavVisible separateOnPageNav"><div class="fixedHeaderContainer"><div class="headerWrapper wrapper"><header><a href="/"><h2 class="headerTitle">Elkarbackup Docs</h2></a><a href="/versions.html"><h3>1.3.5</h3></a><div class="navigationWrapper navigationSlider"><nav class="slidingNav"><ul class="nav-site nav-site-internal"><li class="siteNavGroupActive"><a href="/docs/1.3.5/installation.html" target="_self">Installation</a></li><li class="siteNavGroupActive"><a href="/docs/1.3.5/introduction.html" target="_self">Documentation</a></li><li class="siteNavGroupActive"><a href="/docs/1.3.5/troubleshooting.html" target="_self">Troubleshooting</a></li><li class="navSearchWrapper reactNavSearchWrapper"><input type="text" id="search_input_react" placeholder="Search" title="Search"/></li></ul></nav></div></header></div></div><div class="navPusher"><div class="docMainWrapper wrapper"><div class="docsNavContainer" id="docsNav"><nav class="toc"><div class="toggleNav"><section class="navWrapper wrapper"><div class="navBreadcrumb wrapper"><div class="navToggle" id="navToggler"><div class="hamburger-menu"><div class="line1"></div><div class="line2"></div><div class="line3"></div></div></div><h2><i>›</i><span>Settings</span></h2><div class="tocToggler" id="tocToggler"><i class="icon-toc"></i></div></div><div class="navGroups"><div class="navGroup"><h3 class="navGroupCategoryTitle">Introduction</h3><ul class=""><li class="navListItem"><a class="navItem" href="/docs/1.3.5/introduction.html">What is it?</a></li><li class="navListItem"><a class="navItem" href="/docs/1.3.5/why-elkarbackup.html">Why Elkarbackup?</a></li></ul></div><div class="navGroup"><h3 class="navGroupCategoryTitle">Installation</h3><ul class=""><li class="navListItem"><a class="navItem" href="/docs/1.3.5/installation.html">Installation</a></li><li class="navListItem"><a class="navItem" href="/docs/1.3.5/getting-started.html">Getting started</a></li></ul></div><div class="navGroup"><h3 class="navGroupCategoryTitle">Clients and jobs</h3><ul class=""><li class="navListItem"><a class="navItem" href="/docs/1.3.5/clients-jobs.html">Clients and jobs</a></li><li class="navListItem"><a class="navItem" href="/docs/1.3.5/hosts-linux.html">Linux hosts</a></li><li class="navListItem"><a class="navItem" href="/docs/1.3.5/hosts-windows.html">Windows hosts</a></li><li class="navListItem"><a class="navItem" href="/docs/1.3.5/advanced-connection-options.html">Advanced connection options</a></li><li class="navListItem"><a class="navItem" href="/docs/1.3.5/hosts-solving-problems.html">Solving problems</a></li></ul></div><div class="navGroup"><h3 class="navGroupCategoryTitle">Backup status</h3><ul class=""><li class="navListItem"><a class="navItem" href="/docs/1.3.5/backup-status.html">Backup status</a></li></ul></div><div class="navGroup"><h3 class="navGroupCategoryTitle">Backup policies</h3><ul class=""><li class="navListItem"><a class="navItem" href="/docs/1.3.5/policies-new.html">Adding policies</a></li><li class="navListItem"><a class="navItem" href="/docs/1.3.5/policies-schedule.html">Schedule</a></li><li class="navListItem"><a class="navItem" href="/docs/1.3.5/policies-outdated-data.html">Outdated data</a></li><li class="navListItem"><a class="navItem" href="/docs/1.3.5/policies-different.html">Using different policies</a></li><li class="navListItem"><a class="navItem" href="/docs/1.3.5/sort-jobs.html">Sort Jobs</a></li></ul></div><div class="navGroup"><h3 class="navGroupCategoryTitle">Scripts</h3><ul class=""><li class="navListItem"><a class="navItem" href="/docs/1.3.5/script-intro.html">Scripts</a></li><li class="navListItem"><a class="navItem" href="/docs/1.3.5/script-new.html">Creating a new script</a></li><li class="navListItem"><a class="navItem" href="/docs/1.3.5/script-example.html">Script example</a></li></ul></div><div class="navGroup"><h3 class="navGroupCategoryTitle">Settings</h3><ul class=""><li class="navListItem"><a class="navItem" href="/docs/1.3.5/manage-parameters.html">Manage parameters</a></li><li class="navListItem"><a class="navItem" href="/docs/1.3.5/storages.html">Backup storages</a></li><li class="navListItem navListItemActive"><a class="navItem" href="/docs/1.3.5/storage-nfs.html">NFS storage</a></li><li class="navListItem"><a class="navItem" href="/docs/1.3.5/storage-tahoe.html">Configure Tahoe-LAFS storage</a></li><li class="navListItem"><a class="navItem" href="/docs/1.3.5/backup-mirror.html">Backup mirror</a></li></ul></div><div class="navGroup"><h3 class="navGroupCategoryTitle">A review of concepts</h3><ul class=""><li class="navListItem"><a class="navItem" href="/docs/1.3.5/concepts-rsnapshot.html">Rsnapshot</a></li><li class="navListItem"><a class="navItem" href="/docs/1.3.5/concepts-tahoe.html">Tahoe</a></li></ul></div><div class="navGroup"><h3 class="navGroupCategoryTitle">Troubleshooting</h3><ul class=""><li class="navListItem"><a class="navItem" href="/docs/1.3.5/troubleshooting.html">Troubleshooting</a></li></ul></div></div></section></div><script>
+            var coll = document.getElementsByClassName('collapsible');
+            var checkActiveCategory = true;
+            for (var i = 0; i < coll.length; i++) {
+              var links = coll[i].nextElementSibling.getElementsByTagName('*');
+              if (checkActiveCategory){
+                for (var j = 0; j < links.length; j++) {
+                  if (links[j].classList.contains('navListItemActive')){
+                    coll[i].nextElementSibling.classList.toggle('hide');
+                    coll[i].childNodes[1].classList.toggle('rotate');
+                    checkActiveCategory = false;
+                    break;
+                  }
+                }
+              }
+
+              coll[i].addEventListener('click', function() {
+                var arrow = this.childNodes[1];
+                arrow.classList.toggle('rotate');
+                var content = this.nextElementSibling;
+                content.classList.toggle('hide');
+              });
+            }
+
+            document.addEventListener('DOMContentLoaded', function() {
+              createToggler('#navToggler', '#docsNav', 'docsSliderActive');
+              createToggler('#tocToggler', 'body', 'tocActive');
+
+              var headings = document.querySelector('.toc-headings');
+              headings && headings.addEventListener('click', function(event) {
+                var el = event.target;
+                while(el !== headings){
+                  if (el.tagName === 'A') {
+                    document.body.classList.remove('tocActive');
+                    break;
+                  } else{
+                    el = el.parentNode;
+                  }
+                }
+              }, false);
+
+              function createToggler(togglerSelector, targetSelector, className) {
+                var toggler = document.querySelector(togglerSelector);
+                var target = document.querySelector(targetSelector);
+
+                if (!toggler) {
+                  return;
+                }
+
+                toggler.onclick = function(event) {
+                  event.preventDefault();
+
+                  target.classList.toggle(className);
+                };
+              }
+            });
+        </script></nav></div><div class="container mainContainer docsContainer"><div class="wrapper"><div class="post"><header class="postHeader"><a class="edit-page-link button" href="https://github.com/elkarbackup/elkarbackup-docs/edit/master/docs/configure-storage-nfs.md" target="_blank" rel="noreferrer noopener">Edit</a><h1 id="__docusaurus" class="postHeaderTitle">NFS storage</h1></header><article><div><span><p>At first it is assumed that if we want to use an NFS disk that we have accessible in our internal network, everything necessary is already ready to be used. In this section we will see very quickly what would be the way to install an NFS server in a debian environment, and how we could publish a resource to be used as a remote disk from other machines. There is a lot of documentation to go deeper into this topic on the Internet.</p>
+<p>On the server that will publish the NFS disk, we will install the necessary packages:</p>
+<blockquote>
+<p>root@backupsNFS:~# apt-get install nfs-kernel-server portmap nfs-common</p>
+</blockquote>
+<p>Once this is done, we must decide which will be the local folder to which the other machines are going to access as a remote disk, and we will have to specify the range of IPs to which we allow access. This is specified in the file <strong>/etc/exports</strong></p>
+<p>In our example we have decided that the folder that we are going to publish on this NFS server will be <em><strong>/srv/nfsfolder</strong></em> and access will be allowed to the computers of the network <em><strong>192.168.3.0/24</strong></em>, so we will add this line to the file <em><strong>/etc/exports</strong></em></p>
+<blockquote>
+<p>/srv/nfsfolder  192.168.3.0/24(rw,sync,no_subtree_check)</p>
+</blockquote>
+<p>At this point, we have to restart the service and execute the command exportfs:</p>
+<blockquote>
+<p>root@backupsNFS:~# /etc/init.d/nfs-kernel-server restart</p>
+<p>root@backupsNFS:~# exportfs -a</p>
+</blockquote>
+<p>With this it is assumed that the disk is published and accessible for machines on the 192.168.3.0/24 network. Now we will see how we map it from an NFS client, in our case the elkarbakup server.</p>
+<p>At this point it is worth remembering that if we have not previously installed the autofs package on our ElkarBackup server, now is the time to do it.</p>
+<blockquote>
+<p>root@ElkarBackup:~# apt-get install autofs</p>
+</blockquote>
+<p>We need to make sure that in the <em><strong>/etc/auto.master</strong></em> the line <em><strong>net -host</strong></em> is uncommented. If it was commented, please uncomment it and restart the <em><strong>autofs</strong></em> service.</p>
+<p>Now, it is enough that from our client machine we force access to the folder stored in the NFS server, so that it is mounted in a self-magic way.</p>
+<p>Assuming that the NFS server has IP 192.168.3.100, an <em><strong>ls</strong></em> like the following one would be enough to make the folder accessible from our NFS client:</p>
+<blockquote>
+<p>root@ElkarBackup:~# ls /net/192.168.3.100/srv/nfsfolder/</p>
+</blockquote>
+<p>If the previously seen has worked, that means the necessary software part is working properly. Finally, in order for the Elkarbackup web interface to use the NFS client to correctly manage access to remote disks, we need to edit the <em><strong>/etc/auto.nfs4</strong></em> file and uncomment the line</p>
+<blockquote>
+<p>/nfs4  /etc/auto.nfs4</p>
+</blockquote>
+</span></div></article></div><div class="docs-prevnext"><a class="docs-prev button" href="/docs/1.3.5/storages.html"><span class="arrow-prev">← </span><span>Backup storages</span></a><a class="docs-next button" href="/docs/1.3.5/storage-tahoe.html"><span>Configure Tahoe-LAFS storage</span><span class="arrow-next"> →</span></a></div></div></div><nav class="onPageNav"></nav></div><footer class="nav-footer" id="footer"><section class="sitemap"><a href="/" class="nav-home"></a><div><h5>Documentation</h5><a href="/docs/en/getting-started.html">Getting Started</a><a href="/docs/en/installation.html">Installation</a><a href="/docs/en/troubleshooting.html">Troubleshooting</a></div><div><h5>Community</h5><a href="http://stackoverflow.com/questions/tagged/elkarbackup" target="_blank" rel="noreferrer noopener">Stack Overflow</a><a href="https://crowdin.com/project/elkarbackup">Translate</a><a href="https://twitter.com/elkarbackup/" target="_blank" rel="noreferrer noopener">Twitter</a></div><div><h5>More</h5><a href="https://www.elkarbackup.org">Website</a><a href="https://github.com/elkarbackup/elkarbackup">GitHub</a><a class="github-button" href="https://github.com/elkarbackup/elkarbackup" data-icon="octicon-star" data-count-href="/facebook/docusaurus/stargazers" data-show-count="true" data-count-aria-label="# stargazers on GitHub" aria-label="Star this project on GitHub">Star</a></div></section><section class="copyright">Copyright © 2021 ElkarBackup</section></footer></div><script type="text/javascript" src="https://cdn.jsdelivr.net/docsearch.js/1/docsearch.min.js"></script><script>
+                document.addEventListener('keyup', function(e) {
+                  if (e.target !== document.body) {
+                    return;
+                  }
+                  // keyCode for '/' (slash)
+                  if (e.keyCode === 191) {
+                    const search = document.getElementById('search_input_react');
+                    search && search.focus();
+                  }
+                });
+              </script><script>
+              var search = docsearch({
+                
+                apiKey: '7f2bf4bca0a9b06c05b54d12e953811d',
+                indexName: 'elkarbackup',
+                inputSelector: '#search_input_react'
+              });
+            </script></body></html>
