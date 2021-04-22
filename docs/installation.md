@@ -11,8 +11,6 @@ The Elkarbackup installation has been tested on the next systems:
      3. [Ubuntu 20.04](#ubuntu-2004-lts)
   2. [Docker](#docker)
 
-  <details>
-  <summary>Your favorite Linux distribution is not in the list?</summary>
 
   > You can check the previous [1.3 version](https://github.com/elkarbackup/elkarbackup-docs/installation-1.3.md)
   > Or you can [open an issue](https://github.com/elkarbackup/elkarbackup/issues)
@@ -20,7 +18,7 @@ The Elkarbackup installation has been tested on the next systems:
 
   </details>
 
-  [After the installation](/get-started.html)
+  [After the installation](/getting-started.html)
 
   ***
   
