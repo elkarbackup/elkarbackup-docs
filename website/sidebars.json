@@ -34,12 +34,10 @@
       "manage-parameters",
       "storages",
       "storage-nfs",
-      "storage-tahoe",
       "backup-mirror"
     ],
     "A review of concepts": [
-      "concepts-rsnapshot",
-      "concepts-tahoe"
+      "concepts-rsnapshot"
     ],
     "Troubleshooting": [
       "troubleshooting"

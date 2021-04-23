@@ -6,25 +6,23 @@ title: Installation
 The Elkarbackup installation has been tested on the next systems:
 
   1. GNU/Linux
-     1. [Debian 10 Buster](#debian-10-buster)
-     2. [Debian 9 Stretch](#debian-9-stretch)
+     1. [Debian Buster 10.0](#debian-buster-100)
+     2. [Debian Bullseye 11.0](#debian-bullseye-110)
      3. [Ubuntu 20.04](#ubuntu-2004-lts)
-     4. [Ubuntu 18.04](#ubuntu-1804-lts)
   2. [Docker](#docker)
 
-
-  [After the installation](/docs/getting-started.md)
+  [After the installation](/getting-started.html)
 
   ***
   
   ## Supported Systems
-  
-  ### Debian 10 Buster
+
+  ### Debian Buster (10.0)
 
   #### 1. Install these recommended packages:
 
   ```sh
-  apt install debconf php php-cli rsnapshot apache2 mysql-server php-mysql acl bzip2 php-xml libapache2-mod-php libapache2-mod-php7.0 libssh2-1 mysql-client
+  apt install debconf php php-cli rsnapshot apache2 mariadb-server php-mysql acl bzip2 php-xml libapache2-mod-php libssh2-1 mariadb-client gpg
   ```
   #### 2. Configure MySQL root password:
 
@@ -57,29 +55,36 @@ The Elkarbackup installation has been tested on the next systems:
 
   ***
 
-  ### Debian 9 Stretch
+  ### Debian Bullseye (11.0)
 
-  #### 1. Install these recommended packages:
+  #### 1. Install rsnaphost package from Debian 10 Buster:
+
+  Debian 11 Bullseye won't distribute rsnaphost due to not being actively maintained, 
+  so we must use the package from Debian 10 Buster.: https://bugs.debian.org/cgi-bin/bugreport.cgi?bug=986709
 
   ```sh
-  apt install debconf php php-cli rsnapshot apache2 mysql-server php-mysql acl bzip2 php-xml libapache2-mod-php libapache2-mod-php7.0 libssh2-1 mysql-client
+  wget http://ftp.debian.org/debian/pool/main/r/rsnapshot/rsnapshot_1.4.2-1_all.deb
+  apt-get install rsnapshot_1.4.2-1_all.deb
   ```
-  #### 2. Configure MySQL root password:
+
+  #### 2. Install mariadb-server and configure root password if you want a dedicated local DB server for Elkarbackup:
 
   ```sh
+  apt install mariadb-server
   $ mysql_secure_installation
   ```
 
   #### 3. Add package repository key:
 
   ```sh
+  apt install gpg
   wget -O - http://elkarbackup.org/apt/archive.gpg.key | apt-key add -
   ```
 
   #### 4. Add elkarbackup repositories:
 
   ```sh
-  echo "deb http://elkarbackup.org/apt/debian stretch main" > /etc/apt/sources.list.d/elkarbackup.list
+  echo "deb http://elkarbackup.org/apt/debian bullseye main" > /etc/apt/sources.list.d/elkarbackup.list
   ```
   And update package index files:
       
@@ -90,83 +95,49 @@ The Elkarbackup installation has been tested on the next systems:
   #### 5. Install Elkarbackup:
 
   ```sh
-  apt install elkarbackup rsnapshot
+  apt install elkarbackup
   ```
 
   ***
+
+ 
   
   ### Ubuntu 20.04 LTS
   
   #### 1. Install these recommended packages:
 
   ```sh
-  apt install debconf php php-cli rsnapshot apache2 mysql-server php-mysql acl bzip2 php-xml libapache2-mod-php libapache2-mod-php libssh2-1 mysql-client
+    sudo apt install debconf php php-cli rsnapshot apache2 mysql-server php-mysql acl bzip2 php-xml libapache2-mod-php libssh2-1 gpg
   ```
-  #### 2. Configure MySQL root password:
+  #### 2. Configure MySQL root password and enable access by password:
 
   ```sh
-  $ mysql_secure_installation
-  ```
-
-  #### 3. Add package repository key:
-
-  ```sh
-  wget -O - http://elkarbackup.org/apt/archive.gpg.key | apt-key add -
-  ```
-
-  #### 4. Add elkarbackup repositories:
-
-  ```sh
-  echo "deb http://elkarbackup.org/apt/ubuntu focal main" > /etc/apt/sources.list.d/elkarbackup.list
-  ```
-  And update package index files:
-      
-  ```sh
-  apt update
-  ```
-
-  #### 5. Install Elkarbackup:
-
-  ```sh
-  apt install elkarbackup
-  ```
-
-  ***
-  
-  ### Ubuntu 18.04 LTS
-  
-  #### 1. Install these recommended packages:
-
-  ```sh
-  apt install debconf php php-cli rsnapshot apache2 mysql-server php-mysql acl bzip2 php-xml libapache2-mod-php libapache2-mod-php libssh2-1 mysql-client
-  ```
-  #### 2. Configure MySQL root password:
-
-  ```sh
-  $ mysql_secure_installation
+  sudo mysql_secure_installation
+  echo 'UPDATE user SET plugin="mysql_native_password" WHERE user="root";' | sudo mysql -u root mysql
   ```
 
   #### 3. Add package repository key:
 
   ```sh
-  wget -O - http://elkarbackup.org/apt/archive.gpg.key | apt-key add -
+  wget -O - http://elkarbackup.org/apt/archive.gpg.key | sudo apt-key add -
   ```
 
   #### 4. Add elkarbackup repositories:
 
   ```sh
-  echo "deb http://elkarbackup.org/apt/ubuntu bionic main" > /etc/apt/sources.list.d/elkarbackup.list
+  sudo sh -c 'echo "deb http://elkarbackup.org/apt/ubuntu focal main" > /etc/apt/sources.list.d/elkarbackup.list'
+
   ```
   And update package index files:
       
   ```sh
-  apt update
+  sudo apt update
   ```
 
   #### 5. Install Elkarbackup:
 
   ```sh
-  apt install elkarbackup
+  sudo apt install elkarbackup
   ```
 
   ***

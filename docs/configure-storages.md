@@ -26,8 +26,6 @@ Also we can define the maximum number of parallel backup jobs that could be exec
 
 It is important to remember that the elkarbackup user of our Debian server must have write permissions to every location that has been defined.
 
-If Tahoe-LAFS is installed on the machine, we can enable secondary storage. Remember that it is necessary to configure Tahoe to work.
-
 
 
 
