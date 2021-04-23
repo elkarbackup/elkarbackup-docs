@@ -44,7 +44,7 @@ function Versions(props) {
                   </a>
                 </td>
                 <td>
-                <a href={`${repoUrl}/releases/tag/v${latestVersion}`}>Release Notes</a>
+                <a href={`${repoUrl}/blob/master/CHANGELOG.md#${latestVersion.replace(/\./g, "")}`}>Release Notes</a>
                 </td>
               </tr>
             </tbody>
@@ -95,7 +95,7 @@ function Versions(props) {
                         </a>
                       </td>
                       <td>
-                        <a href={`${repoUrl}/releases/tag/v${version}`}>
+                        <a href={`${repoUrl}/blob/master/CHANGELOG.md#${version.replace(/\./g, "")}`}>
                           Release Notes
                         </a>
                       </td>
