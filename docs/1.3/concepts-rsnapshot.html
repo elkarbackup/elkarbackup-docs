@@ -1,0 +1,132 @@
+<!DOCTYPE html><html lang="en"><head><meta charSet="utf-8"/><meta http-equiv="X-UA-Compatible" content="IE=edge"/><title>A review of concepts: Rsnapshot · Elkarbackup Docs</title><meta name="viewport" content="width=device-width, initial-scale=1.0"/><meta name="generator" content="Docusaurus"/><meta name="description" content="As mentioned earlier, ElkarBackup is a tool based on other free tools, especially in rsnyc and rsnapshot, and since most of its logic responds to rsnapshot logic, it is worth stopping to analyze its behavior."/><meta name="docsearch:version" content="1.3"/><meta name="docsearch:language" content="en"/><meta property="og:title" content="A review of concepts: Rsnapshot · Elkarbackup Docs"/><meta property="og:type" content="website"/><meta property="og:url" content="https://docs.elkarbackup.org/index.html"/><meta property="og:description" content="As mentioned earlier, ElkarBackup is a tool based on other free tools, especially in rsnyc and rsnapshot, and since most of its logic responds to rsnapshot logic, it is worth stopping to analyze its behavior."/><meta property="og:image" content="https://docs.elkarbackup.org/img/docusaurus.png"/><meta name="twitter:card" content="summary"/><meta name="twitter:image" content="https://docs.elkarbackup.org/img/docusaurus.png"/><link rel="shortcut icon" href="/undefined"/><link rel="stylesheet" href="https://cdn.jsdelivr.net/docsearch.js/1/docsearch.min.css"/><link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/atom-one-dark.min.css"/><script>
+              (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+              (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+              m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+              })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+              ga('create', 'UA-3914088-13', 'auto');
+              ga('send', 'pageview');
+            </script><script type="text/javascript" src="https://buttons.github.io/buttons.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/docsearch.js@2/dist/cdn/docsearch.min.js"></script><script type="text/javascript" src="/js/elkarbackup.js"></script><script src="/js/scrollSpy.js"></script><link rel="stylesheet" href="/css/main.css"/><script src="/js/codetabs.js"></script></head><body class="sideNavVisible separateOnPageNav"><div class="fixedHeaderContainer"><div class="headerWrapper wrapper"><header><a href="/"><h2 class="headerTitle">Elkarbackup Docs</h2></a><a href="/versions.html"><h3>1.3</h3></a><div class="navigationWrapper navigationSlider"><nav class="slidingNav"><ul class="nav-site nav-site-internal"><li class="siteNavGroupActive"><a href="/docs/1.3/installation.html" target="_self">Installation</a></li><li class="siteNavGroupActive"><a href="/docs/1.3/introduction.html" target="_self">Documentation</a></li><li class="siteNavGroupActive"><a href="/docs/1.3/troubleshooting.html" target="_self">Troubleshooting</a></li><li class="navSearchWrapper reactNavSearchWrapper"><input type="text" id="search_input_react" placeholder="Search" title="Search"/></li></ul></nav></div></header></div></div><div class="navPusher"><div class="docMainWrapper wrapper"><div class="docsNavContainer" id="docsNav"><nav class="toc"><div class="toggleNav"><section class="navWrapper wrapper"><div class="navBreadcrumb wrapper"><div class="navToggle" id="navToggler"><div class="hamburger-menu"><div class="line1"></div><div class="line2"></div><div class="line3"></div></div></div><h2><i>›</i><span>A review of concepts</span></h2><div class="tocToggler" id="tocToggler"><i class="icon-toc"></i></div></div><div class="navGroups"><div class="navGroup"><h3 class="navGroupCategoryTitle">Introduction</h3><ul class=""><li class="navListItem"><a class="navItem" href="/docs/1.3/introduction.html">What is it?</a></li><li class="navListItem"><a class="navItem" href="/docs/1.3/why-elkarbackup.html">Why Elkarbackup?</a></li></ul></div><div class="navGroup"><h3 class="navGroupCategoryTitle">Installation</h3><ul class=""><li class="navListItem"><a class="navItem" href="/docs/1.3/installation.html">Installation</a></li><li class="navListItem"><a class="navItem" href="/docs/1.3/getting-started.html">Getting started</a></li></ul></div><div class="navGroup"><h3 class="navGroupCategoryTitle">Clients and jobs</h3><ul class=""><li class="navListItem"><a class="navItem" href="/docs/1.3/clients-jobs.html">Clients and jobs</a></li><li class="navListItem"><a class="navItem" href="/docs/1.3/hosts-linux.html">Linux hosts</a></li><li class="navListItem"><a class="navItem" href="/docs/1.3/hosts-windows.html">Windows hosts</a></li><li class="navListItem"><a class="navItem" href="/docs/1.3/advanced-connection-options.html">Advanced connection options</a></li><li class="navListItem"><a class="navItem" href="/docs/1.3/hosts-solving-problems.html">Solving problems</a></li></ul></div><div class="navGroup"><h3 class="navGroupCategoryTitle">Backup status</h3><ul class=""><li class="navListItem"><a class="navItem" href="/docs/1.3/backup-status.html">Backup status</a></li></ul></div><div class="navGroup"><h3 class="navGroupCategoryTitle">Backup policies</h3><ul class=""><li class="navListItem"><a class="navItem" href="/docs/1.3/policies-new.html">Adding policies</a></li><li class="navListItem"><a class="navItem" href="/docs/1.3/policies-schedule.html">Schedule</a></li><li class="navListItem"><a class="navItem" href="/docs/1.3/policies-outdated-data.html">Outdated data</a></li><li class="navListItem"><a class="navItem" href="/docs/1.3/policies-different.html">Using different policies</a></li><li class="navListItem"><a class="navItem" href="/docs/1.3/sort-jobs.html">Sort Jobs</a></li></ul></div><div class="navGroup"><h3 class="navGroupCategoryTitle">Scripts</h3><ul class=""><li class="navListItem"><a class="navItem" href="/docs/1.3/script-intro.html">Scripts</a></li><li class="navListItem"><a class="navItem" href="/docs/1.3/script-new.html">Creating a new script</a></li><li class="navListItem"><a class="navItem" href="/docs/1.3/script-example.html">Script example</a></li></ul></div><div class="navGroup"><h3 class="navGroupCategoryTitle">Settings</h3><ul class=""><li class="navListItem"><a class="navItem" href="/docs/1.3/manage-parameters.html">Manage parameters</a></li><li class="navListItem"><a class="navItem" href="/docs/1.3/storages.html">Backup storages</a></li><li class="navListItem"><a class="navItem" href="/docs/1.3/storage-nfs.html">NFS storage</a></li><li class="navListItem"><a class="navItem" href="/docs/1.3/storage-tahoe.html">Configure Tahoe-LAFS storage</a></li><li class="navListItem"><a class="navItem" href="/docs/1.3/backup-mirror.html">Backup mirror</a></li></ul></div><div class="navGroup"><h3 class="navGroupCategoryTitle">A review of concepts</h3><ul class=""><li class="navListItem navListItemActive"><a class="navItem" href="/docs/1.3/concepts-rsnapshot.html">Rsnapshot</a></li><li class="navListItem"><a class="navItem" href="/docs/1.3/concepts-tahoe.html">Tahoe</a></li></ul></div><div class="navGroup"><h3 class="navGroupCategoryTitle">Troubleshooting</h3><ul class=""><li class="navListItem"><a class="navItem" href="/docs/1.3/troubleshooting.html">Troubleshooting</a></li></ul></div></div></section></div><script>
+            var coll = document.getElementsByClassName('collapsible');
+            var checkActiveCategory = true;
+            for (var i = 0; i < coll.length; i++) {
+              var links = coll[i].nextElementSibling.getElementsByTagName('*');
+              if (checkActiveCategory){
+                for (var j = 0; j < links.length; j++) {
+                  if (links[j].classList.contains('navListItemActive')){
+                    coll[i].nextElementSibling.classList.toggle('hide');
+                    coll[i].childNodes[1].classList.toggle('rotate');
+                    checkActiveCategory = false;
+                    break;
+                  }
+                }
+              }
+
+              coll[i].addEventListener('click', function() {
+                var arrow = this.childNodes[1];
+                arrow.classList.toggle('rotate');
+                var content = this.nextElementSibling;
+                content.classList.toggle('hide');
+              });
+            }
+
+            document.addEventListener('DOMContentLoaded', function() {
+              createToggler('#navToggler', '#docsNav', 'docsSliderActive');
+              createToggler('#tocToggler', 'body', 'tocActive');
+
+              var headings = document.querySelector('.toc-headings');
+              headings && headings.addEventListener('click', function(event) {
+                var el = event.target;
+                while(el !== headings){
+                  if (el.tagName === 'A') {
+                    document.body.classList.remove('tocActive');
+                    break;
+                  } else{
+                    el = el.parentNode;
+                  }
+                }
+              }, false);
+
+              function createToggler(togglerSelector, targetSelector, className) {
+                var toggler = document.querySelector(togglerSelector);
+                var target = document.querySelector(targetSelector);
+
+                if (!toggler) {
+                  return;
+                }
+
+                toggler.onclick = function(event) {
+                  event.preventDefault();
+
+                  target.classList.toggle(className);
+                };
+              }
+            });
+        </script></nav></div><div class="container mainContainer docsContainer"><div class="wrapper"><div class="post"><header class="postHeader"><a class="edit-page-link button" href="https://github.com/elkarbackup/elkarbackup-docs/edit/master/docs/concepts-rsnapshot.md" target="_blank" rel="noreferrer noopener">Edit</a><h1 id="__docusaurus" class="postHeaderTitle">A review of concepts: Rsnapshot</h1></header><article><div><span><p>As mentioned earlier, ElkarBackup is a tool based on other free tools, especially in rsnyc and rsnapshot, and since most of its logic responds to rsnapshot logic, it is worth stopping to analyze its behavior.</p>
+<p>Rsnapshot is based on the following concepts:</p>
+<ul>
+<li>Origin of the data to copy: Where does he have to copy the data from?</li>
+<li>Frequency: How often does he have to copy? At certain times during the day, once a day the days that interest us, once a week, and once a month on the day we decide, ....</li>
+<li>Rotation: How many copies do you have to maintain at each of the frequencies mentioned above? That is, perhaps it is enough to keep the last 4 copies made during the day, but perhaps we want to keep the end-of-month copies for two years.</li>
+</ul>
+<p>Next we will try to explain its operation</p>
+<h2><a class="anchor" aria-hidden="true" id="frequency"></a><a href="#frequency" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Frequency</h2>
+<p>You have to define how often you have to make the copies, and these are the options:</p>
+<ul>
+<li>During the day (Hourly): We define the copies that the system will make at different times of the day. The system names them as Hourly.0, Hourly.1, Hourly.2 .....</li>
+<li>Daily (Daily): We will define the copies that the system will make each day of the week, specifying on which specific days and at what time it will do them. The system names them as Daily.0, Daily.1, Daily.2 .....</li>
+<li>Weekly: We will define the copies that the system will make once a week, specifying on which day of the week (only one) and at what time it will do them. The system names them as Weekly.0, Weekly.1, Weekly.2 .....</li>
+<li>Monthly: We will define the copies that the system will make once a month, specifying the day of the month and the time. The system names them as Monthly.0, Monthly.1, Monthly.2 .....</li>
+</ul>
+<p>When I say that <em><strong>&quot;the system will make&quot;</strong></em>, I am not telling the whole truth. Sometimes it will make the copies and others it will rotate the copies previously made. We will see this shortly when explaining the rotation.</p>
+<h2><a class="anchor" aria-hidden="true" id="retention"></a><a href="#retention" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Retention</h2>
+<p>With retention we are going to specify how many folders will have to save the system of each frequency. For example:</p>
+<ul>
+<li>If we put a retention of 4 on copies made during the day (Hourly), that means that the system will keep the last 4 copies in the folders Hourly.0, Hourly.1, Hourly.2 and Hourly.3, where Hourly.0 will be the newest and Hourly.3 the oldest.</li>
+<li>If we put a retention of 5 on the copies made once a day (Daily), that means the system will keep the last 5 copies in the Daily.0, Daily.1, Daily.2, Daily.3 and Daily.4 folders, where Daily.0 will be the newest and Daily.4 the oldest.</li>
+<li>The same logic applies to the retentions applied to Weekly and Monthly copies.</li>
+</ul>
+<h2><a class="anchor" aria-hidden="true" id="rotation"></a><a href="#rotation" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Rotation</h2>
+<p>This is not complicated, but you have to understand it well. In defining frequency, we are also setting different levels of copy, specifying in some way that Weekly precedes Monthly, Daily precedes Weekly, and Hourly precedes Daily. There is no level that precedes Hourly.</p>
+<p><img src="/docs/assets/screenshots/rotation.png" alt=""></p>
+<p>We can have different copy policies, but for the example imagine that our programming is composed as follows:</p>
+<ul>
+<li>Hourly copies at 11:00, 14:00 and 16:00, with a retention of 3</li>
+<li>Daily copies from Monday through Friday at 9:00 PM, with a retention of 10</li>
+<li>Weekly copies on Saturdays at 9pm, with a retention of 5</li>
+<li>Monthly copies on the 1st of each month at 9:00 PM, with a retention of 24</li>
+</ul>
+<p>In this case the copies are made as follows:</p>
+<ul>
+<li>When the hour arrives to execute the <em><strong>Hourly</strong></em> copy first of all it deletes the last one (<em><strong>Hourly.2</strong></em>), and next it changes the name of the rest of folders. <em><strong>Hourly.1 → Hourly.2</strong></em> and <em><strong>Hourly.0 → Hourly.1</strong></em>. Then it makes the new copy in the <em><strong>Hourly.0</strong></em> folder.</li>
+<li>When the hour arrives to execute the <em><strong>Daily</strong></em> copy first of all it deletes the last one (<em><strong>Daily.9</strong></em>), and next it changes the name of the rest of folders. <em><strong>Daily.8 → Daily.9,</strong></em> <em>**Daily.7 → Daily.8, ..., Daily.0 → Daily.1 **</em>. The difference comes now, in this case the system <em><strong>will not make a new copy to create the Daily.0</strong></em>, it will be generated by <em><strong>a rotation of the last copy of the previous level: Hourly.2 → Daily.0</strong></em></li>
+<li>When the hour arrives to execute the <em><strong>Weekly</strong></em> copy first of all it deletes the last one (<em><strong>Weekly.4</strong></em>), and next it changes the name of the rest of folders. <em><strong>Weekly.3 → Weekly.4,</strong></em> <em>**Weekly.2 → Weekly.3, ..., Weekly.0 → Weekly.1 **</em>. <em><strong>Neither in this case will a new copy be made</strong></em> to create the Weekly.0, it will be generated by a rotation of the last copy of the previous level: <em><strong>Daily.9 → Weekly.0</strong></em></li>
+<li>When the hour arrives to execute the <em><strong>Monthly</strong></em> copy first of all it deletes the last one (<em><strong>Monthly.23</strong></em>), and next it changes the name of the rest of folders. <em><strong>Monthly.22 → Monthly.23,</strong></em> <em>**Monthly.21 → Monthly.22, ..., Monthly.0 → Monthly.1 **</em>. <em><strong>Neither in this case will a new copy be made</strong></em> to create the Monthly.0, it will be generated by a rotation of the last copy of the previous level: <em><strong>Weekly.9 → Monthly.0</strong></em></li>
+</ul>
+<p>Here's what to understand: <em><strong>The rotation will only move the last copy of the previous level</strong></em>, it will never move any other folder.</p>
+<p>That is to say:</p>
+<ul>
+<li>If the Hourly retention is 3, Daily rotation will only move the Hourly.2, never the rest.</li>
+<li>If the Hourly retention is 2, the Daily rotation will only move the Hourly.1, never the Hourly.0</li>
+</ul>
+<p>In this logic there is a condition that we must have clear; Never touching the folders that end in .0, and for this reason <em><strong>the retention can not be 1 when in policies there are higher levels</strong></em>, the Daily will never touch the Hourly.0, and the Weekly will not touch the Daily.0 either.</p>
+<p>It is important to understand this, since it is the logic that will be used below when we define the policies from the web interface.</p>
+</span></div></article></div><div class="docs-prevnext"><a class="docs-prev button" href="/docs/1.3/backup-mirror.html"><span class="arrow-prev">← </span><span>Backup mirror</span></a><a class="docs-next button" href="/docs/1.3/concepts-tahoe.html"><span>Next</span><span class="arrow-next"> →</span></a></div></div></div><nav class="onPageNav"><ul class="toc-headings"><li><a href="#frequency">Frequency</a></li><li><a href="#retention">Retention</a></li><li><a href="#rotation">Rotation</a></li></ul></nav></div><footer class="nav-footer" id="footer"><section class="sitemap"><a href="/" class="nav-home"></a><div><h5>Documentation</h5><a href="/docs/en/getting-started.html">Getting Started</a><a href="/docs/en/installation.html">Installation</a><a href="/docs/en/troubleshooting.html">Troubleshooting</a></div><div><h5>Community</h5><a href="http://stackoverflow.com/questions/tagged/elkarbackup" target="_blank" rel="noreferrer noopener">Stack Overflow</a><a href="https://crowdin.com/project/elkarbackup">Translate</a><a href="https://twitter.com/elkarbackup/" target="_blank" rel="noreferrer noopener">Twitter</a></div><div><h5>More</h5><a href="https://www.elkarbackup.org">Website</a><a href="https://github.com/elkarbackup/elkarbackup">GitHub</a><a class="github-button" href="https://github.com/elkarbackup/elkarbackup" data-icon="octicon-star" data-count-href="/facebook/docusaurus/stargazers" data-show-count="true" data-count-aria-label="# stargazers on GitHub" aria-label="Star this project on GitHub">Star</a></div></section><section class="copyright">Copyright © 2021 ElkarBackup</section></footer></div><script type="text/javascript" src="https://cdn.jsdelivr.net/docsearch.js/1/docsearch.min.js"></script><script>
+                document.addEventListener('keyup', function(e) {
+                  if (e.target !== document.body) {
+                    return;
+                  }
+                  // keyCode for '/' (slash)
+                  if (e.keyCode === 191) {
+                    const search = document.getElementById('search_input_react');
+                    search && search.focus();
+                  }
+                });
+              </script><script>
+              var search = docsearch({
+                
+                apiKey: '7f2bf4bca0a9b06c05b54d12e953811d',
+                indexName: 'elkarbackup',
+                inputSelector: '#search_input_react'
+              });
+            </script></body></html>

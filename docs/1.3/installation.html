@@ -1,0 +1,283 @@
+<!DOCTYPE html><html lang="en"><head><meta charSet="utf-8"/><meta http-equiv="X-UA-Compatible" content="IE=edge"/><title>Installation · Elkarbackup Docs</title><meta name="viewport" content="width=device-width, initial-scale=1.0"/><meta name="generator" content="Docusaurus"/><meta name="description" content="Elkarbackup v1.3 installation has been tested on the next systems:"/><meta name="docsearch:version" content="1.3"/><meta name="docsearch:language" content="en"/><meta property="og:title" content="Installation · Elkarbackup Docs"/><meta property="og:type" content="website"/><meta property="og:url" content="https://docs.elkarbackup.org/index.html"/><meta property="og:description" content="Elkarbackup v1.3 installation has been tested on the next systems:"/><meta property="og:image" content="https://docs.elkarbackup.org/img/docusaurus.png"/><meta name="twitter:card" content="summary"/><meta name="twitter:image" content="https://docs.elkarbackup.org/img/docusaurus.png"/><link rel="shortcut icon" href="/undefined"/><link rel="stylesheet" href="https://cdn.jsdelivr.net/docsearch.js/1/docsearch.min.css"/><link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/atom-one-dark.min.css"/><script>
+              (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+              (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+              m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+              })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+              ga('create', 'UA-3914088-13', 'auto');
+              ga('send', 'pageview');
+            </script><script type="text/javascript" src="https://buttons.github.io/buttons.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/docsearch.js@2/dist/cdn/docsearch.min.js"></script><script type="text/javascript" src="/js/elkarbackup.js"></script><script src="/js/scrollSpy.js"></script><link rel="stylesheet" href="/css/main.css"/><script src="/js/codetabs.js"></script></head><body class="sideNavVisible separateOnPageNav"><div class="fixedHeaderContainer"><div class="headerWrapper wrapper"><header><a href="/"><h2 class="headerTitle">Elkarbackup Docs</h2></a><a href="/versions.html"><h3>1.3</h3></a><div class="navigationWrapper navigationSlider"><nav class="slidingNav"><ul class="nav-site nav-site-internal"><li class="siteNavGroupActive siteNavItemActive"><a href="/docs/1.3/installation.html" target="_self">Installation</a></li><li class="siteNavGroupActive"><a href="/docs/1.3/introduction.html" target="_self">Documentation</a></li><li class="siteNavGroupActive"><a href="/docs/1.3/troubleshooting.html" target="_self">Troubleshooting</a></li><li class="navSearchWrapper reactNavSearchWrapper"><input type="text" id="search_input_react" placeholder="Search" title="Search"/></li></ul></nav></div></header></div></div><div class="navPusher"><div class="docMainWrapper wrapper"><div class="docsNavContainer" id="docsNav"><nav class="toc"><div class="toggleNav"><section class="navWrapper wrapper"><div class="navBreadcrumb wrapper"><div class="navToggle" id="navToggler"><div class="hamburger-menu"><div class="line1"></div><div class="line2"></div><div class="line3"></div></div></div><h2><i>›</i><span>Installation</span></h2><div class="tocToggler" id="tocToggler"><i class="icon-toc"></i></div></div><div class="navGroups"><div class="navGroup"><h3 class="navGroupCategoryTitle">Introduction</h3><ul class=""><li class="navListItem"><a class="navItem" href="/docs/1.3/introduction.html">What is it?</a></li><li class="navListItem"><a class="navItem" href="/docs/1.3/why-elkarbackup.html">Why Elkarbackup?</a></li></ul></div><div class="navGroup"><h3 class="navGroupCategoryTitle">Installation</h3><ul class=""><li class="navListItem navListItemActive"><a class="navItem" href="/docs/1.3/installation.html">Installation</a></li><li class="navListItem"><a class="navItem" href="/docs/1.3/getting-started.html">Getting started</a></li></ul></div><div class="navGroup"><h3 class="navGroupCategoryTitle">Clients and jobs</h3><ul class=""><li class="navListItem"><a class="navItem" href="/docs/1.3/clients-jobs.html">Clients and jobs</a></li><li class="navListItem"><a class="navItem" href="/docs/1.3/hosts-linux.html">Linux hosts</a></li><li class="navListItem"><a class="navItem" href="/docs/1.3/hosts-windows.html">Windows hosts</a></li><li class="navListItem"><a class="navItem" href="/docs/1.3/advanced-connection-options.html">Advanced connection options</a></li><li class="navListItem"><a class="navItem" href="/docs/1.3/hosts-solving-problems.html">Solving problems</a></li></ul></div><div class="navGroup"><h3 class="navGroupCategoryTitle">Backup status</h3><ul class=""><li class="navListItem"><a class="navItem" href="/docs/1.3/backup-status.html">Backup status</a></li></ul></div><div class="navGroup"><h3 class="navGroupCategoryTitle">Backup policies</h3><ul class=""><li class="navListItem"><a class="navItem" href="/docs/1.3/policies-new.html">Adding policies</a></li><li class="navListItem"><a class="navItem" href="/docs/1.3/policies-schedule.html">Schedule</a></li><li class="navListItem"><a class="navItem" href="/docs/1.3/policies-outdated-data.html">Outdated data</a></li><li class="navListItem"><a class="navItem" href="/docs/1.3/policies-different.html">Using different policies</a></li><li class="navListItem"><a class="navItem" href="/docs/1.3/sort-jobs.html">Sort Jobs</a></li></ul></div><div class="navGroup"><h3 class="navGroupCategoryTitle">Scripts</h3><ul class=""><li class="navListItem"><a class="navItem" href="/docs/1.3/script-intro.html">Scripts</a></li><li class="navListItem"><a class="navItem" href="/docs/1.3/script-new.html">Creating a new script</a></li><li class="navListItem"><a class="navItem" href="/docs/1.3/script-example.html">Script example</a></li></ul></div><div class="navGroup"><h3 class="navGroupCategoryTitle">Settings</h3><ul class=""><li class="navListItem"><a class="navItem" href="/docs/1.3/manage-parameters.html">Manage parameters</a></li><li class="navListItem"><a class="navItem" href="/docs/1.3/storages.html">Backup storages</a></li><li class="navListItem"><a class="navItem" href="/docs/1.3/storage-nfs.html">NFS storage</a></li><li class="navListItem"><a class="navItem" href="/docs/1.3/storage-tahoe.html">Configure Tahoe-LAFS storage</a></li><li class="navListItem"><a class="navItem" href="/docs/1.3/backup-mirror.html">Backup mirror</a></li></ul></div><div class="navGroup"><h3 class="navGroupCategoryTitle">A review of concepts</h3><ul class=""><li class="navListItem"><a class="navItem" href="/docs/1.3/concepts-rsnapshot.html">Rsnapshot</a></li><li class="navListItem"><a class="navItem" href="/docs/1.3/concepts-tahoe.html">Tahoe</a></li></ul></div><div class="navGroup"><h3 class="navGroupCategoryTitle">Troubleshooting</h3><ul class=""><li class="navListItem"><a class="navItem" href="/docs/1.3/troubleshooting.html">Troubleshooting</a></li></ul></div></div></section></div><script>
+            var coll = document.getElementsByClassName('collapsible');
+            var checkActiveCategory = true;
+            for (var i = 0; i < coll.length; i++) {
+              var links = coll[i].nextElementSibling.getElementsByTagName('*');
+              if (checkActiveCategory){
+                for (var j = 0; j < links.length; j++) {
+                  if (links[j].classList.contains('navListItemActive')){
+                    coll[i].nextElementSibling.classList.toggle('hide');
+                    coll[i].childNodes[1].classList.toggle('rotate');
+                    checkActiveCategory = false;
+                    break;
+                  }
+                }
+              }
+
+              coll[i].addEventListener('click', function() {
+                var arrow = this.childNodes[1];
+                arrow.classList.toggle('rotate');
+                var content = this.nextElementSibling;
+                content.classList.toggle('hide');
+              });
+            }
+
+            document.addEventListener('DOMContentLoaded', function() {
+              createToggler('#navToggler', '#docsNav', 'docsSliderActive');
+              createToggler('#tocToggler', 'body', 'tocActive');
+
+              var headings = document.querySelector('.toc-headings');
+              headings && headings.addEventListener('click', function(event) {
+                var el = event.target;
+                while(el !== headings){
+                  if (el.tagName === 'A') {
+                    document.body.classList.remove('tocActive');
+                    break;
+                  } else{
+                    el = el.parentNode;
+                  }
+                }
+              }, false);
+
+              function createToggler(togglerSelector, targetSelector, className) {
+                var toggler = document.querySelector(togglerSelector);
+                var target = document.querySelector(targetSelector);
+
+                if (!toggler) {
+                  return;
+                }
+
+                toggler.onclick = function(event) {
+                  event.preventDefault();
+
+                  target.classList.toggle(className);
+                };
+              }
+            });
+        </script></nav></div><div class="container mainContainer docsContainer"><div class="wrapper"><div class="post"><header class="postHeader"><a class="edit-page-link button" href="https://github.com/elkarbackup/elkarbackup-docs/edit/master/docs/installation.md" target="_blank" rel="noreferrer noopener">Edit</a><h1 id="__docusaurus" class="postHeaderTitle">Installation</h1></header><article><div><span><p>Elkarbackup v1.3 installation has been tested on the next systems:</p>
+<ol>
+<li>GNU/Linux
+<ol>
+<li><a href="#debian-stretch-90">Debian Stretch 9.0</a></li>
+<li><a href="#debian-jessie-80">Debian Jessie 8.0</a></li>
+<li><a href="#debian-wheezy-70">Debian Wheezy 7.0</a></li>
+<li><a href="#ubuntu-1804-lts">Ubuntu 18.04</a></li>
+<li><a href="#ubuntu-1604-lts">Ubuntu 16.04</a></li>
+<li><a href="#ubuntu-1404-lts">Ubuntu 14.04</a></li>
+</ol></li>
+<li><a href="#docker">Docker</a></li>
+</ol>
+<p><details>
+<summary>Your favorite Linux distribution is not in the list?</summary></p>
+<blockquote>
+<p>You can <a href="https://github.com/elkarbackup/elkarbackup/issues">open an issue</a>
+requesting it!</p>
+</blockquote>
+<p></details></p>
+<p><a href="/get-started.html">After the installation</a></p>
+<hr>
+<h2><a class="anchor" aria-hidden="true" id="supported-systems"></a><a href="#supported-systems" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Supported Systems</h2>
+<h3><a class="anchor" aria-hidden="true" id="debian-stretch-90"></a><a href="#debian-stretch-90" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Debian Stretch (9.0)</h3>
+<h4><a class="anchor" aria-hidden="true" id="1-install-these-recommended-packages"></a><a href="#1-install-these-recommended-packages" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>1. Install these recommended packages:</h4>
+<pre><code class="hljs css language-sh">apt install debconf php php-cli rsnapshot apache2 mysql-server php-mysql acl bzip2 php-xml libapache2-mod-php libapache2-mod-php7.0 libssh2-1 mysql-client
+</code></pre>
+<h4><a class="anchor" aria-hidden="true" id="2-configure-mysql-root-password"></a><a href="#2-configure-mysql-root-password" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>2. Configure MySQL root password:</h4>
+<pre><code class="hljs css language-sh">$ mysql_secure_installation
+</code></pre>
+<h4><a class="anchor" aria-hidden="true" id="3-add-package-repository-key"></a><a href="#3-add-package-repository-key" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>3. Add package repository key:</h4>
+<pre><code class="hljs css language-sh">wget -O - http://elkarbackup.org/apt/archive.gpg.key | apt-key add -
+</code></pre>
+<h4><a class="anchor" aria-hidden="true" id="4-add-elkarbackup-repositories"></a><a href="#4-add-elkarbackup-repositories" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>4. Add elkarbackup repositories:</h4>
+<pre><code class="hljs css language-sh"><span class="hljs-built_in">echo</span> <span class="hljs-string">"deb http://elkarbackup.org/apt/debian stretch main"</span> &gt; /etc/apt/sources.list.d/elkarbackup.list
+</code></pre>
+<p>And update package index files:</p>
+<pre><code class="hljs css language-sh">apt update
+</code></pre>
+<h4><a class="anchor" aria-hidden="true" id="5-install-elkarbackup"></a><a href="#5-install-elkarbackup" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>5. Install Elkarbackup:</h4>
+<pre><code class="hljs css language-sh">apt install elkarbackup rsnapshot
+</code></pre>
+<hr>
+<h3><a class="anchor" aria-hidden="true" id="debian-jessie-80"></a><a href="#debian-jessie-80" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Debian Jessie (8.0)</h3>
+<h4><a class="anchor" aria-hidden="true" id="1-install-these-recommended-packages-1"></a><a href="#1-install-these-recommended-packages-1" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>1. Install these recommended packages:</h4>
+<pre><code class="hljs css language-sh">apt install debconf php5 php5-cli rsnapshot mysql-server php5-mysql acl bzip2
+</code></pre>
+<p>Note: remember MySQL admin password!</p>
+<h4><a class="anchor" aria-hidden="true" id="2-add-package-repository-key"></a><a href="#2-add-package-repository-key" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>2. Add package repository key:</h4>
+<pre><code class="hljs css language-sh">wget -O - http://elkarbackup.org/apt/archive.gpg.key | apt-key add -
+</code></pre>
+<h4><a class="anchor" aria-hidden="true" id="3-add-elkarbackup-repositories"></a><a href="#3-add-elkarbackup-repositories" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>3. Add elkarbackup repositories:</h4>
+<pre><code class="hljs css language-sh"><span class="hljs-built_in">echo</span> <span class="hljs-string">"deb http://elkarbackup.org/apt/debian jessie main"</span> &gt; /etc/apt/sources.list.d/elkarbackup.list
+</code></pre>
+<p>And update package index files:</p>
+<pre><code class="hljs css language-sh">apt update
+</code></pre>
+<h4><a class="anchor" aria-hidden="true" id="4-install-elkarbackup"></a><a href="#4-install-elkarbackup" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>4. Install Elkarbackup:</h4>
+<pre><code class="hljs css language-sh">apt install elkarbackup rsnapshot
+</code></pre>
+<hr>
+<h3><a class="anchor" aria-hidden="true" id="debian-wheezy-70"></a><a href="#debian-wheezy-70" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Debian Wheezy (7.0)</h3>
+<h4><a class="anchor" aria-hidden="true" id="1-install-these-recommended-packages-2"></a><a href="#1-install-these-recommended-packages-2" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>1. Install these recommended packages:</h4>
+<pre><code class="hljs css language-sh">apt-get install debconf php5 php5-cli rsnapshot mysql-server php5-mysql acl bzip2
+</code></pre>
+<p>Note: remember MySQL admin password!</p>
+<h4><a class="anchor" aria-hidden="true" id="2-add-package-repository-key-1"></a><a href="#2-add-package-repository-key-1" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>2. Add package repository key:</h4>
+<pre><code class="hljs css language-sh">wget -O - http://elkarbackup.org/apt/archive.gpg.key | apt-key add -
+</code></pre>
+<h4><a class="anchor" aria-hidden="true" id="3-add-this-line-to-your-etcaptsourceslist-file"></a><a href="#3-add-this-line-to-your-etcaptsourceslist-file" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>3. Add this line to your <code>/etc/apt/sources.list</code> file:</h4>
+<pre><code class="hljs css language-sh">deb http://elkarbackup.org/apt/debian wheezy main
+</code></pre>
+<p>And update package index files:</p>
+<pre><code class="hljs css language-sh">apt-get update
+</code></pre>
+<h4><a class="anchor" aria-hidden="true" id="4-install-elkarbackup-1"></a><a href="#4-install-elkarbackup-1" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>4. Install Elkarbackup:</h4>
+<pre><code class="hljs css language-sh">apt-get install elkarbackup
+</code></pre>
+<h3><a class="anchor" aria-hidden="true" id="ubuntu-1804-lts"></a><a href="#ubuntu-1804-lts" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Ubuntu 18.04 LTS</h3>
+<h4><a class="anchor" aria-hidden="true" id="1-install-these-recommended-packages-3"></a><a href="#1-install-these-recommended-packages-3" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>1. Install these recommended packages:</h4>
+<pre><code class="hljs css language-sh">apt install debconf php php-cli rsnapshot apache2 mysql-server php-mysql acl bzip2 php-xml libapache2-mod-php libapache2-mod-php libssh2-1 mysql-client
+</code></pre>
+<h4><a class="anchor" aria-hidden="true" id="2-configure-mysql-root-password-1"></a><a href="#2-configure-mysql-root-password-1" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>2. Configure MySQL root password:</h4>
+<pre><code class="hljs css language-sh">$ mysql_secure_installation
+</code></pre>
+<h4><a class="anchor" aria-hidden="true" id="3-add-package-repository-key-1"></a><a href="#3-add-package-repository-key-1" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>3. Add package repository key:</h4>
+<pre><code class="hljs css language-sh">wget -O - http://elkarbackup.org/apt/archive.gpg.key | apt-key add -
+</code></pre>
+<h4><a class="anchor" aria-hidden="true" id="4-add-elkarbackup-repositories-1"></a><a href="#4-add-elkarbackup-repositories-1" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>4. Add elkarbackup repositories:</h4>
+<pre><code class="hljs css language-sh"><span class="hljs-built_in">echo</span> <span class="hljs-string">"deb http://elkarbackup.org/apt/ubuntu bionic main"</span> &gt; /etc/apt/sources.list.d/elkarbackup.list
+</code></pre>
+<p>And update package index files:</p>
+<pre><code class="hljs css language-sh">apt update
+</code></pre>
+<h4><a class="anchor" aria-hidden="true" id="5-install-elkarbackup-1"></a><a href="#5-install-elkarbackup-1" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>5. Install Elkarbackup:</h4>
+<pre><code class="hljs css language-sh">apt install elkarbackup
+</code></pre>
+<hr>
+<h3><a class="anchor" aria-hidden="true" id="ubuntu-1604-lts"></a><a href="#ubuntu-1604-lts" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Ubuntu 16.04 LTS</h3>
+<h4><a class="anchor" aria-hidden="true" id="1-install-these-recommended-packages-4"></a><a href="#1-install-these-recommended-packages-4" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>1. Install these recommended packages:</h4>
+<pre><code class="hljs css language-sh">apt install debconf php php-cli rsnapshot apache2 mysql-server php-mysql acl bzip2 php-xml libapache2-mod-php libapache2-mod-php7.0 libssh2-1 mysql-client
+</code></pre>
+<p>Note: remember MySQL admin password!</p>
+<h4><a class="anchor" aria-hidden="true" id="2-add-package-repository-key-2"></a><a href="#2-add-package-repository-key-2" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>2. Add package repository key:</h4>
+<pre><code class="hljs css language-sh">wget -O - http://elkarbackup.org/apt/archive.gpg.key | apt-key add -
+</code></pre>
+<h4><a class="anchor" aria-hidden="true" id="3-add-the-elkarbackup-repo"></a><a href="#3-add-the-elkarbackup-repo" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>3. Add the elkarbackup repo:</h4>
+<pre><code class="hljs css language-sh"><span class="hljs-built_in">echo</span> <span class="hljs-string">"deb http://elkarbackup.org/apt/ubuntu xenial main"</span> &gt; /etc/apt/sources.list.d/elkarbackup.list
+</code></pre>
+<p>And update package index files:</p>
+<pre><code class="hljs css language-sh">apt update
+</code></pre>
+<h4><a class="anchor" aria-hidden="true" id="4-install-elkarbackup-2"></a><a href="#4-install-elkarbackup-2" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>4. Install Elkarbackup:</h4>
+<pre><code class="hljs css language-sh">apt install elkarbackup
+</code></pre>
+<h3><a class="anchor" aria-hidden="true" id="ubuntu-1404-lts"></a><a href="#ubuntu-1404-lts" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Ubuntu 14.04 LTS</h3>
+<h4><a class="anchor" aria-hidden="true" id="1-install-these-recommended-packages-5"></a><a href="#1-install-these-recommended-packages-5" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>1. Install these recommended packages:</h4>
+<pre><code class="hljs css language-sh">apt-get install debconf php5 php5-cli rsnapshot mysql-server php5-mysql acl bzip2
+</code></pre>
+<p>Note: remember MySQL admin password!</p>
+<h4><a class="anchor" aria-hidden="true" id="2-add-package-repository-key-3"></a><a href="#2-add-package-repository-key-3" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>2. Add package repository key:</h4>
+<pre><code class="hljs css language-sh">wget -O - http://elkarbackup.org/apt/archive.gpg.key | apt-key add -
+</code></pre>
+<h4><a class="anchor" aria-hidden="true" id="3-add-this-line-to-your-etcaptsourceslist-file-1"></a><a href="#3-add-this-line-to-your-etcaptsourceslist-file-1" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>3. Add this line to your <code>/etc/apt/sources.list</code> file:</h4>
+<pre><code class="hljs css language-sh">deb http://elkarbackup.org/apt/ubuntu trusty main
+</code></pre>
+<p>And update package index files:</p>
+<pre><code class="hljs css language-sh">apt-get update
+</code></pre>
+<h4><a class="anchor" aria-hidden="true" id="4-install-elkarbackup-3"></a><a href="#4-install-elkarbackup-3" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>4. Install Elkarbackup:</h4>
+<pre><code class="hljs css language-sh">apt-get install elkarbackup
+</code></pre>
+<h3><a class="anchor" aria-hidden="true" id="fedora-24"></a><a href="#fedora-24" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Fedora 24</h3>
+<h4><a class="anchor" aria-hidden="true" id="1-install-these-required-packages"></a><a href="#1-install-these-required-packages" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>1. Install these required packages:</h4>
+<pre><code class="hljs css language-sh">$ dnf install httpd php mariadb-server rsnapshot zip php-mysql php-xml php-process
+
+<span class="hljs-comment"># Start Apache and Mysql server</span>
+$ systemctl start httpd
+$ systemctl start mariadb
+</code></pre>
+<h4><a class="anchor" aria-hidden="true" id="2-configure-mysql-root-password-2"></a><a href="#2-configure-mysql-root-password-2" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>2. Configure MySQL root password:</h4>
+<pre><code class="hljs css language-sh">$ mysql_secure_installation
+</code></pre>
+<h4><a class="anchor" aria-hidden="true" id="3-configure-php-timezone"></a><a href="#3-configure-php-timezone" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>3. Configure PHP Timezone</h4>
+<pre><code class="hljs css language-sh">$ sed -i <span class="hljs-string">"s/;date.timezone =.*/date.timezone = Europe\/London/g"</span> /etc/php.ini
+</code></pre>
+<h4><a class="anchor" aria-hidden="true" id="4-run-elkarbackup-installer"></a><a href="#4-run-elkarbackup-installer" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>4. Run ElkarBackup installer:</h4>
+<pre><code class="hljs css language-sh">$ bash -c <span class="hljs-string">"<span class="hljs-variable">$(curl -s https://raw.githubusercontent.com/elkarbackup/elkarbackup/master/install/eb-installer.sh)</span>"</span>
+
+<span class="hljs-comment"># Optional: set it to start automatically at boot time</span>
+$ systemctl <span class="hljs-built_in">enable</span> mariadb
+$ systemctl <span class="hljs-built_in">enable</span> httpd.service
+</code></pre>
+<h3><a class="anchor" aria-hidden="true" id="centos-7"></a><a href="#centos-7" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>CentOS 7</h3>
+<h4><a class="anchor" aria-hidden="true" id="1-enable-remi-repository-php-56-or-higer-required"></a><a href="#1-enable-remi-repository-php-56-or-higer-required" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>1. Enable REMI repository (PHP 5.6 or higer required)</h4>
+<p>CentOS 7 provides PHP 5.4, so we need to upgrade it to PHP 5.6 or PHP7</p>
+<pre><code class="hljs css language-sh">yum install https://dl.fedoraproject.org/pub/epel/epel-release-latest-7.noarch.rpm
+yum install http://rpms.remirepo.net/enterprise/remi-release-7.rpm
+yum install yum-utils
+yum-config-manager --<span class="hljs-built_in">enable</span> remi-php56
+</code></pre>
+<p>More info: <a href="http://rpms.remirepo.net/wizard/">http://rpms.remirepo.net/wizard/</a></p>
+<h4><a class="anchor" aria-hidden="true" id="2-install-the-required-packages"></a><a href="#2-install-the-required-packages" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>2. Install the required packages:</h4>
+<pre><code class="hljs css language-sh">$ yum install bzip2 httpd mariadb-server rsnapshot zip unzip <span class="hljs-built_in">which</span> git php php-mysql php-xml php-process
+
+<span class="hljs-comment"># Start apache and mysql server</span>
+$ systemctl start httpd
+$ systemctl start mariadb
+</code></pre>
+<h4><a class="anchor" aria-hidden="true" id="3-configure-mysql-root-password"></a><a href="#3-configure-mysql-root-password" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>3. Configure MySQL root password:</h4>
+<pre><code class="hljs css language-sh">$ mysql_secure_installation
+</code></pre>
+<h4><a class="anchor" aria-hidden="true" id="4-configure-php-timezone"></a><a href="#4-configure-php-timezone" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>4. Configure PHP Timezone</h4>
+<pre><code class="hljs css language-sh">$ sed -i <span class="hljs-string">"s/;date.timezone =.*/date.timezone = Europe\/London/g"</span> /etc/php.ini
+</code></pre>
+<h4><a class="anchor" aria-hidden="true" id="5-run-elkarbackup-installer"></a><a href="#5-run-elkarbackup-installer" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>5. Run ElkarBackup installer:</h4>
+<pre><code class="hljs css language-sh">$ bash -c <span class="hljs-string">"<span class="hljs-variable">$(curl -s https://raw.githubusercontent.com/elkarbackup/elkarbackup/master/install/eb-installer.sh)</span>"</span>
+
+<span class="hljs-comment"># Optional: set it to start automatically at boot time</span>
+$ systemctl <span class="hljs-built_in">enable</span> mariadb
+$ systemctl <span class="hljs-built_in">enable</span> httpd.service
+</code></pre>
+<h3><a class="anchor" aria-hidden="true" id="docker"></a><a href="#docker" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Docker</h3>
+<p>ElkarBackup docker repo in Docker Hub: <a href="https://hub.docker.com/r/elkarbackup/elkarbackup/">https://hub.docker.com/r/elkarbackup/elkarbackup/</a></p>
+<p>Demo: <a href="https://asciinema.org/a/CRZZ2NITZJueRU36oGDInxHrN"><img src="https://asciinema.org/a/CRZZ2NITZJueRU36oGDInxHrN.png" alt="asciicast"></a></p>
+<h3><a class="anchor" aria-hidden="true" id="after-the-installation"></a><a href="#after-the-installation" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>After the installation</h3>
+<p>Now you can access to Elkarbackup using the following URL:</p>
+<ul>
+<li><a href="http://ip-address/elkarbackup/app.php/login">http://ip-address/elkarbackup/app.php/login</a></li>
+<li><a href="https://ip-address/e">https://ip-address</a></li>
+</ul>
+<pre><code class="hljs css language-yaml"><span class="hljs-attr">Default user:</span> <span class="hljs-string">root</span>
+<span class="hljs-attr">Default password:</span> <span class="hljs-string">root</span>
+</code></pre>
+<p><strong>Note</strong>: you can also use the address <a href="http://elkarbackup">http://elkarbackup</a> but first you need to add your IP/name to your DNS/hosts file.</p>
+<p>After the installation, is highly recommended:</p>
+<ul>
+<li>Change root user's password and email address (Users -&gt; Show -&gt; Users -&gt; &quot;root&quot;)</li>
+<li>Configure notification email server and protocol (Config -&gt; Manage Parameters)</li>
+</ul>
+</span></div></article></div><div class="docs-prevnext"><a class="docs-prev button" href="/docs/1.3/why-elkarbackup.html"><span class="arrow-prev">← </span><span>Why Elkarbackup?</span></a><a class="docs-next button" href="/docs/1.3/getting-started.html"><span>Getting started</span><span class="arrow-next"> →</span></a></div></div></div><nav class="onPageNav"><ul class="toc-headings"><li><a href="#supported-systems">Supported Systems</a><ul class="toc-headings"><li><a href="#debian-stretch-90">Debian Stretch (9.0)</a></li><li><a href="#debian-jessie-80">Debian Jessie (8.0)</a></li><li><a href="#debian-wheezy-70">Debian Wheezy (7.0)</a></li><li><a href="#ubuntu-1804-lts">Ubuntu 18.04 LTS</a></li><li><a href="#ubuntu-1604-lts">Ubuntu 16.04 LTS</a></li><li><a href="#ubuntu-1404-lts">Ubuntu 14.04 LTS</a></li><li><a href="#fedora-24">Fedora 24</a></li><li><a href="#centos-7">CentOS 7</a></li><li><a href="#docker">Docker</a></li><li><a href="#after-the-installation">After the installation</a></li></ul></li></ul></nav></div><footer class="nav-footer" id="footer"><section class="sitemap"><a href="/" class="nav-home"></a><div><h5>Documentation</h5><a href="/docs/en/getting-started.html">Getting Started</a><a href="/docs/en/installation.html">Installation</a><a href="/docs/en/troubleshooting.html">Troubleshooting</a></div><div><h5>Community</h5><a href="http://stackoverflow.com/questions/tagged/elkarbackup" target="_blank" rel="noreferrer noopener">Stack Overflow</a><a href="https://crowdin.com/project/elkarbackup">Translate</a><a href="https://twitter.com/elkarbackup/" target="_blank" rel="noreferrer noopener">Twitter</a></div><div><h5>More</h5><a href="https://www.elkarbackup.org">Website</a><a href="https://github.com/elkarbackup/elkarbackup">GitHub</a><a class="github-button" href="https://github.com/elkarbackup/elkarbackup" data-icon="octicon-star" data-count-href="/facebook/docusaurus/stargazers" data-show-count="true" data-count-aria-label="# stargazers on GitHub" aria-label="Star this project on GitHub">Star</a></div></section><section class="copyright">Copyright © 2021 ElkarBackup</section></footer></div><script type="text/javascript" src="https://cdn.jsdelivr.net/docsearch.js/1/docsearch.min.js"></script><script>
+                document.addEventListener('keyup', function(e) {
+                  if (e.target !== document.body) {
+                    return;
+                  }
+                  // keyCode for '/' (slash)
+                  if (e.keyCode === 191) {
+                    const search = document.getElementById('search_input_react');
+                    search && search.focus();
+                  }
+                });
+              </script><script>
+              var search = docsearch({
+                
+                apiKey: '7f2bf4bca0a9b06c05b54d12e953811d',
+                indexName: 'elkarbackup',
+                inputSelector: '#search_input_react'
+              });
+            </script></body></html>
