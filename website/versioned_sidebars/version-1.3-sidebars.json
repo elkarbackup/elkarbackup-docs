@@ -1,0 +1,48 @@
+{
+  "version-1.3-docs": {
+    "Introduction": [
+      "version-1.3-introduction",
+      "version-1.3-why-elkarbackup"
+    ],
+    "Installation": [
+      "version-1.3-installation",
+      "version-1.3-getting-started"
+    ],
+    "Clients and jobs": [
+      "version-1.3-clients-jobs",
+      "version-1.3-hosts-linux",
+      "version-1.3-hosts-windows",
+      "version-1.3-advanced-connection-options",
+      "version-1.3-hosts-solving-problems"
+    ],
+    "Backup status": [
+      "version-1.3-backup-status"
+    ],
+    "Backup policies": [
+      "version-1.3-policies-new",
+      "version-1.3-policies-schedule",
+      "version-1.3-policies-outdated-data",
+      "version-1.3-policies-different",
+      "version-1.3-sort-jobs"
+    ],
+    "Scripts": [
+      "version-1.3-script-intro",
+      "version-1.3-script-new",
+      "version-1.3-script-example"
+    ],
+    "Settings": [
+      "version-1.3-manage-parameters",
+      "version-1.3-storages",
+      "version-1.3-storage-nfs",
+      "version-1.3-storage-tahoe",
+      "version-1.3-backup-mirror"
+    ],
+    "A review of concepts": [
+      "version-1.3-concepts-rsnapshot",
+      "version-1.3-concepts-tahoe"
+    ],
+    "Troubleshooting": [
+      "version-1.3-troubleshooting"
+    ]
+  }
+}

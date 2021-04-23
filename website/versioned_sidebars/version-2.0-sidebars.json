@@ -1,0 +1,46 @@
+{
+  "version-2.0-docs": {
+    "Introduction": [
+      "version-2.0-introduction",
+      "version-2.0-why-elkarbackup"
+    ],
+    "Installation": [
+      "version-2.0-installation",
+      "version-2.0-getting-started"
+    ],
+    "Clients and jobs": [
+      "version-2.0-clients-jobs",
+      "version-2.0-hosts-linux",
+      "version-2.0-hosts-windows",
+      "version-2.0-advanced-connection-options",
+      "version-2.0-hosts-solving-problems"
+    ],
+    "Backup status": [
+      "version-2.0-backup-status"
+    ],
+    "Backup policies": [
+      "version-2.0-policies-new",
+      "version-2.0-policies-schedule",
+      "version-2.0-policies-outdated-data",
+      "version-2.0-policies-different",
+      "version-2.0-sort-jobs"
+    ],
+    "Scripts": [
+      "version-2.0-script-intro",
+      "version-2.0-script-new",
+      "version-2.0-script-example"
+    ],
+    "Settings": [
+      "version-2.0-manage-parameters",
+      "version-2.0-storages",
+      "version-2.0-storage-nfs",
+      "version-2.0-backup-mirror"
+    ],
+    "A review of concepts": [
+      "version-2.0-concepts-rsnapshot"
+    ],
+    "Troubleshooting": [
+      "version-2.0-troubleshooting"
+    ]
+  }
+}
