@@ -64,14 +64,14 @@ The Elkarbackup installation has been tested on the next systems:
 
   ```sh
   wget http://ftp.debian.org/debian/pool/main/r/rsnapshot/rsnapshot_1.4.2-1_all.deb
-  apt-get install rsnapshot_1.4.2-1_all.deb
+  apt-get install ./rsnapshot_1.4.2-1_all.deb
   ```
 
   #### 2. Install mariadb-server and configure root password if you want a dedicated local DB server for Elkarbackup:
 
   ```sh
   apt install mariadb-server
-  $ mysql_secure_installation
+  mysql_secure_installation
   ```
 
   #### 3. Add package repository key:
