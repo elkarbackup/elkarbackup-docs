@@ -153,7 +153,6 @@ The Elkarbackup v2.0 installation has been tested on the next systems:
 
   Now you can access to Elkarbackup using the following URL:
   - [http://ip-address/elkarbackup/](http://ip-address/elkarbackup/)
-  - [https://ip-address](https://ip-address/e)
 
   ```yaml
   Default user: root
