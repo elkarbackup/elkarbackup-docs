@@ -7,16 +7,28 @@ title: Getting started
 
 So you have installed ElkarBackup successfully. Let's connect to the web UI.
 
+### Debian/Ubuntu:
+
+Apache will be configured to access in two ways:
+
 HTTP address:
 
 ```
-http://<ip-address>/elkarbackup/
+http://ELKARBACKUP_SERVER/elkarbackup/
 ```
 
 HTTPS address:
 
 ```
-https://<ip-address>/
+https://ELKARBACKUP_SERVER/
+```
+
+### Docker container:
+
+If you are using the default `docker-compose.yml` template, you can access to the following URL:
+
+```
+http://localhost:8000
 ```
 
 # Login
@@ -28,4 +40,4 @@ username: root
 password: root
 ```
 
-Obviously, you should change the password immediately!
+Obviously, you should change the password immediately!!
