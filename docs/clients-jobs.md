@@ -7,7 +7,7 @@ First of all, let's introduce what we call _clients_ and _jobs_ :
 
 * **Client**: A client is a host that contains the data we want to save. It could be any machine that supports ssh or rsync automated connectivity. In this manual we'll focus on GNU/Linux and Windows clients.
 
-* **Job**: Each root folder we want to save from each client. Each job has it's own configuration with it's own frequency, retention policy and backup location. A client could have (and usually it has) more than one job.
+* **Job**: Each root folder we want to save from each client. Each job has its own configuration with its own frequency, retention policy and backup location. A client could have (and usually it has) more than one job.
 
 ## Connecting to the clients
 
