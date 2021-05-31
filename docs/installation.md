@@ -15,9 +15,9 @@ The Elkarbackup installation has been tested on the next systems:
 
   ***
   
-  ## Supported Systems
+ ## Supported Systems
 
-  ### Debian Buster (10.0)
+ ### Debian Buster (10.0)
 
   #### 1. Install these recommended packages:
 
@@ -144,9 +144,53 @@ The Elkarbackup installation has been tested on the next systems:
 
   ### Docker
 
-  ElkarBackup docker repo in Docker Hub: https://hub.docker.com/r/elkarbackup/elkarbackup/
-  
-  Demo: [![asciicast](https://asciinema.org/a/CRZZ2NITZJueRU36oGDInxHrN.png)](https://asciinema.org/a/CRZZ2NITZJueRU36oGDInxHrN)
+  Elkarbackup Docker image is published on DockerHub and Github Container Registry.
+
+  #### Recommended usage via docker-compose
+
+  You can use Docker Compose to easily run ElkarBackup in an isolated environment built with Docker containers:
+
+
+  **docker-compose.yml***
+
+```
+version: '3'
+
+services:
+  elkarbackup:
+    image: elkarbackup/elkarbackup:latest
+    environment:
+      SYMFONY__DATABASE__PASSWORD: "your-password-here"
+      EB_CRON: "enabled"
+      volumes:
+      - backups:/app/backups
+      - uploads:/app/uploads
+      - sshkeys:/app/.ssh
+    ports:
+      - 8000:80
+    
+  db:
+    image: mysql:5.7.22
+    environment:
+      MYSQL_ROOT_PASSWORD: "your-password-here"
+    volumes:
+      - db:/var/lib/mysql
+
+volumes:
+  db:
+  backups:
+  uploads:
+  sshkeys:
+```
+
+Run `docker-compose up`, wait for it to initialize completely, and go to the address:
+
+- http://localhost:80000
+
+
+You can found more info about the Docker image configuration in the official [README](https://github.com/elkarbackup/elkarbackup/blob/master/docker/README.md):
+
+https://github.com/elkarbackup/elkarbackup/blob/master/docker/README.md
 
   ### After the installation
 
