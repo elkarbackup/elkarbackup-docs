@@ -1,6 +1,7 @@
 ---
-id: backup-mirror
+id: version-2.0-backup-mirror
 title: Backup mirror
+original_id: backup-mirror
 ---
 
 For what we have seen until now, we are able to make copies of the data of several servers, optimizing the disk space and using different policies.
