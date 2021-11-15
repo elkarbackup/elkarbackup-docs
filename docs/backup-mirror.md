@@ -15,47 +15,46 @@ In the menu we can see the option _**Configuration → Repository backup script*
 
 If we click on this button, we will download the following script:
 
-> \#!/bin/bash
->
->
->
-> MYSQL\_DB=ElkarBackup
->
-> MYSQL\_HOST=localhost
->
-> MYSQL\_PASSWORD=root
->
-> MYSQL\_USER=root
->
-> REPOSITORY=/var/spool/ElkarBackup/backups
->
-> SERVER=ElkarBackup
->
-> SERVER\_USER=ElkarBackup
->
-> UPLOADS=/var/spool/ElkarBackup/uploads
->
->
->
-> ssh "$SERVER\_USER@$SERVER" "cd '$REPOSITORY'; find . -maxdepth 2 -mindepth 2" \| sed s/^..// \| while read jobId
->
-> do
->
->     echo Backing up job $jobId
->
->     mkdir -p $jobId 2&gt;/dev/null
->
->     rsync -aH --delete "$SERVER\_USER@$SERVER:$REPOSITORY/$jobId/" $jobId
->
-> done
->
-> echo Backing up mysql DB
->
-> ssh "$SERVER\_USER@$SERVER" "mysqldump -u$MYSQL\_USER -p$MYSQL\_PASSWORD -h$MYSQL\_HOST $MYSQL\_DB" &gt; ElkarBackup.sql
->
-> echo Backing up uploads
->
-> rsync -aH --delete "$SERVER\_USER@$SERVER":"$UPLOADS/" uploads
+```bash
+\#!/bin/bash
+
+MYSQL_DB={{ mysqldb }}
+MYSQL_HOST={{ mysqlhost }}
+MYSQL_PASSWORD={{ mysqlpassword }}
+MYSQL_USER={{ mysqluser }}
+REPOSITORY={{ backupsroot }}
+SERVER={{ server }}
+SERVER_USER={{ backupsuser }}
+UPLOADS={{ uploads }}
+
+echo "Starting backup..."
+echo "Date: " `date "+%Y-%m-%d (%H:%M)"`
+
+ssh "$SERVER_USER@$SERVER" "cd '$REPOSITORY'; find . -maxdepth 2 -mindepth 2" | sed s/^..// | while read jobId
+do
+    echo Backing up job $jobId
+    mkdir -p $jobId 2>/dev/null
+    rsync -aH --delete "$SERVER_USER@$SERVER:$REPOSITORY/$jobId/" $jobId
+done
+echo Backing up mysql DB
+ssh "$SERVER_USER@$SERVER" "mysqldump -u$MYSQL_USER -p$MYSQL_PASSWORD -h$MYSQL_HOST $MYSQL_DB" > elkarbackup.sql
+echo Backing up uploads
+rsync -aH --delete "$SERVER_USER@$SERVER":"$UPLOADS/" uploads
+
+USED=`df -h . | awk 'NR==2 { print $3 }'`
+USE=`df -h . | awk 'NR==2 { print $5 }'`
+AVAILABLE=`df -h . | awk 'NR==2 { print $4 }'`
+
+echo "Backup finished succesfully!"
+echo "Date: " `date "+%Y-%m-%d (%H:%M)"`
+echo ""
+echo "**** INFO ****"
+echo "Used disk space: $USED ($USE)"
+echo "Available disk space: $AVAILABLE"
+echo ""
+#echo "Power off!"
+#sudo nohup shutdown 1 &
+```
 
 
 
@@ -67,6 +66,6 @@ If we run this script on another machine \(onwards Secondary\):
 
 So it would be enough to schedule the execution of this script on the Secondary server to have the synchronized copy of our repository on its own disk.
 
-It we want to avoid data loss in a catastrophical situation, it would not make much sense for both servers to be located on the same site .....
+It we want to avoid data loss in a catastrophical situation, it would not make much sense for both servers to be located on the same site
 
 
