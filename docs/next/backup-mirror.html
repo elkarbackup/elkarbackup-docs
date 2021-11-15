@@ -68,16 +68,16 @@
 <p>In the menu we can see the option <em><strong>Configuration → Repository backup script</strong></em>, and inside we have the option to <em><strong>download Backup Script.</strong></em></p>
 <p><img src="/docs/assets/screenshots/repository_backup_script.png" alt=""></p>
 <p>If we click on this button, we will download the following script:</p>
-<pre><code class="hljs css language-bash">\<span class="hljs-comment">#!/bin/bash</span>
-
-MYSQL_DB={{ mysqldb }}
-MYSQL_HOST={{ mysqlhost }}
-MYSQL_PASSWORD={{ mysqlpassword }}
-MYSQL_USER={{ mysqluser }}
-REPOSITORY={{ backupsroot }}
-SERVER={{ server }}
-SERVER_USER={{ backupsuser }}
-UPLOADS={{ uploads }}
+<pre><code class="hljs css language-bash"><span class="hljs-meta">#!/bin/bash
+</span>
+MYSQL_DB=elkarbackup
+MYSQL_HOST=localhost
+MYSQL_PASSWORD=changeme
+MYSQL_USER=root
+REPOSITORY=/var/spool/ElkarBackup/backups
+SERVER=elkarbackup
+SERVER_USER=elkarbackup
+UPLOADS=/var/spool/ElkarBackup/uploads
 
 <span class="hljs-built_in">echo</span> <span class="hljs-string">"Starting backup..."</span>
 <span class="hljs-built_in">echo</span> <span class="hljs-string">"Date: "</span> `date <span class="hljs-string">"+%Y-%m-%d (%H:%M)"</span>`
