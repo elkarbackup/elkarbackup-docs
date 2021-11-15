@@ -16,16 +16,16 @@ In the menu we can see the option _**Configuration → Repository backup script*
 If we click on this button, we will download the following script:
 
 ```bash
-\#!/bin/bash
+#!/bin/bash
 
-MYSQL_DB={{ mysqldb }}
-MYSQL_HOST={{ mysqlhost }}
-MYSQL_PASSWORD={{ mysqlpassword }}
-MYSQL_USER={{ mysqluser }}
-REPOSITORY={{ backupsroot }}
-SERVER={{ server }}
-SERVER_USER={{ backupsuser }}
-UPLOADS={{ uploads }}
+MYSQL_DB=elkarbackup
+MYSQL_HOST=localhost
+MYSQL_PASSWORD=changeme
+MYSQL_USER=root
+REPOSITORY=/var/spool/ElkarBackup/backups
+SERVER=elkarbackup
+SERVER_USER=elkarbackup
+UPLOADS=/var/spool/ElkarBackup/uploads
 
 echo "Starting backup..."
 echo "Date: " `date "+%Y-%m-%d (%H:%M)"`
@@ -58,7 +58,7 @@ echo ""
 
 
 
-If we run this script on another machine \(onwards Secondary\):
+If we run this script on another machine (onwards Secondary):
 
 * It will connect to the server where we have ElkarBackup installed and will launch the synchronization of the existing backups.
 * Then it will back up the MySQL database in the ElkarBackup.sql file
