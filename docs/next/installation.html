@@ -154,7 +154,7 @@ wget -O - http://elkarbackup.org/apt/archive.gpg.key | apt-key add -
     <span class="hljs-attribute">environment</span>:
       <span class="hljs-attribute">SYMFONY__DATABASE__PASSWORD</span>: <span class="hljs-string">"your-password-here"</span>
       <span class="hljs-attribute">EB_CRON</span>: <span class="hljs-string">"enabled"</span>
-      <span class="hljs-attribute">volumes</span>:
+    <span class="hljs-attribute">volumes</span>:
       - <span class="hljs-attribute">backups</span>:/app/backups
       - <span class="hljs-attribute">uploads</span>:/app/uploads
       - <span class="hljs-attribute">sshkeys</span>:/app/.ssh
