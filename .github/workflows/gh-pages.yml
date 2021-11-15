@@ -17,14 +17,18 @@ jobs:
 
       - name: npm
         uses: actions/setup-node@v2
-      - run: npm install
+
+      - name: Install
+        working-directory: ./website
+        run: yarn install --frozen-lockfile;
       
       - name: Build
-        run: npm run build
+        working-directory: ./websie
+        run: yarn run build
 
       - name: Deploy
         uses: peaceiris/actions-gh-pages@v3
         if: github.ref == 'refs/heads/main'
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: ./public
+          publish_dir: ./website/public
