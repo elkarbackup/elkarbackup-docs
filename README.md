@@ -1,6 +1,6 @@
 # Elkarbackup Documentation
 
-[![Build Status](https://api.travis-ci.com/elkarbackup/elkarbackup-docs.svg?branch=master)](https://travis-ci.com/elkarbackup/elkarbackup-docs)
+[![Build](https://github.com/elkarbackup/elkarbackup-docs/actions/workflows/gh-pages.yml/badge.svg)](https://github.com/elkarbackup/elkarbackup-docs/actions/workflows/gh-pages.yml)
 
 This is the repository for the official documentation of [ElkarBackup](https://www.elkarbackup.org).
 
@@ -18,7 +18,7 @@ This website has been built using [Docusaurus](https://docusaurus.io).
 
 ### Building the website with Docker
 
-TravisCI will build the static web after every commit and push it to `gh-pages` branch.
+GitHub Action will build the static web after every commit and push it to `gh-pages` branch.
 
 However, you can also build the website by yourself. You have to install the required dependencies (npm/yarn) and follow Docusaurus [instructions](https://docusaurus.io/docs/en/publishing).
 
